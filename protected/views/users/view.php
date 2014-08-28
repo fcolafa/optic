@@ -1,0 +1,30 @@
+<?php
+/* @var $this UsersController */
+/* @var $model Users */
+
+$this->breadcrumbs=array(
+	Yii::t('database','Users')=>array('index'),
+	$model->id_user,
+);
+
+$this->menu=array(
+	array('label'=>Yii::t('actions','List')." ". Yii::t('database','Users'), 'url'=>array('index')),
+	array('label'=>Yii::t('actions','Create')." ". Yii::t('database','Users'), 'url'=>array('create')),
+	array('label'=>Yii::t('actions','Update')." ". Yii::t('database','Users'), 'url'=>array('update', 'id'=>$model->id_user)),
+	array('label'=>Yii::t('actions','Delete')." ". Yii::t('database','Users'), 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_user),'confirm'=>Yii::t('validation','Are you sure you want to delete this item?'))),
+	array('label'=>Yii::t('actions','Manage')." ". Yii::t('database','Users'), 'url'=>array('admin')),
+);
+?>
+
+<h1><?php echo Yii::t('actions','View')?> <?php echo Yii::t('database','Users')?> #<?php echo $model->id_user; ?></h1>
+
+<?php $this->widget('zii.widgets.CDetailView', array(
+	'data'=>$model,
+	'attributes'=>array(
+		'id_user',
+		'user_name',
+		'date_create',
+		'date_lastsession',
+		'email',
+	),
+)); ?>
