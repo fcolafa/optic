@@ -17,18 +17,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'id_user'); ?>
-		<?php echo $form->textField($model,'id_user'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'login'); ?>
 		<?php echo $form->textField($model,'login'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'logout'); ?>
-		<?php echo $form->textField($model,'logout'); ?>
+		<?php echo $form->label($model,'id_user'); ?>
+		<?php echo $form->textField($model,'id_user'); ?>
 	</div>
 
 	<div class="row buttons">

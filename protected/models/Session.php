@@ -5,9 +5,8 @@
  *
  * The followings are the available columns in table 'session':
  * @property integer $id_session
- * @property integer $id_user
  * @property string $login
- * @property string $logout
+ * @property integer $id_user
  *
  * The followings are the available model relations:
  * @property Users $idUser
@@ -17,6 +16,7 @@ class Session extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+        public $_username; 
 	public function tableName()
 	{
 		return 'session';
@@ -32,10 +32,11 @@ class Session extends CActiveRecord
 		return array(
 			array('id_user', 'required'),
 			array('id_user', 'numerical', 'integerOnly'=>true),
-			array('login, logout', 'safe'),
+			array('login', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_session, id_user, login, logout', 'safe', 'on'=>'search'),
+			array('id_session, login, id_user', 'safe', 'on'=>'search'),
+                        array('_username', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,9 +59,8 @@ class Session extends CActiveRecord
 	{
 		return array(
 			'id_session' => Yii::t('database','Id Session'),
-			'id_user' => Yii::t('database','Id User'),
 			'login' => Yii::t('database','Login'),
-			'logout' => Yii::t('database','Logout'),
+			'id_user' => Yii::t('database','Id User'),
 		);
 	}
 
@@ -81,11 +81,13 @@ class Session extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
+                $criteria->with=array('idUser');
+                $criteria->together=true;
 
 		$criteria->compare('id_session',$this->id_session);
-		$criteria->compare('id_user',$this->id_user);
 		$criteria->compare('login',$this->login,true);
-		$criteria->compare('logout',$this->logout,true);
+		$criteria->compare('id_user',$this->id_user);
+                $criteria->compare('idUser.user_name', $this->_username,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

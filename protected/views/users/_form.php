@@ -43,7 +43,7 @@
         </div>
 	<div class="row">
 		<?php echo $form->labelEx($model,'role'); ?>
-		<?php echo $form->textField($model,'role',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->dropDownList($model,'role',CHtml::listData( Yii::app()->authManager->getAuthItems(),'name','name'));?>
 		<?php echo $form->error($model,'role'); ?>
 	</div>
 	<div class="row">

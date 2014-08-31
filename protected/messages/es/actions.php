@@ -12,5 +12,7 @@ return array(
 'Save'=>'Guardar',
 'Login'=>'Iniciar Sesión',
 'Logout'=>'Cerrar Sesión',
-'Select'=>'Seleccione'
+'Select'=>'Seleccione',
+'Session'=>'Conexiones',
+    
 );

@@ -36,10 +36,6 @@
 		<?php echo $form->textField($model,'date_create'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'date_lastsession'); ?>
-		<?php echo $form->textField($model,'date_lastsession'); ?>
-	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'email'); ?>

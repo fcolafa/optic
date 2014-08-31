@@ -55,54 +55,6 @@ class SessionController extends Controller
 			'model'=>$this->loadModel($id),
 		));
 	}
-
-	/**
-	 * Creates a new model.
-	 * If creation is successful, the browser will be redirected to the 'view' page.
-	 */
-	public function actionCreate()
-	{
-		$model=new Session;
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Session']))
-		{
-			$model->attributes=$_POST['Session'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_session));
-		}
-
-		$this->render('create',array(
-			'model'=>$model,
-		));
-	}
-
-	/**
-	 * Updates a particular model.
-	 * If update is successful, the browser will be redirected to the 'view' page.
-	 * @param integer $id the ID of the model to be updated
-	 */
-	public function actionUpdate($id)
-	{
-		$model=$this->loadModel($id);
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Session']))
-		{
-			$model->attributes=$_POST['Session'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_session));
-		}
-
-		$this->render('update',array(
-			'model'=>$model,
-		));
-	}
-
 	/**
 	 * Deletes a particular model.
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
@@ -131,13 +83,12 @@ class SessionController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionAdmin($id=null)
 	{
 		$model=new Session('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Session']))
 			$model->attributes=$_GET['Session'];
-
 		$this->render('admin',array(
 			'model'=>$model,
 		));

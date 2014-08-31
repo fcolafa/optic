@@ -29,11 +29,8 @@ class UserIdentity extends CUserIdentity
                             $this->setState('role', $user->role);
                             $this->username=$user->user_name;
                             $this->errorCode=self::ERROR_NONE;
-                            $info_usuario = Users::model()->find('LOWER(user_name)=?', array($user->user_name));
-                            /*En las vistas tendremos disponibles last_login y perfil pueden setear las que requieran */    
-                            $this->setState('last_login',$info_usuario->date_lastsession);
-                            
-                            $sql = "update users set date_lastsession = now() where user_name='$user->user_name'";
+                            $info_usuario = Users::model()->find('LOWER(user_name)=?', array($user->user_name));        
+                            $sql = "INSERT INTO session (`id_user`,`login`) VALUES (".$user->id_user." , now() )";
                             $connection = Yii::app() -> db;
                             $command = $connection -> createCommand($sql);
                             $command -> execute();

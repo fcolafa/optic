@@ -23,8 +23,12 @@ $this->menu=array(
 	'attributes'=>array(
 		'id_user',
 		'user_name',
-		'date_create',
-		'date_lastsession',
+		  array(
+                'name'=>'date_create',
+                //'value'=>'date("d M Y",strtotime($data["work_date"]))'
+                'value'=>Yii::app()->dateFormatter->format("d MMMM y HH:mm:ss",strtotime($model->date_create))
+                ),
 		'email',
+                'role',
 	),
 )); ?>

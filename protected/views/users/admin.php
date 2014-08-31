@@ -48,9 +48,14 @@ $('.search-form form').submit(function(){
 	'columns'=>array(
 		'id_user',
 		'user_name',
-		'date_create',
-		'date_lastsession',
+		  array(
+                'name'=>'date_create',
+                //'value'=>'date("d M Y",strtotime($data["work_date"]))'
+                'value'=>'Yii::app()->dateFormatter->format("d MMMM y HH:mm:ss",strtotime($data->date_create))'
+                ),
+             
 		'email',
+                'role',
 		array(
 			'class'=>'CButtonColumn',
 		),

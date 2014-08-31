@@ -10,7 +10,6 @@
  * @property string $session
  * @property string $role
  * @property string $date_create
- * @property string $date_lastsession
  * @property string $email
  */
 class Users extends CActiveRecord
@@ -25,7 +24,6 @@ class Users extends CActiveRecord
 	{
 		return 'users';
 	}
-
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -38,10 +36,9 @@ class Users extends CActiveRecord
                         array('_oldpassword,password, password_repeat','required' ,'on'=>'update'),
                         array('user_name','unique'),
 			array('user_name, password, session, role, email', 'length', 'max'=>45),
-			array('date_lastsession', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_user,user_name, password, session, role, date_create, date_lastsession, email', 'safe', 'on'=>'search'),
+			array('id_user,user_name, password, session, role, date_create, email', 'safe', 'on'=>'search'),
                         array('email','email'),
                         array('password', 'compare'),
                         array('password_repeat', 'safe'),
@@ -60,7 +57,6 @@ class Users extends CActiveRecord
                     'sessions' => array(self::HAS_MANY, 'Session', 'id_user'),
 		);
 	}
-
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */
@@ -73,7 +69,6 @@ class Users extends CActiveRecord
 			'session' => Yii::t('database','Session'),
 			'role' => Yii::t('database','Role'),
 			'date_create' => Yii::t('database','Date Create'),
-			'date_lastsession' => Yii::t('database','Date Lastsession'),
 			'email' => Yii::t('database','Email'),
                         'password_repeat'=>Yii::t('database','Repeat Password'),
                         '_oldpassword'=>  Yii::t('database','Old Password'),
@@ -111,8 +106,8 @@ class Users extends CActiveRecord
 		$criteria->compare('id_user',$this->id_user);
 		$criteria->compare('user_name',$this->user_name,true);
 		$criteria->compare('date_Create',$this->date_create,true);
-		$criteria->compare('date_lastsession',$this->date_lastsession,true);
 		$criteria->compare('email',$this->email,true);
+                $criteria->compare('role',$this->role,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-array('label'=>Yii::t('actions','List')." ". Yii::t('database','Session'), 'url'=>array('index')),
-	array('label'=>Yii::t('actions','Create')." ".Yii::t('database','Session'), 'url'=>array('create')),
+//array('label'=>Yii::t('actions','List')." ". Yii::t('database','Session'), 'url'=>array('index')),
+	
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -34,7 +34,7 @@ $('.search-form form').submit(function(){
 ) <?php echo Yii::t('validation','at the beginning of each of your search values to specify how the comparison should be done')?> .
 </p>
 
-<?php echo CHtml::link(Yii::t('actions','Advanced Search'),'#',array('class'=>'search-button')); ?>
+
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
@@ -46,12 +46,28 @@ $('.search-form form').submit(function(){
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id_session',
-		'id_user',
-		'login',
-		'logout',
+		
+                array('name'=>'idUser.user_name',
+                    'value'=>'$data->idUser->user_name',
+                    'filter'=>  CHtml::activeTextField($model, '_username'),
+                    ),
+                array(
+                'name'=>'login',
+                //'value'=>'date("d M Y",strtotime($data["work_date"]))'
+                'value'=>'Yii::app()->dateFormatter->format("d MMMM y HH:mm:ss",strtotime($data->login))'
+                ),
+             
+            
 		array(
 			'class'=>'CButtonColumn',
+                        'buttons'=>array(
+                        'update'=>array(
+                            'visible'=>'false',
+                         ),
+                            'view'=>array(
+                            'visible'=>'false',
+                         ),
+                    ),
 		),
 	),
 )); ?>

@@ -32,10 +32,13 @@
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
-                                array('label'=>'Sucursales', 'url'=>array('/office/index')),
+                                array('label'=>Yii::t('database', 'Office'), 'url'=>array('/office/index')),
+                                array('label'=>'Gestion '.Yii::t('database', 'Users'), 'url'=>array('/users/index')),
 				array('label'=>Yii::t('actions','Login'), 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                            
 				array('label'=>Yii::t('actions','Logout').' ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
+			
+                            ),
 		)); ?>
 	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>

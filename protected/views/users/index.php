@@ -9,6 +9,7 @@ $this->breadcrumbs=array(
 $this->menu=array(
 	array('label'=>Yii::t('actions','Create')." ". Yii::t('database','Users'), 'url'=>array('create')),
 	array('label'=>Yii::t('actions','Manage')." ". Yii::t('database','Users'), 'url'=>array('admin')),
+        array('label'=>Yii::t('actions','Session')." ". Yii::t('database','Users'), 'url'=>array('session/admin')),
 );
 ?>
 

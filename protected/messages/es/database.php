@@ -23,6 +23,7 @@ return array(
 'Date Lastsession'=>'Ultima conexión',
 'Repeat Password'=>'Repetir Contraseña',
 'Old Password'=>'Contraseña Anterior',
+'Role'=>'Permisos',
  
 //zone
 'Zone'=>'Región',

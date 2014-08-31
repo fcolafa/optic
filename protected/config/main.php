@@ -40,7 +40,8 @@ return array(
 	'components'=>array(
 		'user'=>array(
 			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
+			'allowAutoLogin'=>false,
+                        //'authTimeout'=>300,
 		),
 		// uncomment the following to enable URLs in path-format
 	

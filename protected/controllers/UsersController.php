@@ -28,17 +28,14 @@ class UsersController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
+                    
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'actions'=>array('index','view','create','update'),
+				'roles'=>array('Administrador'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'actions'=>array('index','view','create','update','admin','delete'),
+				'roles'=>array('Control Total'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -76,10 +73,14 @@ class UsersController extends Controller
                         date_default_timezone_set('America/Santiago');
                         $model->date_create=  date("y/m/d H:i:s");
                         
-			if($model->save())
+			if($model->save()){
+                                Yii::app()->authManager->assign($model->role,$model->id_user);
 				$this->redirect(array('view','id'=>$model->id_user));
-                        $model->password = '';
-                        $model->password_repeat= '';
+                        }
+                        $model->password_repeat='';
+                        $model->password='';
+                        $model->_oldpassword='';
+                      
 		}
 		$this->render('create',array(
 			'model'=>$model,
@@ -95,9 +96,9 @@ class UsersController extends Controller
 	{
 		$model=$this->loadModel($id);
                 
-                   
-                   $oldpass=$model->password;
                    $model->password='';
+             
+                   Yii::app ()->authManager->revoke($model->role,$model->id_user);
                   
                          
 		// Uncomment the following line if AJAX validation is needed
@@ -110,15 +111,20 @@ class UsersController extends Controller
                         $model->password_repeat = md5($model->password_repeat);
                         date_default_timezone_set('America/Santiago');
                         $model->date_create=  date("y/m/d H:i:s");
+                      
+                     
                        
                         //if($oldpass==md5($model->_oldpassword)){
-			if($model->save())
+			if($model->save()){
+                                Yii::app()->authManager->assign($model->role,$model->id_user);
 				$this->redirect(array('view','id'=>$model->id_user));
+                         
                                 
-                         //}
-                         $model->password = '';
-                         $model->password_repeat= '';
-                         $model->_oldpassword='';
+                         }
+                       $model->password_repeat='';
+                        $model->password='';
+                        $model->_oldpassword='';
+                     
 		}
 
 		$this->render('update',array(
@@ -134,7 +140,7 @@ class UsersController extends Controller
 	public function actionDelete($id)
 	{
 		$this->loadModel($id)->delete();
-
+                $sesion=  Session::model()->deleteByPk($id);
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
