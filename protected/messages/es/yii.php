@@ -282,4 +282,5 @@ return array (
   '{n} megabyte|{n} megabytes' => '{n} megabyte|{n} megabytes',
   '{n} terabyte|{n} terabytes' => '{n} terabyte|{n} terabytes',
   '{widget} cannot find the view "{view}".' => '{widget} no ha podido encontrar la vista "{view}".',
+    'Operations'=>'Acciones',
 );

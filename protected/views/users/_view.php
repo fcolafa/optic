@@ -14,7 +14,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('date_create')); ?>:</b>
-	<?php echo CHtml::encode(Yii::app()->dateFormatter->format("d MMMM y HH:mm:ss",strtotime($data->date_create))); ?>
+	<?php echo CHtml::encode(Yii::app()->dateFormatter->format("d MMMM y | HH:mm:ss",strtotime($data->date_create))); ?>
 	<br />
 
 </div>

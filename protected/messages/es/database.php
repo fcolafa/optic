@@ -6,7 +6,30 @@ return array(
 'City'=>'Ciudad',
 'Id City'=>'Id Ciudad',
 'City Name'=>'Nombre Ciudad',
-    
+//Client   
+ 'Clients'=>'Clientes',
+ 'Client'=>'Cliente',
+ 'Id Client'=> 'Id Cliente',
+ 'Client Name'=>'Nombres',
+ 'Client Lastname'=>'Apellidos',
+ 'Client Rut'=>'Rut',
+ 'Client Phone'=>'Telefono',
+ 'Lefteye Sphere'=>'Esfera Ojo Izquierdo',
+ 'Lefteye Cylinder'=>'Cilindro Ojo Izquierdo',
+ 'Lefteye Axis'=>'Eje Ojo Izquierdo',
+ 'Righteye Sphere'=>'Esfera Ojo Derecho',
+ 'Righteye Cylinder'=>'Cilindro Ojo Derecho',
+ 'Righteye Axis'=>'Eje Ojo Derecho',  
+ 'Addition'=>'Adición',
+ 'Height'=>'Altura',
+ 'Pupillary Distance'=>'Distancia Pupilar',
+ 'Comment'=>'Comentario',
+ //glass
+ 'Glass'=>'Cristal',
+ 'Glasses'=>'Cristales',
+ 'Sphere'=>'Esfera',
+ 'Cylinder'=>'Cilindro',
+ 
 //office
 'Office'=>'Sucursal',
 'Offices'=>'Sucursales',
@@ -24,6 +47,12 @@ return array(
 'Repeat Password'=>'Repetir Contraseña',
 'Old Password'=>'Contraseña Anterior',
 'Role'=>'Permisos',
+
+ //Sales
+'Sales'=>'ventas',
+'Date'=>'Fecha de venta',
+'Price'=>'Monto Venta',
+    
  
 //zone
 'Zone'=>'Región',

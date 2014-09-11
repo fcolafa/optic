@@ -26,7 +26,7 @@ $this->menu=array(
 		  array(
                 'name'=>'date_create',
                 //'value'=>'date("d M Y",strtotime($data["work_date"]))'
-                'value'=>Yii::app()->dateFormatter->format("d MMMM y HH:mm:ss",strtotime($model->date_create))
+                'value'=>Yii::app()->dateFormatter->format("d MMMM y | HH:mm:ss",strtotime($model->date_create))
                 ),
 		'email',
                 'role',
