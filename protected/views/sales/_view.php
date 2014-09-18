@@ -9,11 +9,14 @@
 	<?php echo CHtml::link(CHtml::encode($data->id_sales), array('view', 'id'=>$data->id_sales,'ido'=>$data->id_office)); ?>
         <br />
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id_client')); ?>:</b>
-	<?php echo CHtml::encode($data->id_client); ?>
+	<?php echo CHtml::link(CHtml::encode($data->idClient->client_rut),array('client/view','id'=>$data->id_client)); ?>
+        <?php echo CHtml::encode($data->idClient->client_name); ?>
+        <?php echo CHtml::encode($data->idClient->client_lastname); ?>
+      
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id_office')); ?>:</b>
-	<?php echo CHtml::encode($data->id_office); ?>
+	<?php echo CHtml::encode($data->idOffice->office_name); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('date')); ?>:</b>
@@ -22,6 +25,10 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('price')); ?>:</b>
 	<?php echo CHtml::encode($data->price); ?>
+	<br />
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
+	<?php echo CHtml::encode($data->status==1?'finalizada':'pendiente'); ?>
 	<br />
 
 

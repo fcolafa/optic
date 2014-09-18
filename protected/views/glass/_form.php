@@ -21,20 +21,25 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'sphere'); ?>
-		<?php echo $form->textField($model,'sphere'); ?>
+		<?php echo $form->numberField($model,'sphere',array('step'=>0.25)); ?>
 		<?php echo $form->error($model,'sphere'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'cylinder'); ?>
-		<?php echo $form->textField($model,'cylinder'); ?>
+		<?php echo $form->numberField($model,'cylinder',array('step'=>0.25)); ?>
 		<?php echo $form->error($model,'cylinder'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'amount'); ?>
-		<?php echo $form->textField($model,'amount'); ?>
+		<?php echo $form->numberField($model,'amount'); ?>
 		<?php echo $form->error($model,'amount'); ?>
+	</div>
+        <div class="row">
+		<?php echo $form->labelEx($model,'critical_stock'); ?>
+		<?php echo $form->numberField($model, 'critical_stock') ;?>
+		<?php echo $form->error($model,'critical_stock'); ?>
 	</div>
 
 	<div class="row buttons">

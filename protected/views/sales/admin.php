@@ -74,6 +74,13 @@ $('.search-form form').submit(function(){
                     'value'=>'$data->idOffice->office_name',
                     'filter'=>  CHtml::activeTextField($model, '_officename'),
                     ),
+                      array(
+                    
+                    'name'=>'type',
+                    'filter'=>array('Optico'=>'Optico','Contacto'=>'Contacto'),
+                    'value'=>'$data->type',
+      
+                ),
             
 		  array(
                 'name'=>'date',
@@ -81,8 +88,28 @@ $('.search-form form').submit(function(){
                 'value'=>'Yii::app()->dateFormatter->format("d MMMM y \n HH:mm:ss",strtotime($data->date))'
                 ),
 		'price',
+                array(
+                    
+                    'name'=>'status',
+                    'filter'=>array('1'=>'Finalizada','0'=>'Pendiente'),
+                    'value'=>'($data->status=="1")?("Finalizada"):("Pendiente")'
+      
+                ),
+               
+        
 		array(
 			'class'=>'CButtonColumn',
+                        'buttons'=>array(
+                        'view'=>array(
+                            'url'=>'Yii::app()->controller->createUrl("view",array("id"=>"$data->id_sales","ido"=>"'.$ido.'"));',
+                         ),
+                            'update'=>array(
+                            'url'=>'Yii::app()->controller->createUrl("update",array("id"=>"$data->id_sales","ido"=>"'.$ido.'"));',
+                         ),
+                            'delete'=>array(
+                                'visible'=>'true',
+                            )
+                        ),
 		),
 	),
 )); ?>

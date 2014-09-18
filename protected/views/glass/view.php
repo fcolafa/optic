@@ -25,5 +25,6 @@ $this->menu=array(
 		'sphere',
 		'cylinder',
 		'amount',
+		'critical_stock',
 	),
 )); ?>

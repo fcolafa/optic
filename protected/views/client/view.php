@@ -26,9 +26,10 @@ $this->menu=array(
 		'client_lastname',
 		'client_rut',
 		'client_phone',
-		'righteye_sphere',
-		'righteye_cylinder',
-		'righteye_axis',
+                array(
+                  'name'=>Yii::t('database','forces'),
+                  'value'=>$model->righteye_axis."     ".$model->righteye_cylinder."x".$model->righteye_axis."°",
+                ),
 		'lefteye_sphere',
 		'lefteye_cylinder',
 		'lefteye_axis',

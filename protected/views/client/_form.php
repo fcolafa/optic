@@ -60,14 +60,14 @@
             <td>
                 <div class="row">
                         <?php echo $form->labelEx($model,'lefteye_sphere'); ?>
-                        <?php echo $form->textField($model,'lefteye_sphere'); ?>
+                        <?php echo $form->numberField($model,'lefteye_sphere',array('step'=>0.25)); ?>
                         <?php echo $form->error($model,'lefteye_sphere'); ?>
                 </div>
             </td>
             <td>
                 <div class="row">
                         <?php echo $form->labelEx($model,'lefteye_cylinder'); ?>
-                        <?php echo $form->textField($model,'lefteye_cylinder'); ?>
+                        <?php echo $form->numberField($model,'lefteye_cylinder',array('step'=>0.25)); ?>
                         <?php echo $form->error($model,'lefteye_cylinder'); ?>
                 </div>
               
@@ -75,7 +75,7 @@
             <td>
                 <div class="row">
 		<?php echo $form->labelEx($model,'lefteye_axis'); ?>
-		<?php echo $form->textField($model,'lefteye_axis'); ?>
+		<?php echo $form->numberField($model,'lefteye_axis'); ?>
 		<?php echo $form->error($model,'lefteye_axis'); ?>
                 </div>
             </td>
@@ -84,14 +84,14 @@
             <td>
                   <div class="row">
                         <?php echo $form->labelEx($model,'righteye_sphere'); ?>
-                        <?php echo $form->textField($model,'righteye_sphere'); ?>
+                        <?php echo $form->numberField($model,'righteye_sphere',array('step'=>0.25)); ?>
                         <?php echo $form->error($model,'righteye_sphere'); ?>
                 </div>
            </td>
             <td>
                 <div class="row">
 		<?php echo $form->labelEx($model,'righteye_cylinder'); ?>
-		<?php echo $form->textField($model,'righteye_cylinder'); ?>
+		<?php echo $form->numberField($model,'righteye_cylinder',array('step'=>0.25)); ?>
 		<?php echo $form->error($model,'righteye_cylinder'); ?>
             </div>
            
@@ -99,7 +99,7 @@
             <td>
                 <div class="row">
 		<?php echo $form->labelEx($model,'righteye_axis'); ?>
-		<?php echo $form->textField($model,'righteye_axis'); ?>
+		<?php echo $form->numberField($model,'righteye_axis'); ?>
 		<?php echo $form->error($model,'righteye_axis'); ?>
             </div>
                 
@@ -112,7 +112,7 @@
             <td>
                 <div class="row">
                         <?php echo $form->labelEx($model,'pupillary_distance'); ?>
-                        <?php echo $form->textField($model,'pupillary_distance'); ?>
+                        <?php echo $form->numberField($model,'pupillary_distance'); ?>
                         <?php echo $form->error($model,'pupillary_distance'); ?>
                 </div>
             </td>
@@ -125,7 +125,7 @@
             <td>
                 <div class="row">
                         <?php echo $form->labelEx($model,'addition'); ?>
-                        <?php echo $form->textField($model,'addition'); ?>
+                        <?php echo $form->numberField($model,'addition'); ?>
                         <?php echo $form->error($model,'addition'); ?>
                 </div>
             </td>
@@ -134,7 +134,7 @@
             <td>
                 <div class="row">
                         <?php echo $form->labelEx($model,'height'); ?>
-                        <?php echo $form->textField($model,'height'); ?>
+                        <?php echo $form->numberField($model,'height'); ?>
                         <?php echo $form->error($model,'height'); ?>
                 </div>
             </td>

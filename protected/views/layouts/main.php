@@ -1,3 +1,4 @@
+
 <?php /* @var $this Controller */ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo CHtml::encode(Yii::app()->language)?>" lang="<?php echo CHtml::encode(Yii::app()->language)?>">
@@ -37,7 +38,7 @@
 				array('label'=>Yii::t('actions','Login'), 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                             
 				array('label'=>Yii::t('actions','Logout').' ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			
+
                             ),
 		)); ?>
 	</div><!-- mainmenu -->
@@ -46,13 +47,25 @@
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
-
+                <div class="info" style="text-align: left;">
+        <?php $flashMessages=Yii::app()->user->getFlashes();
+        if($flashMessages){
+            echo '<ul class="flashes">';
+            foreach ( $flashMessages as $key =>$message){
+                echo '<li><div class="flash-'.$key.'">'. $message . "</div></li>\n";
+        }
+      echo '</ul>';
+            }
+        
+   
+                ?>
+                </div>
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> by Francisco Lagos.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered();  ?>
 	</div><!-- footer -->
@@ -61,3 +74,11 @@
 
 </body>
 </html>
+<?php
+Yii::app()->clientScript->registerScript(
+        'myHideEffect',
+        '$(".info").animate({opacity:1.0},10000).slideUp("slow");',
+        CClientScript::POS_READY
+        );
+ ?>
+

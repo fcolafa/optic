@@ -66,10 +66,6 @@ class SalesController extends Controller
 	public function actionCreate($ido)
 	{
 		$model=new Sales;
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-                if($ido!=null)
                 $model->id_office=$ido;
 
 		if(isset($_POST['Sales']))
@@ -77,10 +73,13 @@ class SalesController extends Controller
 			$model->attributes=$_POST['Sales'];
                         date_default_timezone_set('America/Santiago');
                         $model->date=  date("y/m/d H:i:s");
+                        if($model->price==$model->pay)
+                            $model->status=1;
+                        else
+                            $model->status=0;
                       	if($model->save())
-				$this->redirect(array('view','id'=>$model->id_sales));
+				$this->redirect(array('view','id'=>$model->id_sales,'ido'=>$model->id_office));
 		}
-
 		$this->render('create',array(
 			'model'=>$model,'ido'=>$ido,
 		));
@@ -96,6 +95,7 @@ class SalesController extends Controller
 		$model=$this->loadModel($id);
                 $model->id_office=$ido;
                  
+                 
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -106,7 +106,12 @@ class SalesController extends Controller
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_sales,'ido'=>$ido));
 		}
+                if($model->status==1){
+                    Yii::app()->user->setFlash('notice',Yii::t('validation','This sale cannot be updated, because it has finished'));
+                    $this->redirect(array('view','id'=>$model->id_sales,'ido'=>$ido));
+                }
 
+                 
 		$this->render('update',array(
 			'model'=>$model,'ido'=>$ido,
 		));
@@ -119,13 +124,18 @@ class SalesController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+            $model=$this->loadModel($id);
+             if($model->status==1){
+                    Yii::app()->user->setFlash('notice',Yii::t('validation','This sale cannot be deleted, because it has finished'));
+                    $this->redirect(array('view','id'=>$model->id_sales,'ido'=>$model->id_office));
+                }else{
 		$this->loadModel($id)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
-
+        }
 	/**
 	 * Lists all models.
          * @param integer $ido the ID of model Office to be filter

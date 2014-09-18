@@ -24,8 +24,9 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('client_phone')); ?>:</b>
 	<?php echo CHtml::encode($data->client_phone); ?>
 	<br />
+        
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('righteye_sphere')); ?>:</b>
+	<b><?php /* echo CHtml::encode($data->getAttributeLabel('righteye_sphere')); ?>:</b>
 	<?php echo CHtml::encode($data->righteye_sphere); ?>
 	<br />
 
@@ -33,7 +34,7 @@
 	<?php echo CHtml::encode($data->righteye_cylinder); ?>
 	<br />
 
-	<?php /*
+	<?php 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('righteye_axis')); ?>:</b>
 	<?php echo CHtml::encode($data->righteye_axis); ?>
 	<br />

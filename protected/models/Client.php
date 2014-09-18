@@ -42,8 +42,10 @@ class Client extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('client_name, client_lastname, client_rut', 'required'),
-			array('client_phone, righteye_axis, lefteye_axis, pupillary_distance', 'numerical', 'integerOnly'=>true),
-			array('righteye_sphere, righteye_cylinder, lefteye_sphere, lefteye_cylinder, addition, height', 'numerical'),
+			array('client_phone, pupillary_distance', 'numerical', 'integerOnly'=>true),
+			array('addition, height', 'numerical'),
+                        array('righteye_sphere, righteye_cylinder, lefteye_sphere, lefteye_cylinder','numerical','max'=>30,'min'=>-30),
+                        array(' righteye_axis, lefteye_axis','numerical','integerOnly'=>true,'min'=>0,'max'=>359),
 			array('client_name, client_lastname', 'length', 'max'=>45),
 			array('client_rut', 'length', 'max'=>20),
                         array('client_rut', 'unique'),

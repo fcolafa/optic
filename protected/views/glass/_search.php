@@ -31,6 +31,11 @@
 		<?php echo $form->textField($model,'amount'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'critical_stock'); ?>
+		<?php echo $form->textField($model,'critical_stock'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

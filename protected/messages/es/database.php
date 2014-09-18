@@ -29,6 +29,7 @@ return array(
  'Glasses'=>'Cristales',
  'Sphere'=>'Esfera',
  'Cylinder'=>'Cilindro',
+ 'Critical Stock'=>'Stock Critico',
  
 //office
 'Office'=>'Sucursal',
@@ -52,6 +53,9 @@ return array(
 'Sales'=>'ventas',
 'Date'=>'Fecha de venta',
 'Price'=>'Monto Venta',
+'Type'=>'Tipo',
+'Pay'=>'Abono',
+    'Status'=>'Estado',
     
  
 //zone

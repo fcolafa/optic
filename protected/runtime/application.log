@@ -7453,3 +7453,2119 @@ Stack trace:
 #12 {main}
 REQUEST_URI=/optic/sales
 ---
+2014/09/11 22:36:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'optic.sales' doesn't exist. La sentencia SQL ejecutada fue: SHOW FULL COLUMNS FROM `sales`.
+in C:\xampp\htdocs\optic\protected\views\sales\index.php (26)
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (143)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/11 22:36:14 [error] [exception.CDbException] exception 'CDbException' with message 'La tabla "sales" definida en la clase active record "Sales" no se ha podido encontrar en la base de datos.' in C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Sales))
+#1 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1601): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#4 C:\xampp\htdocs\optic\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#7 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#8 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(147): CListView->init()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#11 C:\xampp\htdocs\optic\protected\views\sales\index.php(26): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#16 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(143): CController->render('index', Array)
+#17 [internal function]: SalesController->actionIndex('1')
+#18 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#19 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#20 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#27 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#29 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Sales/index')
+#30 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/optic/Sales/index?ido=1
+HTTP_REFERER=http://localhost/optic/office/index
+---
+2014/09/11 22:36:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'optic.sales' doesn't exist. La sentencia SQL ejecutada fue: SHOW FULL COLUMNS FROM `sales`.
+in C:\xampp\htdocs\optic\protected\views\sales\index.php (26)
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (143)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/11 22:36:48 [error] [exception.CDbException] exception 'CDbException' with message 'La tabla "sales" definida en la clase active record "Sales" no se ha podido encontrar en la base de datos.' in C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Sales))
+#1 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1601): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#4 C:\xampp\htdocs\optic\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#7 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#8 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(147): CListView->init()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#11 C:\xampp\htdocs\optic\protected\views\sales\index.php(26): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#16 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(143): CController->render('index', Array)
+#17 [internal function]: SalesController->actionIndex('1')
+#18 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#19 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#20 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#27 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#29 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/index')
+#30 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/optic/sales/index?ido=1
+---
+2014/09/11 22:37:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'optic.sales' doesn't exist. La sentencia SQL ejecutada fue: SHOW FULL COLUMNS FROM `sales`.
+in C:\xampp\htdocs\optic\protected\views\sales\index.php (26)
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (143)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/11 22:37:15 [error] [exception.CDbException] exception 'CDbException' with message 'La tabla "sales" definida en la clase active record "Sales" no se ha podido encontrar en la base de datos.' in C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Sales))
+#1 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1601): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#4 C:\xampp\htdocs\optic\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#7 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#8 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(147): CListView->init()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#11 C:\xampp\htdocs\optic\protected\views\sales\index.php(26): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#16 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(143): CController->render('index', Array)
+#17 [internal function]: SalesController->actionIndex('1')
+#18 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#19 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#20 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#27 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#29 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Sales/index')
+#30 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/optic/Sales/index?ido=1
+HTTP_REFERER=http://localhost/optic/office/index
+---
+2014/09/11 22:46:39 [error] [php] include(.php): failed to open stream: No such file or directory (C:\xampp\htdocs\optic\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(186): import()
+#1 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(287): createValidator()
+#2 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(260): Glass->createValidators()
+#3 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(2236): Glass->getValidators()
+#4 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#5 C:\xampp\htdocs\optic\yii\framework\web\widgets\CActiveForm.php(725): activeTextField()
+#6 C:\xampp\htdocs\optic\protected\views\glass\_search.php(16): CActiveForm->textField()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): GlassController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): GlassController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\views\glass\admin.php(41): GlassController->renderPartial()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): GlassController->renderInternal()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): GlassController->renderFile()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): GlassController->renderPartial()
+#15 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(143): GlassController->render()
+#16 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionAdmin()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): GlassController->runAction()
+#19 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): GlassController->filterAccessControl()
+#22 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#23 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): GlassController->runActionWithFilters()
+#25 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): GlassController->run()
+#26 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/glass/admin
+in C:\xampp\htdocs\optic\protected\views\glass\_search.php (16)
+in C:\xampp\htdocs\optic\protected\views\glass\admin.php (41)
+in C:\xampp\htdocs\optic\protected\controllers\GlassController.php (143)
+2014/09/11 22:47:26 [error] [php] include(.php): failed to open stream: No such file or directory (C:\xampp\htdocs\optic\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(186): import()
+#1 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(287): createValidator()
+#2 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(260): Glass->createValidators()
+#3 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(2236): Glass->getValidators()
+#4 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#5 C:\xampp\htdocs\optic\yii\framework\web\widgets\CActiveForm.php(725): activeTextField()
+#6 C:\xampp\htdocs\optic\protected\views\glass\_search.php(16): CActiveForm->textField()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): GlassController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): GlassController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\views\glass\admin.php(41): GlassController->renderPartial()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): GlassController->renderInternal()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): GlassController->renderFile()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): GlassController->renderPartial()
+#15 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(143): GlassController->render()
+#16 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionAdmin()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): GlassController->runAction()
+#19 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): GlassController->filterAccessControl()
+#22 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#23 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): GlassController->runActionWithFilters()
+#25 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): GlassController->run()
+#26 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/glass/admin
+in C:\xampp\htdocs\optic\protected\views\glass\_search.php (16)
+in C:\xampp\htdocs\optic\protected\views\glass\admin.php (41)
+in C:\xampp\htdocs\optic\protected\controllers\GlassController.php (143)
+2014/09/11 22:48:21 [error] [php] include(.php): failed to open stream: No such file or directory (C:\xampp\htdocs\optic\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(186): import()
+#1 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(287): createValidator()
+#2 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(260): Glass->createValidators()
+#3 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(304): Glass->getValidators()
+#4 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1414): Glass->isAttributeRequired()
+#5 C:\xampp\htdocs\optic\yii\framework\web\widgets\CActiveForm.php(597): activeLabelEx()
+#6 C:\xampp\htdocs\optic\protected\views\glass\_form.php(23): CActiveForm->labelEx()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): GlassController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): GlassController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\views\glass\create.php(18): GlassController->renderPartial()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): GlassController->renderInternal()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): GlassController->renderFile()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): GlassController->renderPartial()
+#15 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(79): GlassController->render()
+#16 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionCreate()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): GlassController->runAction()
+#19 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): GlassController->filterAccessControl()
+#22 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#23 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): GlassController->runActionWithFilters()
+#25 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): GlassController->run()
+#26 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/glass/create
+in C:\xampp\htdocs\optic\protected\views\glass\_form.php (23)
+in C:\xampp\htdocs\optic\protected\views\glass\create.php (18)
+in C:\xampp\htdocs\optic\protected\controllers\GlassController.php (79)
+2014/09/11 22:49:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales
+---
+2014/09/11 22:55:32 [error] [php] include(validateUnique.php): failed to open stream: No such file or directory (C:\xampp\htdocs\optic\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(186): import()
+#1 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(287): createValidator()
+#2 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(260): Glass->createValidators()
+#3 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(304): Glass->getValidators()
+#4 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1414): Glass->isAttributeRequired()
+#5 C:\xampp\htdocs\optic\yii\framework\web\widgets\CActiveForm.php(597): activeLabelEx()
+#6 C:\xampp\htdocs\optic\protected\views\glass\_form.php(23): CActiveForm->labelEx()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): GlassController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): GlassController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\views\glass\create.php(18): GlassController->renderPartial()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): GlassController->renderInternal()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): GlassController->renderFile()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): GlassController->renderPartial()
+#15 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(79): GlassController->render()
+#16 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionCreate()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): GlassController->runAction()
+#19 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): GlassController->filterAccessControl()
+#22 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#23 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): GlassController->runActionWithFilters()
+#25 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): GlassController->run()
+#26 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/glass/create
+in C:\xampp\htdocs\optic\protected\views\glass\_form.php (23)
+in C:\xampp\htdocs\optic\protected\views\glass\create.php (18)
+in C:\xampp\htdocs\optic\protected\controllers\GlassController.php (79)
+2014/09/11 23:17:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sphere=0.5' at line 1. La sentencia SQL ejecutada fue: SELECT * FROM `glass` `t` WHERE cylinder=and sphere=0.5.
+in C:\xampp\htdocs\optic\protected\models\Glass.php (105)
+in C:\xampp\htdocs\optic\protected\controllers\GlassController.php (73)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/11 23:17:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sphere=0.5' at line 1. The SQL statement executed was: SELECT * FROM `glass` `t` WHERE cylinder=and sphere=0.5' in C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\optic\protected\models\Glass.php(105): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\optic\yii\framework\validators\CInlineValidator.php(42): Glass->validateUnique('sphere', Array)
+#5 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(Glass), 'sphere')
+#6 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(159): CValidator->validate(Object(Glass), NULL)
+#7 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#8 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(73): CActiveRecord->save()
+#9 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionCreate()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('glass/create')
+#20 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/optic/glass/create
+HTTP_REFERER=http://localhost/optic/glass/create
+---
+2014/09/11 23:18:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sphere=0.5' at line 1. La sentencia SQL ejecutada fue: SELECT * FROM `glass` `t` WHERE cylinder= and sphere=0.5.
+in C:\xampp\htdocs\optic\protected\models\Glass.php (105)
+in C:\xampp\htdocs\optic\protected\controllers\GlassController.php (73)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/11 23:18:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sphere=0.5' at line 1. The SQL statement executed was: SELECT * FROM `glass` `t` WHERE cylinder= and sphere=0.5' in C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\optic\protected\models\Glass.php(105): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\optic\yii\framework\validators\CInlineValidator.php(42): Glass->validateUnique('sphere', Array)
+#5 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(Glass), 'sphere')
+#6 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(159): CValidator->validate(Object(Glass), NULL)
+#7 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#8 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(73): CActiveRecord->save()
+#9 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionCreate()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('glass/create')
+#20 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/optic/glass/create
+HTTP_REFERER=http://localhost/optic/glass/create
+---
+2014/09/11 23:19:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sphere=0.5' at line 1. La sentencia SQL ejecutada fue: SELECT * FROM `glass` `t` WHERE cylinder= and sphere=0.5.
+in C:\xampp\htdocs\optic\protected\models\Glass.php (105)
+in C:\xampp\htdocs\optic\protected\controllers\GlassController.php (73)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/11 23:19:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sphere=0.5' at line 1. The SQL statement executed was: SELECT * FROM `glass` `t` WHERE cylinder= and sphere=0.5' in C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\optic\protected\models\Glass.php(105): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\optic\yii\framework\validators\CInlineValidator.php(42): Glass->validateUnique('sphere', Array)
+#5 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(Glass), 'sphere')
+#6 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(159): CValidator->validate(Object(Glass), NULL)
+#7 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#8 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(73): CActiveRecord->save()
+#9 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionCreate()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('glass/create')
+#20 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/optic/glass/create
+HTTP_REFERER=http://localhost/optic/glass/create
+---
+2014/09/11 23:36:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sphere=0.5' at line 1. La sentencia SQL ejecutada fue: SELECT * FROM `glass` `t` WHERE cylinder= and sphere=0.5.
+in C:\xampp\htdocs\optic\protected\models\Glass.php (113)
+in C:\xampp\htdocs\optic\protected\controllers\GlassController.php (73)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/11 23:36:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sphere=0.5' at line 1. The SQL statement executed was: SELECT * FROM `glass` `t` WHERE cylinder= and sphere=0.5' in C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\optic\protected\models\Glass.php(113): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\optic\yii\framework\validators\CInlineValidator.php(42): Glass->validateUnique('sphere', Array)
+#5 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(Glass), 'sphere')
+#6 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(159): CValidator->validate(Object(Glass), NULL)
+#7 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#8 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(73): CActiveRecord->save()
+#9 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionCreate()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('glass/create')
+#20 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/optic/glass/create
+HTTP_REFERER=http://localhost/optic/glass/create
+---
+2014/09/11 23:36:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sphere=0.5' at line 1. La sentencia SQL ejecutada fue: SELECT * FROM `glass` `t` WHERE cylinder= and sphere=0.5.
+in C:\xampp\htdocs\optic\protected\models\Glass.php (113)
+in C:\xampp\htdocs\optic\protected\controllers\GlassController.php (73)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/11 23:36:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sphere=0.5' at line 1. The SQL statement executed was: SELECT * FROM `glass` `t` WHERE cylinder= and sphere=0.5' in C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\optic\protected\models\Glass.php(113): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\optic\yii\framework\validators\CInlineValidator.php(42): Glass->validateUnique('sphere', Array)
+#5 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(Glass), 'sphere')
+#6 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(159): CValidator->validate(Object(Glass), NULL)
+#7 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#8 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(73): CActiveRecord->save()
+#9 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionCreate()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('glass/create')
+#20 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/optic/glass/create
+HTTP_REFERER=http://localhost/optic/glass/create
+---
+2014/09/11 23:37:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sphere=' at line 1. La sentencia SQL ejecutada fue: SELECT * FROM `glass` `t` WHERE cylinder= and sphere=.
+in C:\xampp\htdocs\optic\protected\models\Glass.php (113)
+in C:\xampp\htdocs\optic\protected\controllers\GlassController.php (73)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/11 23:37:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and sphere=' at line 1. The SQL statement executed was: SELECT * FROM `glass` `t` WHERE cylinder= and sphere=' in C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\optic\protected\models\Glass.php(113): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\optic\yii\framework\validators\CInlineValidator.php(42): Glass->validateUnique('sphere', Array)
+#5 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(Glass), 'sphere')
+#6 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(159): CValidator->validate(Object(Glass), NULL)
+#7 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#8 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(73): CActiveRecord->save()
+#9 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionCreate()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('glass/create')
+#20 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/optic/glass/create
+HTTP_REFERER=http://localhost/optic/glass/create
+---
+2014/09/11 23:38:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null and sphere=' at line 1. La sentencia SQL ejecutada fue: SELECT * FROM `glass` `t` WHERE cylinderis null and sphere=.
+in C:\xampp\htdocs\optic\protected\models\Glass.php (113)
+in C:\xampp\htdocs\optic\protected\controllers\GlassController.php (73)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/11 23:38:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null and sphere=' at line 1. The SQL statement executed was: SELECT * FROM `glass` `t` WHERE cylinderis null and sphere=' in C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\optic\protected\models\Glass.php(113): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\xampp\htdocs\optic\yii\framework\validators\CInlineValidator.php(42): Glass->validateUnique('sphere', Array)
+#5 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(Glass), 'sphere')
+#6 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(159): CValidator->validate(Object(Glass), NULL)
+#7 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#8 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(73): CActiveRecord->save()
+#9 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionCreate()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('glass/create')
+#20 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/optic/glass/create
+HTTP_REFERER=http://localhost/optic/glass/create
+---
+2014/09/12 04:10:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales
+---
+2014/09/12 04:41:19 [error] [exception.CException] exception 'CException' with message 'La propiedad "Glass"."critic_stock" no se encuentra definida.' in C:\xampp\htdocs\optic\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('critic_stock')
+#1 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('critic_stock')
+#2 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Glass), 'critic_stock')
+#3 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1514): CHtml::activeInputField('number', Object(Glass), 'critic_stock', Array)
+#4 C:\xampp\htdocs\optic\yii\framework\web\widgets\CActiveForm.php(645): CHtml::activeNumberField(Object(Glass), 'critic_stock', Array)
+#5 C:\xampp\htdocs\optic\protected\views\glass\_form.php(41): CActiveForm->numberField(Object(Glass), 'critic_stock')
+#6 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\optic\protected\views\glass\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(79): CController->render('create', Array)
+#15 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionCreate()
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('glass/create')
+#26 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/optic/glass/create
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/09/12 05:02:21 [error] [php] Illegal string offset 'name' (C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php:2458)
+Stack trace:
+#0 C:\xampp\htdocs\optic\protected\views\glass\_form.php(41): CActiveForm->numberField()
+#1 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): GlassController->renderInternal()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): GlassController->renderFile()
+#4 C:\xampp\htdocs\optic\protected\views\glass\create.php(18): GlassController->renderPartial()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): GlassController->renderInternal()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): GlassController->renderFile()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): GlassController->renderPartial()
+#9 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(79): GlassController->render()
+#10 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionCreate()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): GlassController->runAction()
+#13 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): GlassController->filterAccessControl()
+#16 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): GlassController->runActionWithFilters()
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): GlassController->run()
+#20 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/glass/create
+in C:\xampp\htdocs\optic\protected\views\glass\_form.php (41)
+in C:\xampp\htdocs\optic\protected\views\glass\create.php (18)
+in C:\xampp\htdocs\optic\protected\controllers\GlassController.php (79)
+2014/09/12 05:04:07 [error] [php] Illegal string offset 'name' (C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php:2458)
+Stack trace:
+#0 C:\xampp\htdocs\optic\protected\views\glass\_form.php(41): CActiveForm->numberField()
+#1 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): GlassController->renderInternal()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): GlassController->renderFile()
+#4 C:\xampp\htdocs\optic\protected\views\glass\create.php(18): GlassController->renderPartial()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): GlassController->renderInternal()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): GlassController->renderFile()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): GlassController->renderPartial()
+#9 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(79): GlassController->render()
+#10 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionCreate()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): GlassController->runAction()
+#13 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): GlassController->filterAccessControl()
+#16 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): GlassController->runActionWithFilters()
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): GlassController->run()
+#20 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/glass/create
+in C:\xampp\htdocs\optic\protected\views\glass\_form.php (41)
+in C:\xampp\htdocs\optic\protected\views\glass\create.php (18)
+in C:\xampp\htdocs\optic\protected\controllers\GlassController.php (79)
+2014/09/12 06:28:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales
+---
+2014/09/12 07:38:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\optic\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/optic/users/admin
+HTTP_REFERER=http://localhost/optic/users/create
+---
+2014/09/12 08:24:27 [error] [exception.CException] exception 'CException' with message 'La propiedad "CNumberValidator"."step" no se encuentra definida.' in C:\xampp\htdocs\optic\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(189): CComponent->__set('step', 0.25)
+#1 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(287): CValidator::createValidator('numerical', Object(Glass), 'sphere, cylinde...', Array)
+#2 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(304): CModel->getValidators('sphere')
+#4 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('sphere')
+#5 C:\xampp\htdocs\optic\yii\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Glass), 'sphere', Array)
+#6 C:\xampp\htdocs\optic\protected\views\glass\_form.php(23): CActiveForm->labelEx(Object(Glass), 'sphere')
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#10 C:\xampp\htdocs\optic\protected\views\glass\create.php(18): CController->renderPartial('_form', Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 C:\xampp\htdocs\optic\protected\controllers\GlassController.php(79): CController->render('create', Array)
+#16 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): GlassController->actionCreate()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('glass/create')
+#27 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/optic/glass/create
+---
+2014/09/12 08:27:12 [error] [exception.CException] exception 'CException' with message 'Client tiene una regla de validación inválida. La regla se debe especificar attributos para ser validados y el nombre de su validador.' in C:\xampp\htdocs\optic\yii\framework\base\CModel.php:289
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(260): CModel->createValidators()
+#1 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(304): CModel->getValidators('client_name')
+#2 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('client_name')
+#3 C:\xampp\htdocs\optic\yii\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Client), 'client_name', Array)
+#4 C:\xampp\htdocs\optic\protected\views\client\_form.php(26): CActiveForm->labelEx(Object(Client), 'client_name')
+#5 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\optic\protected\views\client\create.php(18): CController->renderPartial('_form', Array)
+#9 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#13 C:\xampp\htdocs\optic\protected\controllers\ClientController.php(79): CController->render('create', Array)
+#14 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): ClientController->actionCreate()
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#24 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('client/create')
+#25 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/optic/client/create
+HTTP_REFERER=http://localhost/optic/client
+---
+2014/09/14 01:31:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales
+---
+2014/09/14 01:31:16 [error] [php] include(price.php): failed to open stream: No such file or directory (C:\xampp\htdocs\optic\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(186): import()
+#1 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(287): createValidator()
+#2 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(260): Sales->createValidators()
+#3 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(304): Sales->getValidators()
+#4 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1414): Sales->isAttributeRequired()
+#5 C:\xampp\htdocs\optic\yii\framework\web\widgets\CActiveForm.php(597): activeLabelEx()
+#6 C:\xampp\htdocs\optic\protected\views\sales\_form.php(25): CActiveForm->labelEx()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SalesController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\views\sales\create.php(26): SalesController->renderPartial()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SalesController->renderInternal()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): SalesController->renderPartial()
+#15 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(86): SalesController->render()
+#16 unknown(0): SalesController->actionCreate()
+#17 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#18 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#19 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): SalesController->runAction()
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterAccessControl()
+#24 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#25 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SalesController->runActionWithFilters()
+#27 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SalesController->run()
+#28 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/sales/create?ido=1
+in C:\xampp\htdocs\optic\protected\views\sales\_form.php (25)
+in C:\xampp\htdocs\optic\protected\views\sales\create.php (26)
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (86)
+2014/09/14 01:36:25 [error] [php] include(price.php): failed to open stream: No such file or directory (C:\xampp\htdocs\optic\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(186): import()
+#1 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(287): createValidator()
+#2 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(260): Sales->createValidators()
+#3 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(304): Sales->getValidators()
+#4 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1414): Sales->isAttributeRequired()
+#5 C:\xampp\htdocs\optic\yii\framework\web\widgets\CActiveForm.php(597): activeLabelEx()
+#6 C:\xampp\htdocs\optic\protected\views\sales\_form.php(25): CActiveForm->labelEx()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SalesController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\views\sales\create.php(26): SalesController->renderPartial()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SalesController->renderInternal()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): SalesController->renderPartial()
+#15 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(81): SalesController->render()
+#16 unknown(0): SalesController->actionCreate()
+#17 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#18 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#19 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): SalesController->runAction()
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterAccessControl()
+#24 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#25 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SalesController->runActionWithFilters()
+#27 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SalesController->run()
+#28 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/sales/create?ido=1
+in C:\xampp\htdocs\optic\protected\views\sales\_form.php (25)
+in C:\xampp\htdocs\optic\protected\views\sales\create.php (26)
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (81)
+2014/09/14 01:36:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/
+---
+2014/09/14 01:36:42 [error] [php] include(price.php): failed to open stream: No such file or directory (C:\xampp\htdocs\optic\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(186): import()
+#1 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(287): createValidator()
+#2 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(260): Sales->createValidators()
+#3 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(2236): Sales->getValidators()
+#4 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#5 C:\xampp\htdocs\optic\yii\framework\web\widgets\CActiveForm.php(725): activeTextField()
+#6 C:\xampp\htdocs\optic\protected\views\sales\_search.php(16): CActiveForm->textField()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SalesController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\views\sales\admin.php(51): SalesController->renderPartial()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SalesController->renderInternal()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): SalesController->renderPartial()
+#15 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(158): SalesController->render()
+#16 unknown(0): SalesController->actionAdmin()
+#17 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#18 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#19 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): SalesController->runAction()
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterAccessControl()
+#24 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#25 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SalesController->runActionWithFilters()
+#27 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SalesController->run()
+#28 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/sales/admin?ido=1
+in C:\xampp\htdocs\optic\protected\views\sales\_search.php (16)
+in C:\xampp\htdocs\optic\protected\views\sales\admin.php (51)
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (158)
+2014/09/14 01:38:48 [error] [php] include(price.php): failed to open stream: No such file or directory (C:\xampp\htdocs\optic\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(186): import()
+#1 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(287): createValidator()
+#2 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(260): Sales->createValidators()
+#3 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(2236): Sales->getValidators()
+#4 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#5 C:\xampp\htdocs\optic\yii\framework\web\widgets\CActiveForm.php(725): activeTextField()
+#6 C:\xampp\htdocs\optic\protected\views\sales\_search.php(16): CActiveForm->textField()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SalesController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\views\sales\admin.php(51): SalesController->renderPartial()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SalesController->renderInternal()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): SalesController->renderPartial()
+#15 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(158): SalesController->render()
+#16 unknown(0): SalesController->actionAdmin()
+#17 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#18 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#19 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): SalesController->runAction()
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#23 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterAccessControl()
+#24 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#25 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SalesController->runActionWithFilters()
+#27 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SalesController->run()
+#28 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#29 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/sales/admin?ido=1
+in C:\xampp\htdocs\optic\protected\views\sales\_search.php (16)
+in C:\xampp\htdocs\optic\protected\views\sales\admin.php (51)
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (158)
+2014/09/15 06:48:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales
+---
+2014/09/15 06:48:31 [error] [php] Missing argument 2 for YiiBase::t(), called in C:\xampp\htdocs\optic\protected\models\Sales.php on line 81 and defined (C:\xampp\htdocs\optic\yii\framework\YiiBase.php:577)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1390): Sales->getAttributeLabel()
+#1 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1415): activeLabel()
+#2 C:\xampp\htdocs\optic\yii\framework\web\widgets\CActiveForm.php(597): activeLabelEx()
+#3 C:\xampp\htdocs\optic\protected\views\sales\_form.php(23): CActiveForm->labelEx()
+#4 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SalesController->renderInternal()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#7 C:\xampp\htdocs\optic\protected\views\sales\create.php(26): SalesController->renderPartial()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SalesController->renderInternal()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): SalesController->renderPartial()
+#12 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(81): SalesController->render()
+#13 unknown(0): SalesController->actionCreate()
+#14 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#15 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): SalesController->runAction()
+#18 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterAccessControl()
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SalesController->runActionWithFilters()
+#24 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SalesController->run()
+#25 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/sales/create?ido=1
+in C:\xampp\htdocs\optic\protected\models\Sales.php (81)
+in C:\xampp\htdocs\optic\protected\views\sales\_form.php (23)
+in C:\xampp\htdocs\optic\protected\views\sales\create.php (26)
+2014/09/15 06:48:59 [error] [php] Missing argument 2 for YiiBase::t(), called in C:\xampp\htdocs\optic\protected\models\Sales.php on line 81 and defined (C:\xampp\htdocs\optic\yii\framework\YiiBase.php:577)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1390): Sales->getAttributeLabel()
+#1 C:\xampp\htdocs\optic\yii\framework\web\helpers\CHtml.php(1415): activeLabel()
+#2 C:\xampp\htdocs\optic\yii\framework\web\widgets\CActiveForm.php(597): activeLabelEx()
+#3 C:\xampp\htdocs\optic\protected\views\sales\_form.php(23): CActiveForm->labelEx()
+#4 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SalesController->renderInternal()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#7 C:\xampp\htdocs\optic\protected\views\sales\create.php(26): SalesController->renderPartial()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SalesController->renderInternal()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): SalesController->renderPartial()
+#12 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(81): SalesController->render()
+#13 unknown(0): SalesController->actionCreate()
+#14 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#15 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): SalesController->runAction()
+#18 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#20 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterAccessControl()
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#22 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SalesController->runActionWithFilters()
+#24 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SalesController->run()
+#25 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#26 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/sales/create?ido=1
+in C:\xampp\htdocs\optic\protected\models\Sales.php (81)
+in C:\xampp\htdocs\optic\protected\views\sales\_form.php (23)
+in C:\xampp\htdocs\optic\protected\views\sales\create.php (26)
+2014/09/15 01:49:43 [error] [exception.CException] exception 'CException' with message 'La propiedad "Sales"."integer" no se encuentra definida.' in C:\xampp\htdocs\optic\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('integer')
+#1 C:\xampp\htdocs\optic\yii\framework\validators\CNumberValidator.php(78): CActiveRecord->__get('integer')
+#2 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(213): CNumberValidator->validateAttribute(Object(Sales), 'integer')
+#3 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(159): CValidator->validate(Object(Sales), NULL)
+#4 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#5 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(76): CActiveRecord->save()
+#6 [internal function]: SalesController->actionCreate('1')
+#7 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/create')
+#19 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/optic/sales/create?ido=1
+HTTP_REFERER=http://localhost/optic/sales/create?ido=1
+---
+2014/09/15 01:51:16 [error] [exception.CException] exception 'CException' with message 'La propiedad "Sales"."integer" no se encuentra definida.' in C:\xampp\htdocs\optic\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('integer')
+#1 C:\xampp\htdocs\optic\yii\framework\validators\CNumberValidator.php(78): CActiveRecord->__get('integer')
+#2 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(213): CNumberValidator->validateAttribute(Object(Sales), 'integer')
+#3 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(159): CValidator->validate(Object(Sales), NULL)
+#4 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#5 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(77): CActiveRecord->save()
+#6 [internal function]: SalesController->actionCreate('1')
+#7 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/create')
+#19 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/optic/sales/create?ido=1
+HTTP_REFERER=http://localhost/optic/sales/create?ido=1
+---
+2014/09/15 01:58:38 [error] [exception.CException] exception 'CException' with message 'La propiedad "Sales"."integer" no se encuentra definida.' in C:\xampp\htdocs\optic\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('integer')
+#1 C:\xampp\htdocs\optic\yii\framework\validators\CNumberValidator.php(78): CActiveRecord->__get('integer')
+#2 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(213): CNumberValidator->validateAttribute(Object(Sales), 'integer')
+#3 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(159): CValidator->validate(Object(Sales), NULL)
+#4 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#5 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(77): CActiveRecord->save()
+#6 [internal function]: SalesController->actionCreate('1')
+#7 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/create')
+#19 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/optic/sales/create?ido=1
+HTTP_REFERER=http://localhost/optic/sales/create?ido=1
+---
+2014/09/15 07:21:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/1
+HTTP_REFERER=http://localhost/optic/sales/create?ido=1
+---
+2014/09/15 07:22:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/2
+HTTP_REFERER=http://localhost/optic/sales/create?ido=1
+---
+2014/09/15 07:23:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/3
+HTTP_REFERER=http://localhost/optic/sales/create?ido=1
+---
+2014/09/15 07:23:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/4
+HTTP_REFERER=http://localhost/optic/sales/create?ido=1
+---
+2014/09/15 07:25:01 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/5
+HTTP_REFERER=http://localhost/optic/sales/create?ido=1
+---
+2014/09/15 07:29:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales
+---
+2014/09/15 07:34:58 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\optic\yii\framework\base\CModel.php:395)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): SalesController->runAction()
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterAccessControl()
+#7 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SalesController->runActionWithFilters()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SalesController->run()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/sales/update/3?ido=1
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (98)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/15 07:35:10 [error] [php] Invalid argument supplied for foreach() (C:\xampp\htdocs\optic\yii\framework\base\CModel.php:395)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): SalesController->runAction()
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterAccessControl()
+#7 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SalesController->runActionWithFilters()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SalesController->run()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/sales/update/3?ido=1
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (98)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/15 07:44:34 [error] [exception.CException] exception 'CException' with message 'SalesController no ha podido encontrar la vista "ERROR" solicitada.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('ERROR', '\xC3\xB1e', true)
+#1 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(99): CController->render('ERROR', '\xC3\xB1e')
+#2 [internal function]: SalesController->actionUpdate('3', '1')
+#3 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#4 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#14 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/update')
+#15 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/optic/sales/update/3?ido=1
+---
+2014/09/15 07:44:49 [error] [exception.CException] exception 'CException' with message 'SalesController no ha podido encontrar la vista "error" solicitada.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('error', '\xC3\xB1e', true)
+#1 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(99): CController->render('error', '\xC3\xB1e')
+#2 [internal function]: SalesController->actionUpdate('3', '1')
+#3 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#4 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#14 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/update')
+#15 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/optic/sales/update/3?ido=1
+---
+2014/09/15 07:46:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/index')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/index
+HTTP_REFERER=http://localhost/optic/sales/update/3?ido=1
+---
+2014/09/15 07:47:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/index')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/index
+HTTP_REFERER=http://localhost/optic/sales/update/1?ido=1
+---
+2014/09/15 07:48:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/index')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/index
+HTTP_REFERER=http://localhost/optic/sales/update/1?ido=1
+---
+2014/09/16 05:05:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/update')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/update/1
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/16 05:05:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/create')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/create
+---
+2014/09/16 05:23:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/update')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/update/6
+HTTP_REFERER=http://localhost/optic/sales/admin
+---
+2014/09/16 05:23:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/index')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/index
+HTTP_REFERER=http://localhost/optic/sales/admin
+---
+2014/09/16 05:24:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/
+---
+2014/09/16 05:49:14 [error] [exception.CException] exception 'CException' with message 'CClientScript y sus behaviors no tienen un método o closure llamado "registerSript".' in C:\xampp\htdocs\optic\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\optic\protected\views\layouts\main.php(81): CComponent->__call('registerSript', Array)
+#1 C:\xampp\htdocs\optic\protected\views\layouts\main.php(81): CClientScript->registerSript('myHideEffect', '$(".info").anim...', 4)
+#2 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\optic\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\optic\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\htdocs\optic\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\optic\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\optic\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(34): CController->render('index')
+#14 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#20 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/optic/site/index
+HTTP_REFERER=http://localhost/optic/sales/update/6?ido=1
+---
+2014/09/16 06:00:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/update')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/update/6
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/16 06:20:02 [error] [exception.CException] exception 'CException' with message 'La propiedad "Client"."client_lname" no se encuentra definida.' in C:\xampp\htdocs\optic\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('client_lname')
+#1 C:\xampp\htdocs\optic\protected\views\sales\_view.php(14): CActiveRecord->__get('client_lname')
+#2 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(130): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, false)
+#4 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CListView.php(291): CBaseController->renderFile('C:\\xampp\\htdocs...', Array)
+#5 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#10 C:\xampp\htdocs\optic\protected\views\sales\index.php(26): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(148): CController->render('index', Array)
+#16 [internal function]: SalesController->actionIndex('1')
+#17 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#19 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#22 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#26 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#28 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/index')
+#29 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/optic/sales/index?ido=1
+---
+2014/09/16 06:30:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/create')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/create
+HTTP_REFERER=http://localhost/optic/sales/admin
+---
+2014/09/16 06:31:26 [error] [php] Undefined variable: model (C:\xampp\htdocs\optic\protected\controllers\SalesController.php:127)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): SalesController->runAction()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1116): CFilterChain->run()
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterPostOnly()
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterAccessControl()
+#9 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SalesController->runActionWithFilters()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SalesController->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/sales/delete/7
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (127)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/16 06:32:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/delete')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/delete/7
+---
+2014/09/16 06:32:45 [error] [php] Undefined variable: ido (C:\xampp\htdocs\optic\protected\controllers\SalesController.php:130)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): SalesController->runAction()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1116): CFilterChain->run()
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterPostOnly()
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterAccessControl()
+#9 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SalesController->runActionWithFilters()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SalesController->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/sales/delete/7?ajax=sales-grid
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (130)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/16 06:32:59 [error] [php] Undefined variable: ido (C:\xampp\htdocs\optic\protected\controllers\SalesController.php:130)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): SalesController->runAction()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1116): CFilterChain->run()
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterPostOnly()
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterAccessControl()
+#9 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SalesController->runActionWithFilters()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SalesController->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/sales/delete/7
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (130)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/16 06:33:26 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:1118
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/delete')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/delete/7
+---
+2014/09/16 06:36:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/7
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/18 01:23:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/7
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/18 01:46:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/update')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/update/7
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/18 01:46:13 [error] [exception.CException] exception 'CException' with message 'La propiedad "Sales"."id" no se encuentra definida.' in C:\xampp\htdocs\optic\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\xampp\htdocs\optic\protected\views\sales\admin.php(88): CActiveRecord->__get('id')
+#2 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#6 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(173): CController->render('admin', Array)
+#7 [internal function]: SalesController->actionAdmin('1')
+#8 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#9 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/admin')
+#20 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/optic/sales/admin?ido=1
+HTTP_REFERER=http://localhost/optic/sales/7?ido=1
+---
+2014/09/18 01:48:11 [error] [exception.CException] exception 'CException' with message 'La propiedad "Sales"."id" no se encuentra definida.' in C:\xampp\htdocs\optic\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\xampp\htdocs\optic\protected\views\sales\admin.php(88): CActiveRecord->__get('id')
+#2 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#6 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(173): CController->render('admin', Array)
+#7 [internal function]: SalesController->actionAdmin('1')
+#8 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#9 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/admin')
+#20 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/optic/sales/admin?ido=1
+---
+2014/09/18 01:48:32 [error] [exception.CException] exception 'CException' with message 'La propiedad "Sales"."id" no se encuentra definida.' in C:\xampp\htdocs\optic\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\xampp\htdocs\optic\protected\views\sales\admin.php(88): CActiveRecord->__get('id')
+#2 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#6 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(173): CController->render('admin', Array)
+#7 [internal function]: SalesController->actionAdmin('1')
+#8 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#9 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/admin')
+#20 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/optic/sales/admin?ido=1
+---
+2014/09/18 01:48:37 [error] [exception.CException] exception 'CException' with message 'La propiedad "Sales"."id" no se encuentra definida.' in C:\xampp\htdocs\optic\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\xampp\htdocs\optic\protected\views\sales\admin.php(88): CActiveRecord->__get('id')
+#2 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#6 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(173): CController->render('admin', Array)
+#7 [internal function]: SalesController->actionAdmin('1')
+#8 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#9 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/admin')
+#20 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/optic/sales/admin?ido=1
+HTTP_REFERER=http://localhost/optic/sales/7?ido=1
+---
+2014/09/18 01:49:00 [error] [exception.CException] exception 'CException' with message 'La propiedad "Sales"."id_sale" no se encuentra definida.' in C:\xampp\htdocs\optic\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id_sale')
+#1 C:\xampp\htdocs\optic\protected\views\sales\admin.php(88): CActiveRecord->__get('id_sale')
+#2 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#6 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(173): CController->render('admin', Array)
+#7 [internal function]: SalesController->actionAdmin('1')
+#8 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#9 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#19 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/admin')
+#20 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/optic/sales/admin?ido=1
+---
+2014/09/18 02:10:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/7
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/18 02:11:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/7
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/18 02:20:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/7
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/18 02:21:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/7
+---
+2014/09/18 02:21:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/7
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/18 03:48:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "false" solicitada.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(270): CController->missingAction('false')
+#1 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('false')
+#2 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/false')
+#3 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/optic/sales/false
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/18 03:51:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/7
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/18 03:54:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/7
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/18 03:55:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/7
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/18 03:56:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "_view" solicitada.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(270): CController->missingAction('_view')
+#1 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('_view')
+#2 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/_view')
+#3 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/optic/sales/_view/?ido=1
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/18 03:59:10 [error] [php] Use of undefined constant id_sales - assumed 'id_sales' (C:\xampp\htdocs\optic\protected\views\sales\admin.php:88)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#1 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): SalesController->renderPartial()
+#2 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(173): SalesController->render()
+#3 unknown(0): SalesController->actionAdmin()
+#4 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): SalesController->runAction()
+#8 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterAccessControl()
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SalesController->runActionWithFilters()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SalesController->run()
+#15 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/sales/admin?ido=1
+in C:\xampp\htdocs\optic\protected\views\sales\admin.php (88)
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (173)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/18 04:00:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "7." solicitada.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(270): CController->missingAction('7.')
+#1 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('7.')
+#2 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/7.')
+#3 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/optic/sales/7.?ido=1
+HTTP_REFERER=http://localhost/optic/sales/admin?ido=1
+---
+2014/09/18 04:01:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\optic\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/optic/users/admin
+HTTP_REFERER=http://localhost/optic/users/index
+---
+2014/09/18 04:18:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales
+---
+2014/09/18 04:35:04 [error] [php] Undefined variable: data (C:\xampp\htdocs\optic\protected\views\sales\admin.php:86)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SalesController->renderFile()
+#1 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): SalesController->renderPartial()
+#2 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(173): SalesController->render()
+#3 unknown(0): SalesController->actionAdmin()
+#4 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): SalesController->runAction()
+#8 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): SalesController->filterAccessControl()
+#11 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SalesController->runActionWithFilters()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SalesController->run()
+#15 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/sales/admin?ido=2
+in C:\xampp\htdocs\optic\protected\views\sales\admin.php (86)
+in C:\xampp\htdocs\optic\protected\controllers\SalesController.php (173)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/09/18 05:06:53 [error] [exception.CException] exception 'CException' with message 'La propiedad "Sales"."isActive" no se encuentra definida.' in C:\xampp\htdocs\optic\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('isActive')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('isActive')
+#2 C:\xampp\htdocs\optic\yii\framework\base\CComponent.php(612): eval()
+#3 C:\xampp\htdocs\optic\yii\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('($data->isActiv...', Array)
+#4 C:\xampp\htdocs\optic\yii\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Sales))
+#5 C:\xampp\htdocs\optic\yii\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 C:\xampp\htdocs\optic\yii\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#7 C:\xampp\htdocs\optic\yii\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#11 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 C:\xampp\htdocs\optic\protected\views\sales\admin.php(110): CBaseController->widget('zii.widgets.gri...', Array)
+#14 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#16 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#17 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#18 C:\xampp\htdocs\optic\protected\controllers\SalesController.php(173): CController->render('admin', Array)
+#19 [internal function]: SalesController->actionAdmin('2')
+#20 C:\xampp\htdocs\optic\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(SalesController), Array)
+#21 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SalesController), Object(ReflectionMethod), Array)
+#22 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#25 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#29 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#31 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/admin')
+#32 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#33 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/optic/sales/admin?ido=2
+---
+2014/09/18 05:27:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/5
+HTTP_REFERER=http://localhost/optic/sales/index?ido=2
+---
+2014/09/18 05:27:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sales/view')
+#10 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/optic/sales/5
+HTTP_REFERER=http://localhost/optic/sales/index?ido=2
+---

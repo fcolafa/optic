@@ -8,11 +8,15 @@
  * @property integer $id_client
  * @property integer $id_office
  * @property string $date
+ * @property string $type
+ * @property double $pay
  * @property double $price
- *
+ * @property integer $status
+ * 
  * The followings are the available model relations:
  * @property Client $idClient
  * @property Office $idOffice
+ *
  */
 class Sales extends CActiveRecord
 {
@@ -23,7 +27,8 @@ class Sales extends CActiveRecord
          public $_clientname;
          public $_clientrut;
          public $_clientlname;
-	public function tableName()
+         public $_status;
+         public function tableName()
 	{
 		return 'sales';
 	}
@@ -36,16 +41,18 @@ class Sales extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_client, id_office, date', 'required'),
-			array('id_client, id_office', 'numerical', 'integerOnly'=>true),
-			array('price', 'numerical'),
+			array('id_client, id_office, date, type', 'required'),
+			array('id_client, id_office' , 'numerical', 'integerOnly'=>true),
+			array('pay, price, status' , 'numerical'),
+                        array('type', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_sales, id_client, id_office, date, price', 'safe', 'on'=>'search'),
+			array('id_sales, id_client, id_office, type, pay, date,status, price', 'safe', 'on'=>'search'),
                         array('_officename, _clientname, _clientrut, _clientlname','safe','on'=>'search'),
-		);
-	}
 
+                        //array('pay','compare','compareAttribute'=>'price','operator'=>'==','on'=>'update','message'=>' Esta venta ha sido finalizada'),
+                    );
+	}
 	/**
 	 * @return array relational rules.
 	 */
@@ -70,6 +77,9 @@ class Sales extends CActiveRecord
 			'id_office' => Yii::t('database','Id Office'),
 			'date' => Yii::t('database','Date'),
 			'price' => Yii::t('database','Price'),
+                        'type' => Yii::t('database','Type'),
+			'pay' => Yii::t('database','Pay'),
+                        'status'=>  Yii::t('database','Status'),
                         
 		);
 	}
@@ -99,11 +109,15 @@ class Sales extends CActiveRecord
 		$criteria->compare('id_office',$this->id_office);
 		$criteria->compare('date',$this->date,true);
 		$criteria->compare('price',$this->price);
+                $criteria->compare('type',$this->type,true);
+		$criteria->compare('pay',$this->pay);
+                $criteria->compare('status', $this->status);
                 
                 $criteria->compare('idOffice.office_name',$this->_officename, true);
                 $criteria->compare('idClient.client_name',$this->_clientname, true);
                 $criteria->compare('idClient.client_lastname',$this->_clientlname, true);
                 $criteria->compare('idClient.client_rut',$this->_clientrut, true);
+            
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

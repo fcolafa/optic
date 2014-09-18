@@ -21,5 +21,9 @@
 	<?php echo CHtml::encode($data->amount); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('critical_stock')); ?>:</b>
+	<?php echo CHtml::encode($data->critical_stock); ?>
+	<br />
+
 
 </div>

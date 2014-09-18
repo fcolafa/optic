@@ -10,4 +10,8 @@ return array(
 'Please fill out the following form with your login credentials'=>'Por favor complete el siguiente formulario con sus datos de acceso',
 'Has this customer sales Associates. '=>'Tiene ventas Asosiciadas a este Cliente. ',    
 'Invalid Rut'=>'Rut Incorrecto',
-);
+'This crystal already exists'=>'Este Crystal Existe en stock',
+'The pay must be lower than price'=>'El monto del abono debe ser menor que el monto de la venta',
+'This sale cannot be updated, because it has finished'=>'No se puede modificar esta venta, debido a que ha sido finalizada',
+'This sale cannot be deleted, because it has finished'=>'No se puede eliminar esta venta, debido a que ha sido finalizada',
+ );

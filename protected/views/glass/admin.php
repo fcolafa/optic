@@ -50,6 +50,7 @@ $('.search-form form').submit(function(){
 		'sphere',
 		'cylinder',
 		'amount',
+		'critical_stock',
 		array(
 			'class'=>'CButtonColumn',
 		),

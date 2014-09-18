@@ -27,12 +27,12 @@ class Glass extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('amount', 'numerical', 'integerOnly'=>true),
-			array('sphere, cylinder', 'numerical'),
-                        array('sphere, cylinder',''),
+			array('amount, critical_stock', 'numerical', 'integerOnly'=>true),
+			array('sphere, cylinder', 'numerical','max'=>10,'min'=>-10),
+                        array('sphere, cylinder','validateUnique'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_glass, sphere, cylinder, amount', 'safe', 'on'=>'search'),
+			array('id_glass, sphere, cylinder, amount, critical_stock', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,6 +57,7 @@ class Glass extends CActiveRecord
 			'sphere' => Yii::t('database','Sphere'),
 			'cylinder' => Yii::t('database','Cylinder'),
 			'amount' => Yii::t('database','Amount'),
+                        'critical_stock' => Yii::t('database','Critical Stock'),
 		);
 	}
 
@@ -82,7 +83,8 @@ class Glass extends CActiveRecord
 		$criteria->compare('sphere',$this->sphere);
 		$criteria->compare('cylinder',$this->cylinder);
 		$criteria->compare('amount',$this->amount);
-
+                $criteria->compare('amount',$this->critical_stock);
+                
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
@@ -98,4 +100,22 @@ class Glass extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        
+        public function validateUnique($attribute, $params) {
+            $criteria=new CDbCriteria();
+            if($this->cylinder==NULL)
+                $cylinder='is null';
+            else
+                $cylinder='='.$this->cylinder;
+            if($this->sphere==NULL)
+                $sphere='is null';
+            else
+                $sphere='='.$this->sphere;
+            $criteria->condition = "cylinder ".$cylinder." and sphere ".$sphere;
+            $glass=  $this->findAll($criteria);
+            if(count($glass)!=0)
+                $this->addError ('sphere,cylinder', Yii::t ('validation', 'This crystal already exists'));
+
+            
+        }
 }

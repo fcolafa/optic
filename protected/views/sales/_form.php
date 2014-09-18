@@ -20,8 +20,6 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row"> 
-      
-     
          <?php echo $form->labelEx($model,'id_client'); ?>
          <?php
            
@@ -48,7 +46,6 @@
              { jQuery("#Sales_id_client").val(1); }'
              ),
              ));
-             
          ?>
 	</div>
         <?php if(!isset($ido)){?> 
@@ -58,6 +55,18 @@
 		<?php echo $form->error($model,'id_office'); ?>
 	</div>
         <?php } ?>
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'type'); ?>
+		<?php echo $form->dropDownList($model,'type',array('Contacto'=>'Contacto','Optico'=>'Optico')); ?>
+		<?php echo $form->error($model,'type'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'pay'); ?>
+		<?php echo $form->textField($model,'pay'); ?>
+		<?php echo $form->error($model,'pay'); ?>
+	</div>
 	<div class="row">
 		<?php echo $form->labelEx($model,'price'); ?>
 		<?php echo $form->textField($model,'price'); ?>
