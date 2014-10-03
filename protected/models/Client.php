@@ -90,6 +90,7 @@ class Client extends CActiveRecord
 			'height' => Yii::t('database','Height'),
 			'comment' => Yii::t('database','Comment'),
 			'pupillary_distance' => Yii::t('database','Pupillary Distance'),
+                        'Forces'=>'Fuerza',
 		);
 	}
 

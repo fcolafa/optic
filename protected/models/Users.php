@@ -85,8 +85,7 @@ class Users extends CActiveRecord
             return uniqid('',true);
         }
 
-
-	/**
+                /**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 *
 	 * Typical usecase:

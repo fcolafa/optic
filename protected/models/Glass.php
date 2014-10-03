@@ -28,7 +28,7 @@ class Glass extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('amount, critical_stock', 'numerical', 'integerOnly'=>true),
-			array('sphere, cylinder', 'numerical','max'=>10,'min'=>-10),
+			array('sphere, cylinder', 'numerical','max'=>30,'min'=>-30),
                         array('sphere, cylinder','validateUnique'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

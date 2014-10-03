@@ -25,10 +25,12 @@ if(isset($ido))
 		
             array(
                 'name'=>'id_client',
-                'value'=>"(".$model->id_client.") ".$model->idClient->client_rut
-                                          ." ".$model->idClient->client_name
-                                          ." ".$model->idClient->client_lastname,
-                
+                'value'=>CHtml::link(
+                        ' '.$model->idClient->client_rut.' '.
+                        ' '.$model->idClient->client_name.' '.
+                        ' '.$model->idClient->client_lastname.' '
+                        ,array('client/view','id'=>$model->id_client)),
+                'type'=>'raw',
             ),
 		'idOffice.office_name',
 		  array(

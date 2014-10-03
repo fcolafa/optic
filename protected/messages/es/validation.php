@@ -14,4 +14,5 @@ return array(
 'The pay must be lower than price'=>'El monto del abono debe ser menor que el monto de la venta',
 'This sale cannot be updated, because it has finished'=>'No se puede modificar esta venta, debido a que ha sido finalizada',
 'This sale cannot be deleted, because it has finished'=>'No se puede eliminar esta venta, debido a que ha sido finalizada',
- );
+ 'Incorrect username or password.'=>'Usuario o Contraseña Incorrecto',
+        );

@@ -49,8 +49,7 @@ class Sales extends CActiveRecord
 			// @todo Please remove those attributes that should not be searched.
 			array('id_sales, id_client, id_office, type, pay, date,status, price', 'safe', 'on'=>'search'),
                         array('_officename, _clientname, _clientrut, _clientlname','safe','on'=>'search'),
-
-                        //array('pay','compare','compareAttribute'=>'price','operator'=>'==','on'=>'update','message'=>' Esta venta ha sido finalizada'),
+                        array('pay','compare','compareAttribute'=>'price','operator'=>'<=','message'=>' El abono no puede ser mayor al precio'),
                     );
 	}
 	/**
@@ -134,4 +133,5 @@ class Sales extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+       
 }

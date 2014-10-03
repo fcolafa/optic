@@ -28,7 +28,7 @@ class SessionController extends Controller
 		return array(
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'roles'=>array('Administrador','Control Total'),
+				'roles'=>array('Control Total'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),

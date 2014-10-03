@@ -24,8 +24,8 @@
 <div class="container" id="page">
 
 	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
+            <div id="logo"><img src="<?php echo Yii::app()->baseUrl?>/images/logo.png"></img></div>
+        </div><!-- header -->
 
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
@@ -33,6 +33,7 @@
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
+                   
                                 array('label'=>Yii::t('database', 'Office'), 'url'=>array('/office/index')),
                                 array('label'=>'Gestion '.Yii::t('database', 'Users'), 'url'=>array('/users/index')),
 				array('label'=>Yii::t('actions','Login'), 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),

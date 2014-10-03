@@ -14,5 +14,7 @@ return array(
 'Logout'=>'Cerrar Sesión',
 'Select'=>'Seleccione',
 'Session'=>'Conexiones',
+'System Alerts'=>'Alertas de Sistema',
+'Sales Chart'=>'Grafico de Ventas',
     
 );

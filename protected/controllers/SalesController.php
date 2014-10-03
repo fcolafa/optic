@@ -103,6 +103,10 @@ class SalesController extends Controller
 		if(isset($_POST['Sales']))
 		{
 			$model->attributes=$_POST['Sales'];
+                        if($model->price==$model->pay)
+                            $model->status=1;
+                        else
+                            $model->status=0;
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_sales,'ido'=>$ido));
 		}
@@ -219,4 +223,5 @@ class SalesController extends Controller
 			Yii::app()->end();
 		}
 	}
+     
 }

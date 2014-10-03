@@ -30,6 +30,8 @@ return array(
  'Sphere'=>'Esfera',
  'Cylinder'=>'Cilindro',
  'Critical Stock'=>'Stock Critico',
+    
+ 'Home'=>'Inicio',
  
 //office
 'Office'=>'Sucursal',
@@ -55,7 +57,7 @@ return array(
 'Price'=>'Monto Venta',
 'Type'=>'Tipo',
 'Pay'=>'Abono',
-    'Status'=>'Estado',
+'Status'=>'Estado',
     
  
 //zone

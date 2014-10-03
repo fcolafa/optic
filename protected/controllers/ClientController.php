@@ -116,7 +116,7 @@ class ClientController extends Controller
             }catch (CDbException $e) {
                 if($e->errorInfo[1] == 1451) {
                     header("HTTP/1.0 400 Relation Restriction");
-                    echo Yii::t('validation','Has this customer sales Associates. ');
+                     Yii::app()->user->setFlash('error', Yii::t('validation','Has this customer sales Associates. '));
                 } else {
                     throw $e;
                 }
