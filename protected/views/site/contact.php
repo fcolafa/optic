@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Contact Us</h1>
+<h1>Contact Usssssssssssss</h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -17,11 +17,6 @@ $this->breadcrumbs=array(
 	<?php echo Yii::app()->user->getFlash('contact'); ?>
 </div>
 
-<?php else: ?>
-
-<p>
-If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-</p>
 
 <div class="form">
 
@@ -33,7 +28,7 @@ If you have business inquiries or other questions, please fill out the following
 	),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note"> <?php echo Yii::t('validation','Fields with')?> <span class="required">*</span> <?php echo Yii::t('validation','are required')?> </p>
 
 	<?php echo $form->errorSummary($model); ?>
 

@@ -47,6 +47,12 @@
 		<?php echo $form->textField($model,'office_name',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'office_name'); ?>
 	</div>
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'office_address'); ?>
+		<?php echo $form->textField($model,'office_address',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'office_address'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save')); ?>

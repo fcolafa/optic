@@ -5,7 +5,7 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Contact Us</h1>
+<h1><?php echo Yii::t('database', 'Provider')." ".Yii::t('database', 'Provider') ?></h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -15,9 +15,6 @@ $this->breadcrumbs=array(
 
 <?php else: ?>
 
-<p>
-If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-</p>
 
 <div class="form">
 
@@ -29,19 +26,13 @@ If you have business inquiries or other questions, please fill out the following
 	),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+        <p class="note"> <?php echo Yii::t('validation','Fields with')?> <span class="required">*</span> <?php echo Yii::t('validation','are required')?> </p>
 
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'name'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128)); ?>
+		<?php echo $form->dropDownList($model,'email',CHtml::listData(Provider::model()->findAll(),'id_provider','provider_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Provider'))); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 

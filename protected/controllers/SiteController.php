@@ -64,16 +64,29 @@ class SiteController extends Controller
 			$model->attributes=$_POST['ContactForm'];
 			if($model->validate())
 			{
-				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
-				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
-				$headers="From: $name <{$model->email}>\r\n".
-					"Reply-To: {$model->email}\r\n".
-					"MIME-Version: 1.0\r\n".
-					"Content-Type: text/plain; charset=UTF-8";
+                            Yii::import('application.extensions.phpmailer.JPhpMailer');
+                            $mail = new JPhpMailer;
+                            $mail->IsSMTP();
+                            $mail->Host = 'smtp.googlemail.com';
+                            $mail->Port='465'; 
+                            $mail->SMTPSecure = "ssl";
+                            $mail->SMTPAuth = true;
+                            $mail->Username = 'fco.lafa@gmail.com';
+                            $mail->Password = 'badreligion12689';
+                            $mail->SetFrom('fco.lafa@gmail.com', 'ñeflen');
+                            $mail->Subject = $model->subject;
+                            $mail->AltBody = 'To view the message, please use an HTML compatible email viewer!';
+                            $mail->MsgHTML('<h1>JUST A TEST!</h1><br>'.$model->body);
+                            $provider=  Provider::model()->findbyPk($model->email);
+                            $mail->AddAddress($provider->email_provider,$provider->provider_name );
 
-				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
-				$this->refresh();
+                            if ($mail->send()) {
+                                Yii::app()->user->setFlash('notice',"mensaje enviado");
+                                $model->verifyCode->refresh();
+                            }
+                            else {
+                                Yii::app()->user->setFlash('error',"error al enviar mensaje");
+                            }
 			}
 		}
                  if(Yii::app()->user->isGuest)

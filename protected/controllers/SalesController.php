@@ -29,15 +29,15 @@ class SalesController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('*'),
+				'roles'=>array('Supervisor'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','listclient'),
-				'users'=>array('@'),
+				'actions'=>array('index','view','create','update','listclient','admin','delete','pdf'),
+				'roles'=>array('Control Total'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'actions'=>array('index','view','update','create','listclient','pdf'),
+				'roles'=>array('Administrador'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -73,6 +73,7 @@ class SalesController extends Controller
 			$model->attributes=$_POST['Sales'];
                         date_default_timezone_set('America/Santiago');
                         $model->date=  date("y/m/d H:i:s");
+                        $model->id_user=Yii::app()->user->id;
                         if($model->price==$model->pay)
                             $model->status=1;
                         else
@@ -84,6 +85,7 @@ class SalesController extends Controller
 			'model'=>$model,'ido'=>$ido,
 		));
 	}
+    
 
 	/**
 	 * Updates a particular model.
@@ -223,5 +225,14 @@ class SalesController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionPdf(){
+            $dataProvider=new CActiveDataProvider('Office');
+            
+            $html2pdf = Yii::app()->ePdf->HTML2PDF();
+            $html2pdf = new HTML2PDF('P', 'A4', 'es');
+            $html2pdf->WriteHTML($this->renderPartial('indexpdf', array('dataProvider'=>$dataProvider,), true));
+            $html2pdf->Output();	
+        }
      
 }

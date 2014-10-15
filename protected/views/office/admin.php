@@ -55,10 +55,8 @@ $('.search-form form').submit(function(){
                     'value'=>'$data->idCity->city_name',
                     'filter'=>  CHtml::activeTextField($model, '_cityname'),
                     ),
-               
-		
-                
 		'office_name',
+                'office_address',
 		array(
 			'class'=>'CButtonColumn',
 		),

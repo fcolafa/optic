@@ -7,7 +7,7 @@
  */
 class ContactForm extends CFormModel
 {
-	public $name;
+	
 	public $email;
 	public $subject;
 	public $body;
@@ -20,9 +20,7 @@ class ContactForm extends CFormModel
 	{
 		return array(
 			// name, email, subject and body are required
-			array('name, email, subject, body', 'required'),
-			// email has to be a valid email address
-			array('email', 'email'),
+			array('email,subject, body', 'required'),
 			// verifyCode needs to be entered correctly
 			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
 		);
@@ -36,7 +34,13 @@ class ContactForm extends CFormModel
 	public function attributeLabels()
 	{
 		return array(
-			'verifyCode'=>'Verification Code',
+			'verifyCode'=>Yii::t('database','Verification Code'),
+                        'name'=>Yii::t('database','Name'),
+                        'email'=>Yii::t('database','Email'),
+                        'subject'=>Yii::t('database','Subject'),
+                        'body'=>Yii::t('database','Body'),
+                    
+                    
 		);
 	}
 }

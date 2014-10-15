@@ -17,7 +17,7 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('city_name')); ?>:</b>
 	<?php echo CHtml::encode($data->city_name); ?>
 	<br />
-	<?php echo CHtml::button('Sucursales',  array('submit' => array('Office/index', 'id'=>$data->id_city))); ?>
+	<?php echo CHtml::button('Sucursales',  array('class' => 'button grey','submit' => array('Office/index', 'id'=>$data->id_city))); ?>
 	<br />
 
 

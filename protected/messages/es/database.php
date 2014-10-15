@@ -32,12 +32,31 @@ return array(
  'Critical Stock'=>'Stock Critico',
     
  'Home'=>'Inicio',
+ //ContactForm
+ 'Name'=>'Nombre',
+ 'Email'=>'Email', 
+ 'Subject'=>'Asunto',
+ 'Body'=>'Cuerpo',
+ 'Verification Code'=>'Codigo de Verificación',
+    
  
 //office
 'Office'=>'Sucursal',
 'Offices'=>'Sucursales',
 'Id Office'=>'Id Sucursal',
 'Office Name'=>'Nombre Sucursal',
+'Office Address'=>'Dirección Sucursal',
+    
+//products
+'Products'=>'Productos',
+    //provider
+ 'Provider'=>'Proveedor',
+ 'Providers'=>'Proveedores',
+ 'Id Provider'=>'Id Proveedor',
+ 'Provider Name'=>'Nombre Proveedor',
+    'Email Provider'=>'Email Proveedor',
+    'Upper'=>'Mayor que',
+    'Lower'=>'Menor que',
     
 //user
 'Id User'=>'Id Usuario',

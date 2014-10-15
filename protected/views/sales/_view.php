@@ -30,6 +30,9 @@
         <b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
 	<?php echo CHtml::encode($data->status==1?'finalizada':'pendiente'); ?>
 	<br />
+         <b><?php echo CHtml::encode($data->getAttributeLabel('id_user')); ?>:</b>
+	<?php echo CHtml::encode($data->id_user); ?>
+	<br />
 
 
 </div>

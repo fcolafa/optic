@@ -11,14 +11,14 @@
 
 <?php $this->pageTitle=Yii::app()->name; ?>
 
-<h1> <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+<h1><i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
 <div class="span-23 showgrid">
 <div class="dashboardIcons span-16">
 
     <div class="dashIcon span-3">
-        <a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-people.png" alt="Customers" /></a>
-        <div class="dashIconText"><a href="#">Customers</a></div>
+        <a href="<?php echo Yii::app()->baseurl?>/provider/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-people.png" alt="Customers" /></a>
+        <div class="dashIconText"><a href="<?php echo Yii::app()->baseurl?>/provider/"><?php echo Yii::t ('database','Providers') ?></a></div>
     </div>
     
     <div class="dashIcon span-3">
@@ -26,28 +26,32 @@
         <div class="dashIconText"><a href="#">Reports</a></div>
     </div>
     
-    <div class="dashIcon span-3">
-        <a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-barcode.png" alt="Products" /></a>
-        <div class="dashIconText"><a href="#">Products</a></div>
-    </div>
+  
     
     <div class="dashIcon span-3">
         <a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-calendar.png" alt="Calendar" /></a>
         <div class="dashIconText"><a href="#">Calendar</a></div>
     </div>
+  <?php if(Yii::app()->user->checkAccess('Control Total')||Yii::app()->user->checkAccess('Administrador')){?>
+     <div class="dashIcon span-3">
+        <a href="<?php echo Yii::app()->baseurl?>/zone/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-map2.png" alt="Calendar" /></a>
+        <div class="dashIconText"><a href="<?php echo Yii::app()->baseurl?>/zone/"><?php echo Yii::t('database','Zones') ?></a></div>
+    </div>
+  <?php }?>
+     
     
    
     
 </div><!-- END OF .dashIcons -->
 
-   
+</div>
 <div class="graphic">          
 <?php
   
-                           
+     $date=  date("Y"); 
 
 $this->beginWidget('zii.widgets.CPortlet', array(
-	'title'=>Yii::t('actions','Sales Chart'),
+	'title'=>Yii::t('actions','Sales Chart')." ".$date,
 ));
 ?>
 
@@ -68,7 +72,7 @@ $this->beginWidget('zii.widgets.CPortlet', array(
                         <th>Agosto</th>
                         <th>Septiembre</th>
                         <th>Octubre</th>
-                        <th>Nomviembre</th>
+                        <th>Noviembre</th>
                         <th>Diciembre</th>
                         
                     </tr>
@@ -77,9 +81,7 @@ $this->beginWidget('zii.widgets.CPortlet', array(
                   
                         <?php 
                         $office=Office::model()->findAll();
-                        ?>
-                
-                        <?php 
+                       if(isset($office)){
                         foreach ($office as $o){
                         echo "<tr>";   
                         echo "<th>".$o->office_name."</th>";
@@ -101,6 +103,7 @@ $this->beginWidget('zii.widgets.CPortlet', array(
                             }
                         echo "</tr>";
                         }
+                       }
                         ?>                 
                 </tbody>
             </table>
@@ -109,8 +112,7 @@ $this->beginWidget('zii.widgets.CPortlet', array(
         </div>
     </div>
 </div>
+    
 <?php $this->endWidget();?>
-</div>
-
-
+<?php echo CHtml::link('Generar Informe',array('/sales/pdf'),array('target'=>'_blank'));?>
 </div>

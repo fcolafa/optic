@@ -8,6 +8,7 @@
  * @property integer $id_city
  * @property integer $id_zone
  * @property string $office_name
+ * @property string $office_address
  *
  * The followings are the available model relations:
  * @property City $idCity
@@ -36,7 +37,7 @@ class Office extends CActiveRecord
 		return array(
 			array('id_city, id_zone, office_name', 'required'),
                         array('id_city, id_zone', 'numerical', 'integerOnly'=>true),
-			array('office_name', 'length', 'max'=>45),
+			array('office_name,office_address', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
                         array('id_office, id_city, id_zone, office_name', 'safe', 'on'=>'search'),
@@ -69,6 +70,7 @@ class Office extends CActiveRecord
 			'id_city' => Yii::t('database','Id City'),
 			'id_zone' => Yii::t('database','Id Zone'),
 			'office_name' => Yii::t('database','Office Name'),
+                        'office_address' => Yii::t('database','Office Address'),
 		);
 	}
 
@@ -97,6 +99,7 @@ class Office extends CActiveRecord
 		$criteria->compare('id_city',$this->id_city);
 		$criteria->compare('id_zone',$this->id_zone);
 		$criteria->compare('office_name',$this->office_name,true);
+                $criteria->compare('office_address',$this->office_name,true);
                 
                 $criteria->compare('idZone.zone_name', $this->_zonename,true);
                 $criteria->compare('idCity.city_name', $this->_cityname,true);

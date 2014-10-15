@@ -25,5 +25,6 @@ $this->menu=array(
 		'id_city',
 		'id_zone',
 		'office_name',
+                'office_address',
 	),
 )); ?>

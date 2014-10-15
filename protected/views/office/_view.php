@@ -20,8 +20,13 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('office_name')); ?>:</b>
 	<?php echo CHtml::encode($data->office_name); ?>
 	<br />
-       <?php echo CHtml::button(Yii::t('database', 'Sales'),  array('submit' => array('Sales/index', 'ido'=>$data->id_office))); ?>
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('office_address')); ?>:</b>
+	<?php echo CHtml::encode($data->office_address); ?>
+	<br />
+       <?php echo CHtml::button(Yii::t('database', 'Sales'),  array('class'=>'Button grey','submit' => array('Sales/index', 'ido'=>$data->id_office))); ?>
 	<br />
 
 
 </div>
+

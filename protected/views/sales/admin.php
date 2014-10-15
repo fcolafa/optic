@@ -74,8 +74,11 @@ $('.search-form form').submit(function(){
                     'value'=>'$data->idOffice->office_name',
                     'filter'=>  CHtml::activeTextField($model, '_officename'),
                     ),
-                      array(
-                    
+                array('name'=>'idUser.user_name',
+                    'value'=>'$data->idUser->user_name',
+                    'filter'=>  CHtml::activeTextField($model, '_username'),
+                    ),
+                array(    
                     'name'=>'type',
                     'filter'=>array('Optico'=>'Optico','Contacto'=>'Contacto'),
                     'value'=>'$data->type',

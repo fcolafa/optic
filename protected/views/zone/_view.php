@@ -11,8 +11,8 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('zone_name')); ?>:</b>
 	<?php echo CHtml::encode($data->zone_name); ?>
-	<br />
-        <?php echo CHtml::link(CHtml::encode('Ciudades'), array('City/index', 'id'=>$data->id_zone)); ?>     
+        <br />
+       <?php echo CHtml::button(Yii::t('database', 'Cities'),  array('class' => 'button grey','submit' => array('City/index', 'id'=>$data->id_zone))); ?>
 	<br />
 
 
