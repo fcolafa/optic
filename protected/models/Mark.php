@@ -8,7 +8,8 @@
  * @property string $mark_name
  *
  * The followings are the available model relations:
- * @property Model[] $models
+ * @property Examplar[] $examplars
+ * @property Frames[] $frames
  */
 class Mark extends CActiveRecord
 {
@@ -28,8 +29,6 @@ class Mark extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_mark', 'required'),
-			array('id_mark', 'numerical', 'integerOnly'=>true),
 			array('mark_name', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -45,7 +44,8 @@ class Mark extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'models' => array(self::HAS_MANY, 'Model', 'id_mark'),
+			'examplars' => array(self::HAS_MANY, 'Examplar', 'id_mark'),
+			'frames' => array(self::HAS_MANY, 'Frames', 'id_mark'),
 		);
 	}
 

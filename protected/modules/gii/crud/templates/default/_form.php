@@ -41,7 +41,7 @@ foreach($this->tableSchema->columns as $column)
 }
 ?>
 	<div class="row buttons">
-		<?php echo "<?php echo CHtml::submitButton(\$model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save')); ?>\n"; ?>
+		<?php echo "<?php echo CHtml::submitButton(\$model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save'),array('class'=>Yii::app()->params['btnclass'])); ?>\n"; ?>
 	</div>
 
 <?php echo "<?php \$this->endWidget(); ?>\n"; ?>

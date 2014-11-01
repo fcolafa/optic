@@ -20,19 +20,13 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id_mark'); ?>
-		<?php echo $form->textField($model,'id_mark'); ?>
-		<?php echo $form->error($model,'id_mark'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'mark_name'); ?>
 		<?php echo $form->textField($model,'mark_name',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'mark_name'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save'),array('class'=>Yii::app()->params['btnclass'])); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

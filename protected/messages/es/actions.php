@@ -16,5 +16,10 @@ return array(
 'Session'=>'Conexiones',
 'System Alerts'=>'Alertas de Sistema',
 'Sales Chart'=>'Grafico de Ventas',
+'Send'=>'Enviar'   ,
+'Export to'=>'Exportar a',
+'Search'=>'Buscar',
+'Contact'=>'Contacto',
+'Generate'=>'Generar',
     
 );

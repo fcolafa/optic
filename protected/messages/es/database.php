@@ -24,22 +24,39 @@ return array(
  'Height'=>'Altura',
  'Pupillary Distance'=>'Distancia Pupilar',
  'Comment'=>'Comentario',
- //glass
- 'Glass'=>'Cristal',
- 'Glasses'=>'Cristales',
- 'Sphere'=>'Esfera',
- 'Cylinder'=>'Cilindro',
- 'Critical Stock'=>'Stock Critico',
-    
- 'Home'=>'Inicio',
  //ContactForm
  'Name'=>'Nombre',
  'Email'=>'Email', 
  'Subject'=>'Asunto',
  'Body'=>'Cuerpo',
  'Verification Code'=>'Codigo de Verificación',
+  'Contact Providers'=>'Contactar Proveedores',
+  //examplar
+ 'Examplar'=>'Modelo',
+ 'Examplars'=>'Modelos',
+ 'Id Examplar'=>'Id Modelo',
+ 'Examplar Name'=>'Nombre Modelo' ,  
+ //frames
+ 'Frame'=>'Armazon',
+ 'Frames'=>'Armazones',
+ 'Id Frame'=>'Id Armazon',
+ //glass
+ 'Glass'=>'Cristal',
+ 'Glasses'=>'Cristales',
+ 'Sphere'=>'Esfera',
+ 'Cylinder'=>'Cilindro',
+ 'Critical Stock'=>'Stock Critico',
+
     
- 
+  //h  
+ 'Home'=>'Inicio',
+
+    
+ //marks
+ 'Mark'=>'Marca',
+ 'Marks'=>'Marcas',
+ 'Id Mark'=>'Id Marca',
+ 'Mark Name'=>'Nombre de Marca',
 //office
 'Office'=>'Sucursal',
 'Offices'=>'Sucursales',
@@ -58,6 +75,17 @@ return array(
     'Upper'=>'Mayor que',
     'Lower'=>'Menor que',
     
+
+//r
+'Reports'=>'Reportes',
+'Report Type'=>'Tipo de Reporte',
+ //Sales
+'Sales'=>'ventas',
+'Date'=>'Fecha de venta',
+'Price'=>'Monto Venta',
+'Type'=>'Tipo',
+'Pay'=>'Abono',
+'Status'=>'Estado',
 //user
 'Id User'=>'Id Usuario',
 'User'=>'Usuario',
@@ -68,17 +96,8 @@ return array(
 'Date Lastsession'=>'Ultima conexión',
 'Repeat Password'=>'Repetir Contraseña',
 'Old Password'=>'Contraseña Anterior',
-'Role'=>'Permisos',
-
- //Sales
-'Sales'=>'ventas',
-'Date'=>'Fecha de venta',
-'Price'=>'Monto Venta',
-'Type'=>'Tipo',
-'Pay'=>'Abono',
-'Status'=>'Estado',
-    
- 
+'Role'=>'Permisos',    
+ 'Year'=>'Año',
 //zone
 'Zone'=>'Región',
 'Zones'=>'Regiones',

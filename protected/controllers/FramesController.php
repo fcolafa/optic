@@ -29,15 +29,15 @@ class FramesController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('*'),
+				'roles'=>array('Supervisor','Control Total','Administrador'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'actions'=>array('create','update','fillex'),
+				'roles'=>array('Administrador','Control Total'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'actions'=>array('create','admin','delete'),
+				'roles'=>array('Control Total'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -142,6 +142,7 @@ class FramesController extends Controller
 			'model'=>$model,
 		));
 	}
+        
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
@@ -170,4 +171,16 @@ class FramesController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionFillex() {
+            $id=$_POST['Frames']['id_mark'];
+            echo $id;
+            $lista= Examplar::model()->findAll('id_mark=:id_mark',array(':id_mark'=>$id));
+            $lista=CHtml::listData($lista,'id_examplar','examplar_name');
+            echo CHtml::tag('option',array('empty'),CHtml::encode(Yii::t('actions','Select')." ".Yii::t('database','Examplar')),true);
+            foreach($lista as $value =>$name)
+            {
+                 echo CHtml::tag('option',array('value'=>$value),CHtml::encode($name),true);
+            }
+        }
 }

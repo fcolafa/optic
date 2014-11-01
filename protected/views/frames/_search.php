@@ -17,12 +17,17 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'id_model'); ?>
-		<?php echo $form->textField($model,'id_model'); ?>
+		<?php echo $form->label($model,'id_examplar'); ?>
+		<?php echo $form->textField($model,'id_examplar'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'id_mark'); ?>
+		<?php echo $form->textField($model,'id_mark'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton(Yii::t('actions','Search'),array('class'=>Yii::app()->params['btnclass'])); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

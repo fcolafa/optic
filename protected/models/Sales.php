@@ -30,6 +30,8 @@ class Sales extends CActiveRecord
          public $_clientlname;
          public $_status;
          public $_username;
+         public $_reportype;
+         public $_reportyear;
          public function tableName()
 	{
 		return 'sales';
@@ -82,6 +84,8 @@ class Sales extends CActiveRecord
                         'type' => Yii::t('database','Type'),
 			'pay' => Yii::t('database','Pay'),
                         'status'=>  Yii::t('database','Status'),
+                        '_reportype'=>Yii::t('database','Report Type'),
+                        '_reportyear'=>Yii::t('database',' Report Year'),
                         
 		);
 	}

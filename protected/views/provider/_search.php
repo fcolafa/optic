@@ -28,16 +28,16 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'upper'); ?>
-		<?php echo $form->textField($model,'upper',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textField($model,'upper'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'lower'); ?>
-		<?php echo $form->textField($model,'lower',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textField($model,'lower'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton(Yii::t('actions','Search'),array('class'=>Yii::app()->params['btnclass'])); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

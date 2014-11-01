@@ -81,8 +81,13 @@
 		<?php echo $form->textArea($model,'comment',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'pupillary_distance'); ?>
+		<?php echo $form->textField($model,'pupillary_distance'); ?>
+	</div>
+
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton(Yii::t('actions','Search'),array('class'=>Yii::app()->params['btnclass'])); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

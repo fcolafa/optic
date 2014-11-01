@@ -47,7 +47,8 @@ $('.search-form form').submit(function(){
 	'filter'=>$model,
 	'columns'=>array(
 		'id_frame',
-		'id_model',
+		'id_examplar',
+		'id_mark',
 		array(
 			'class'=>'CButtonColumn',
 		),

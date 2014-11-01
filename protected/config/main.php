@@ -12,6 +12,7 @@ return array(
 	'sourceLanguage'=>'en',
 	'charset'=>'utf-8',
         'theme'=>'optic',
+       
         
 
 	// preloading 'log' component
@@ -114,6 +115,7 @@ return array(
                 'CJuiButton'=>array(
                     'htmlOptions'=>array('class'=>'button green'),
                 ),
+     
                
             ),
         ),
@@ -181,5 +183,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+                'btnclass'=>'button grey',
 	),
 );

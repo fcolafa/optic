@@ -3,7 +3,7 @@
 /* @var $model Sales */
 
 $this->breadcrumbs=array(
-	Yii::t('database',Yii::t('database','Sales'))=>array('index'),
+	Yii::t('database',Yii::t('database','Sales'))=>array('index','ido'=>$ido),
 	Yii::t('actions','Manage'),
 );
 
@@ -55,6 +55,11 @@ $('.search-form form').submit(function(){
 	'id'=>'sales-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+        'afterAjaxUpdate'=>"function(){
+                                                        $.datepicker.setDefaults($.datepicker.regional['es']);
+                                                        $('#datepicker_for_due_date').datepicker({'dateFormat': 'yy-mm-dd'});
+                                                        
+                                                }",  // (#4)
 	'columns'=>array(
 		'id_sales',
                 array('name'=>'idClient.client_rut',
@@ -69,11 +74,7 @@ $('.search-form form').submit(function(){
                     'value'=>'$data->idClient->client_lastname',
                     'filter'=>  CHtml::activeTextField($model, '_clientlname'),
                     ),
-		
-                array('name'=>'idOffice.office_name',
-                    'value'=>'$data->idOffice->office_name',
-                    'filter'=>  CHtml::activeTextField($model, '_officename'),
-                    ),
+            
                 array('name'=>'idUser.user_name',
                     'value'=>'$data->idUser->user_name',
                     'filter'=>  CHtml::activeTextField($model, '_username'),
@@ -84,12 +85,37 @@ $('.search-form form').submit(function(){
                     'value'=>'$data->type',
       
                 ),
-            
-		  array(
+                     array(
+                        'name' => 'date',
+                        'value'=>'Yii::app()->dateFormatter->format("d MMMM y \n HH:mm:ss",strtotime($data->date))',
+                        'filter' => $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                            'model'=>$model, 
+                            'attribute'=>'date', 
+                            'language' => 'es',
+                         //   'i18nScriptFile' => 'jquery.ui.datepicker-en.js', 
+                            'htmlOptions' => array(
+                                'id' => 'datepicker_for_due_date',
+                                'size' => '10',
+                            ),
+                            'defaultOptions' => array(  
+                                'showOn' => 'focus', 
+                                'dateFormat' => 'yy-mm-dd',
+                                'showOtherMonths' => true,
+                                'selectOtherMonths' => true,
+                                'changeMonth' => true,
+                                'changeYear' => true,
+                                'showButtonPanel' => true,
+                              
+                            )
+                        ), 
+                        true),
+                       
+                    ),
+		/**  array(
                 'name'=>'date',
                 //'value'=>'date("d M Y",strtotime($data["work_date"]))'
                 'value'=>'Yii::app()->dateFormatter->format("d MMMM y \n HH:mm:ss",strtotime($data->date))'
-                ),
+                ),**/
 		'price',
                 array(
                     
@@ -114,5 +140,14 @@ $('.search-form form').submit(function(){
                             )
                         ),
 		),
+            
 	),
-)); ?>
+)); 
+
+Yii::app()->clientScript->registerScript('re-install-date-picker', "
+function reinstallDatePicker(id, data) {
+        //use the same parameters that you had set in your widget else the datepicker will be refreshed by default
+    $('#datepicker_for_due_date').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['es'],{'dateFormat':'yy-mm-dd'}));
+}
+");
+?>

@@ -30,13 +30,14 @@
 		<?php echo $form->label($model,'office_name'); ?>
 		<?php echo $form->textField($model,'office_name',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
-    <div class="row">
+
+	<div class="row">
 		<?php echo $form->label($model,'office_address'); ?>
 		<?php echo $form->textField($model,'office_address',array('size'=>45,'maxlength'=>45)); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton(Yii::t('actions','Search'),array('class'=>Yii::app()->params['btnclass'])); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

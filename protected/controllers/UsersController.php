@@ -95,35 +95,25 @@ class UsersController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-                
                    $model->password='';
-             
-                   Yii::app ()->authManager->revoke($model->role,$model->id_user);
-                  
-                         
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Users']))
 		{
+                      
 			$model->attributes=$_POST['Users'];
                         $model->password = md5($model->password);
                         $model->password_repeat = md5($model->password_repeat);
                         date_default_timezone_set('America/Santiago');
                         $model->date_create=  date("y/m/d H:i:s");
                       
-                     
-                       
-                        //if($oldpass==md5($model->_oldpassword)){
 			if($model->save()){
+                                Yii::app ()->authManager->revoke($model->role,$model->id_user);
                                 Yii::app()->authManager->assign($model->role,$model->id_user);
 				$this->redirect(array('view','id'=>$model->id_user));
-                         
-                                
                          }
                        $model->password_repeat='';
-                        $model->password='';
-                        $model->_oldpassword='';
+                       $model->password='';
+                       $model->_oldpassword='';
                      
 		}
 

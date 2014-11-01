@@ -30,7 +30,7 @@
 
 <?php endforeach; ?>
 	<div class="row buttons">
-		<?php echo "<?php echo CHtml::submitButton('Search'); ?>\n"; ?>
+		<?php echo "<?php echo CHtml::submitButton(Yii::t('actions','Search'),array('class'=>Yii::app()->params['btnclass'])); ?>\n"; ?>
 	</div>
 
 <?php echo "<?php \$this->endWidget(); ?>\n"; ?>

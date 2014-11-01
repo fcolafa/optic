@@ -18,21 +18,33 @@
 	<p class="note"> <?php echo Yii::t('validation','Fields with')?> <span class="required">*</span> <?php echo Yii::t('validation','are required')?> </p>
 
 	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'id_frame'); ?>
-		<?php echo $form->textField($model,'id_frame'); ?>
-		<?php echo $form->error($model,'id_frame'); ?>
+        
+      
+        
+            <div class="row">
+		<?php echo $form->labelEx($model,'id_mark'); ?>
+                <?php echo $form->dropDownList($model,'id_mark' ,CHtml::listData(Mark::model()->findAll(),'id_mark','mark_name'),
+			array(
+                                'prompt'=>Yii::t('actions','Select')." ".Yii::t("database", "Mark"),
+				'ajax'=>array(
+				'type'=>'POST',
+				'url'=>CController::createUrl('Frames/fillex'),
+				'update'=>'#'.CHtml::activeId($model,'id_examplar'),
+				)
+			)
+			);?>
+		<?php echo $form->error($model,'id_mark'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id_model'); ?>
-		<?php echo $form->textField($model,'id_model'); ?>
-		<?php echo $form->error($model,'id_model'); ?>
+		<?php echo $form->labelEx($model,'id_examplar'); ?>
+		<?php echo $form->dropDownList($model,'id_examplar',CHtml::listData(Examplar::model()->findAll('id_mark=:id_mark',array(':id_mark'=>$model->id_mark)),'id_examplar','examplar_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Examplar'))); ?>
+		<?php echo $form->error($model,'id_examplar'); ?>
 	</div>
+
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save'),array('class'=>Yii::app()->params['btnclass'])); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -5,10 +5,12 @@
  *
  * The followings are the available columns in table 'frames':
  * @property integer $id_frame
- * @property integer $id_model
+ * @property integer $id_examplar
+ * @property integer $id_mark
  *
  * The followings are the available model relations:
- * @property Examplar $idModel
+ * @property Mark $idMark
+ * @property Examplar $idExamplar
  */
 class Frames extends CActiveRecord
 {
@@ -28,11 +30,11 @@ class Frames extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_frame, id_model', 'required'),
-			array('id_frame, id_model', 'numerical', 'integerOnly'=>true),
+			array('id_examplar, id_mark', 'required'),
+			array('id_examplar, id_mark', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_frame, id_model', 'safe', 'on'=>'search'),
+			array('id_frame, id_examplar, id_mark', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -44,7 +46,8 @@ class Frames extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idModel' => array(self::BELONGS_TO, 'Examplar', 'id_model'),
+			'idMark' => array(self::BELONGS_TO, 'Mark', 'id_mark'),
+			'idExamplar' => array(self::BELONGS_TO, 'Examplar', 'id_examplar'),
 		);
 	}
 
@@ -55,7 +58,8 @@ class Frames extends CActiveRecord
 	{
 		return array(
 			'id_frame' => Yii::t('database','Id Frame'),
-			'id_model' => Yii::t('database','Id Model'),
+			'id_examplar' => Yii::t('database','Id Examplar'),
+			'id_mark' => Yii::t('database','Id Mark'),
 		);
 	}
 
@@ -78,7 +82,8 @@ class Frames extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id_frame',$this->id_frame);
-		$criteria->compare('id_model',$this->id_model);
+		$criteria->compare('id_examplar',$this->id_examplar);
+		$criteria->compare('id_mark',$this->id_mark);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -1,11 +1,11 @@
 <?php
-$this->pageTitle=Yii::app()->name . ' - Contact Us';
+$this->pageTitle=Yii::app()->name . '- '. yii::t('database','Providers');
 $this->breadcrumbs=array(
-	'Contact',
+	Yii::t('actions','Contact'),
 );
 ?>
 
-<h1><?php echo Yii::t('database', 'Provider')." ".Yii::t('database', 'Provider') ?></h1>
+<h1><?php echo Yii::t('database', 'Providers') ?></h1>
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -56,18 +56,18 @@ $this->breadcrumbs=array(
         <br />
 		<?php echo $form->textField($model,'verifyCode'); ?>
 		</div>
-		<div class="hint">Please enter the letters as they are shown in the image above.
-		<br/>Letters are not case-sensitive.</div>
+		<div class="hint"> <?php echo Yii::t('validation','Please enter the letters as they are shown in the image above')?>.
+		<br/><?php echo Yii::t('validation','Letters are not case-sensitive.')?></div>
 		<?php echo $form->error($model,'verifyCode'); ?>
 	</div>
 	<?php endif; ?>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Submit',array('class'=>'button grey')); ?>
+		<?php echo CHtml::submitButton(Yii::t('actions','Send'),array('class'=>'button grey')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
 
-<?php endif; ?>
+<?php endif; 

@@ -6,7 +6,7 @@
  * The followings are the available columns in table 'examplar':
  * @property integer $id_examplar
  * @property integer $id_mark
- * @property integer $examplar_name
+ * @property string $examplar_name
  *
  * The followings are the available model relations:
  * @property Mark $idMark
@@ -30,8 +30,9 @@ class Examplar extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_examplar, id_mark', 'required'),
-			array('id_examplar, id_mark, examplar_name', 'numerical', 'integerOnly'=>true),
+			array('id_mark', 'required'),
+			array('id_mark', 'numerical', 'integerOnly'=>true),
+			array('examplar_name', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id_examplar, id_mark, examplar_name', 'safe', 'on'=>'search'),
@@ -83,7 +84,7 @@ class Examplar extends CActiveRecord
 
 		$criteria->compare('id_examplar',$this->id_examplar);
 		$criteria->compare('id_mark',$this->id_mark);
-		$criteria->compare('examplar_name',$this->examplar_name);
+		$criteria->compare('examplar_name',$this->examplar_name,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

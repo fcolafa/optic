@@ -5,6 +5,7 @@ class SiteController extends Controller
 	/**
 	 * Declares class-based actions.
 	 */
+        
 	public function actions()
 	{
 		return array(
@@ -31,7 +32,8 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-            
+          
+        
                 if(Yii::app()->user->isGuest)
                     $this->redirect(Yii::app()->baseUrl.'/site/login');
                 else{
@@ -59,9 +61,11 @@ class SiteController extends Controller
 	public function actionContact()
 	{
 		$model=new ContactForm;
+                
 		if(isset($_POST['ContactForm']))
 		{
 			$model->attributes=$_POST['ContactForm'];
+                        $model->verifyCode->refresh();
 			if($model->validate())
 			{
                             Yii::import('application.extensions.phpmailer.JPhpMailer');
@@ -86,10 +90,13 @@ class SiteController extends Controller
                             }
                             else {
                                 Yii::app()->user->setFlash('error',"error al enviar mensaje");
+                                $model->verifyCode->refresh();
                             }
 			}
 		}
-                 if(Yii::app()->user->isGuest)
+                 
+                 
+                if(Yii::app()->user->isGuest)
                     $this->redirect(Yii::app()->baseUrl);
                  else
 		$this->render('contact',array('model'=>$model));
@@ -132,4 +139,23 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+        
+        public function actionReports(){
+            $model=new Reports;
+            if(isset($_POST['Reports']))
+            {
+                $model->attributes=$_POST['Reports'];
+                if($model->validate()){
+                    $this->actionExcel($model->reportyear);
+                
+                }
+            }
+            $this->render('reports',array('model'=>$model));
+        }
+        public function actionExcel($year){
+            $Office= Office::model()->findAll();
+            Yii::app()->request->sendFile('ReporteMensual-'.$year .'.xls',  
+            $this->renderPartial('/Sales/excel',array('office'=>$Office,'year'=>$year)),true);
+
+        }
 }

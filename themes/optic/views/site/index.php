@@ -1,3 +1,4 @@
+
 <?php  
   $baseUrl = Yii::app()->theme->baseUrl; 
   $cs = Yii::app()->getClientScript();
@@ -22,8 +23,8 @@
     </div>
     
     <div class="dashIcon span-3">
-        <a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-chart.png" alt="Page" /></a>
-        <div class="dashIconText"><a href="#">Reports</a></div>
+        <a href="<?php echo Yii::app()->createUrl('/site/report') ?>"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-chart.png" alt="Page" /></a>
+        <div class="dashIconText"><a href="<?php echo Yii::app()->createUrl('/site/reports') ?>"><?php echo Yii::t('database','Reports')?></a></div>
     </div>
     
   
@@ -32,7 +33,7 @@
         <a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-calendar.png" alt="Calendar" /></a>
         <div class="dashIconText"><a href="#">Calendar</a></div>
     </div>
-  <?php if(Yii::app()->user->checkAccess('Control Total')||Yii::app()->user->checkAccess('Administrador')){?>
+  <?php if(Yii::app()->user->checkAccess('Control Total')){?>
      <div class="dashIcon span-3">
         <a href="<?php echo Yii::app()->baseurl?>/zone/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-map2.png" alt="Calendar" /></a>
         <div class="dashIconText"><a href="<?php echo Yii::app()->baseurl?>/zone/"><?php echo Yii::t('database','Zones') ?></a></div>
@@ -47,15 +48,22 @@
 </div>
 <div class="graphic">          
 <?php
-  
+   
      $date=  date("Y"); 
 
 $this->beginWidget('zii.widgets.CPortlet', array(
 	'title'=>Yii::t('actions','Sales Chart')." ".$date,
 ));
-?>
 
+
+?>
 <div class="chart3">
+   
+    
+
+  
+
+       
     <div>
         <div class="text">
             <table class="myChart">
@@ -85,22 +93,25 @@ $this->beginWidget('zii.widgets.CPortlet', array(
                         foreach ($office as $o){
                         echo "<tr>";   
                         echo "<th>".$o->office_name."</th>";
-                        $command = Yii::app()->db->createCommand(" call monthsales(". $o->id_office .") ");
+                        $command = Yii::app()->db->createCommand(" call monthsales(". $o->id_office .",'".  date("y-m-d")."') ");
                         $month = $command->queryAll();
                         $i=1;
-                       
                         foreach($month as $m){
+                          
                             while ($i<13){
                                 if($i==intval($m['month(s.date)'])){
+                                   
                                  echo "<td>".intval($m['sum(s.price)']) ."</td>";
                                  $i+=1;
                                  break 1;
                                 }else{
-                                echo "<td></td>";
+                                echo "<td>0</td>";
                                 }
                                 $i+=1;
-                            }                               
                             }
+                            
+                            }
+                            
                         echo "</tr>";
                         }
                        }
@@ -114,5 +125,5 @@ $this->beginWidget('zii.widgets.CPortlet', array(
 </div>
     
 <?php $this->endWidget();?>
-<?php echo CHtml::link('Generar Informe',array('/sales/pdf'),array('target'=>'_blank'));?>
+
 </div>

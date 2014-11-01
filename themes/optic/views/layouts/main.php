@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -30,10 +32,8 @@
 
 	<div id="topnav">
             <div class="topnav_text"> 
-                <?php if( Yii::app()->user->checkAccess('Control Total')){?>
-                | <a href='<?php echo $this->createUrl('users/index/'); ?>'>
-                <?php echo Yii::t('actions','Manage').' '.Yii::t('database','Users');?></a> 
-                <?php } 
+               
+                <?php 
                 if(!Yii::app()->user->isGuest){?>
                
                 <?php
@@ -86,11 +86,20 @@
                   'items'=>array(
                     array('label'=>Yii::t('database','Glasses'), 'url'=>array('/Glass/index')),
                     array('label'=>Yii::t('database','Marks'), 'url'=>array('/mark/index')),
+                    array('label'=>Yii::t('database','Examplars'), 'url'=>array('/examplar/index')),
+                    array('label'=>Yii::t('database','Frames'), 'url'=>array('/frames/index')),
                   ),
                 ), 
-            array('label'=>Yii::t('database','Providers'), 'url'=>array('/Provider/index'),'visible'=>!Yii::app()->user->isGuest),
+            array('label'=>Yii::t('database','Providers'), 
+                'items'=>array(
+                    array( 'label'=>Yii::t('actions','Manage').' '.Yii::t('database','Providers'),'url'=>array('/Provider/index'),'visible'=>!Yii::app()->user->isGuest),
+                    array( 'label'=>Yii::t('database','Contact Providers'),'url'=>array('/site/contact'),'visible'=>!Yii::app()->user->isGuest),
+                ),
+                ),
             array('label'=>Yii::t('actions','Login'), 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+            array('label'=>Yii::t('actions','Manage').' '.Yii::t('database','Users'),'url'=>array('/users/index'),'visible'=>Yii::app()->user->checkAccess('Control Total')),        
             array('label'=>Yii::t('actions','Logout').' ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+      
             ),
   ));?> 
 

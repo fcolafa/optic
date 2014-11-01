@@ -20,25 +20,19 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id_examplar'); ?>
-		<?php echo $form->textField($model,'id_examplar'); ?>
-		<?php echo $form->error($model,'id_examplar'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'id_mark'); ?>
-		<?php echo $form->textField($model,'id_mark'); ?>
+		<?php echo $form->dropDownList($model,'id_mark',CHtml::listData(Mark::model()->findAll(),'id_mark','mark_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Mark')));$form->textField($model,'id_mark'); ?>
 		<?php echo $form->error($model,'id_mark'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'examplar_name'); ?>
-		<?php echo $form->textField($model,'examplar_name'); ?>
+		<?php echo $form->textField($model,'examplar_name',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'examplar_name'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save'),array('class'=>Yii::app()->params['btnclass'])); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

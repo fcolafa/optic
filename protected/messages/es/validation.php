@@ -15,4 +15,6 @@ return array(
 'This sale cannot be updated, because it has finished'=>'No se puede modificar esta venta, debido a que ha sido finalizada',
 'This sale cannot be deleted, because it has finished'=>'No se puede eliminar esta venta, debido a que ha sido finalizada',
  'Incorrect username or password.'=>'Usuario o Contraseña Incorrecto',
+ 'Please enter the letters as they are shown in the image above'=>'Por Favor digite los cararcteres tal como se muestran en la imagen',
+    'Letters are not case-sensitive.'=>'Las letras no son sensibles a mayusculas o minusculas',
         );

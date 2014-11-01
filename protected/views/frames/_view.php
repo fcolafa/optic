@@ -9,8 +9,12 @@
 	<?php echo CHtml::link(CHtml::encode($data->id_frame), array('view', 'id'=>$data->id_frame)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id_model')); ?>:</b>
-	<?php echo CHtml::encode($data->id_model); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('id_examplar')); ?>:</b>
+	<?php echo CHtml::encode($data->id_examplar); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('id_mark')); ?>:</b>
+	<?php echo CHtml::encode($data->id_mark); ?>
 	<br />
 
 
