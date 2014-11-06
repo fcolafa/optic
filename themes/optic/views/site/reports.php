@@ -22,6 +22,21 @@ $this->breadcrumbs=array(
         yii::t('database','Reports'),
 );
 ?>
+<?php 
+                        $command = Yii::app()->db->createCommand(" call monthsales(". 1 .",'". 2014 ."-01-01') ");
+                        $month = $command->queryAll();
+                        $total=0;
+                        $sales=array_fill(1,13,0);
+                        foreach($month as $m){
+                           for($i=1;$i<13;$i++){
+                                if($i==intval($m['month(s.date)'])){
+                                    $sales[$i]=intval($m['sum(s.price)']);
+                                    $total+=intval($m['sum(s.price)']);
+                                    }
+                                }
+                                $sales[13]=$total;
+                            }
+                         ?>  
 
 <h1> <?php echo Yii::t('database', 'Reports') ?> </h1>
 
@@ -88,6 +103,7 @@ $this->breadcrumbs=array(
 		<br/><?php echo Yii::t('validation','Letters are not case-sensitive.')?></div>
 		<?php echo $form->error($model,'verifyCode'); ?>
 	</div>
+ 
         <div class="row buttons" >
 		<?php echo CHtml::submitButton(Yii::t('actions','Generate'),array('class'=>'button grey')); ?>
 	</div>

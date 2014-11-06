@@ -6,7 +6,7 @@
 <div class="view">
    
 	<br>
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id_office')); ?>:</b>
+	
 	<?php echo CHtml::link(CHtml::encode($data->id_office), Yii::app()->createUrl('/sales/view/',array( 'id'=>$data->id_office))); ?>
 	<br>
            

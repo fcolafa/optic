@@ -3,7 +3,7 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Sucursales',
+	'PDF',
 );
 ?>
 <img src="C:\xampp\htdocs\optic\themes\optic\images\logo.png" /> 

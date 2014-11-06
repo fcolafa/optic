@@ -12,7 +12,7 @@ class Reports extends CFormModel
 	public $reportype;
 	public $reportyear;
         public $verifyCode;
-        public $visibleyear;
+        public $datatype;
 
 	/**
 	 * Declares the validation rules.
@@ -21,7 +21,7 @@ class Reports extends CFormModel
 	{
 		return array(
 			//array('reportype', 'required'),
-                        array('reportype', 'required'),
+                        array('reportype ', 'required'),
                         array('reportyear','validateyear'),
 			// verifyCode needs to be entered correctly
 			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
@@ -37,7 +37,8 @@ class Reports extends CFormModel
 		return array(
                         'verifyCode'=>Yii::t('database','Verification Code'),
 			'reportype'=> Yii::t('database','Report Type'),
-                        'reportyear'=>Yii::t('database','Year'),     
+                        'reportyear'=>Yii::t('database','Year'),  
+                        'datatype'=>Yii::t('database','Data Type'),
 		);
 	}
         public function validateYear($attribute, $params) {

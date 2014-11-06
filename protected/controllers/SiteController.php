@@ -146,16 +146,30 @@ class SiteController extends Controller
             {
                 $model->attributes=$_POST['Reports'];
                 if($model->validate()){
-                    $this->actionExcel($model->reportyear);
-                
+                 //   if($model->datatype=='Excel')
+                        $this->actionExcel($model->reportyear);
+                    
+                   // if($model->datatype=='PDF')
+                   //  $this->actionPdf();   
+                    
                 }
             }
             $this->render('reports',array('model'=>$model));
         }
         public function actionExcel($year){
             $Office= Office::model()->findAll();
-            Yii::app()->request->sendFile('ReporteMensual-'.$year .'.xls',  
+            Yii::app()->request->sendFile('ReporteAnual-'.$year .'.xls',  
             $this->renderPartial('/Sales/excel',array('office'=>$Office,'year'=>$year)),true);
+            $this->render('reports',array('model'=>$model));
 
+        }
+        
+        
+         public function actionPdf(){
+            $office=new CActiveDataProvider('Office');
+            $html2pdf = Yii::app()->ePdf->HTML2PDF();
+            $html2pdf = new HTML2PDF('P', 'A4', 'es');
+            $html2pdf->WriteHTML($this->renderPartial('/Sales/indexpdf', array('office'=>$office,), true));
+            $html2pdf->Output();	
         }
 }

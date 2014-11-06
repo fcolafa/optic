@@ -33,7 +33,7 @@ class SalesController extends Controller
 			),
 			
 			array('allow',// allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('update','create','listclient','pdf','excel','reports'),
+				'actions'=>array('update','create','listclient','reports'),
 				'roles'=>array('Control Total','Administrador'),
                             ),
                         array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -225,15 +225,5 @@ class SalesController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
-	}
-        
-        public function actionPdf(){
-            $office=new CActiveDataProvider('Office');
-            
-            $html2pdf = Yii::app()->ePdf->HTML2PDF();
-            $html2pdf = new HTML2PDF('P', 'A4', 'es');
-            $html2pdf->WriteHTML($this->renderPartial('indexpdf', array('office'=>$office,), true));
-            $html2pdf->Output();	
-        }
-     
+	}     
 }

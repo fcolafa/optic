@@ -27623,3 +27623,2645 @@ Stack trace:
 REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
 HTTP_REFERER=http://localhost/optic/site/reports
 ---
+2014/11/01 23:05:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:05:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:07:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:11:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:13:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:13:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:16:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:26:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:27:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:27:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:30:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:30:59 [error] [php] require(): Filename cannot be empty (C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CListView.php(291): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php(16): SiteController->widget()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(170): SiteController->renderPartial()
+#11 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(153): SiteController->actionPdf()
+#12 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#16 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php (16)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (170)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (153)
+2014/11/01 23:33:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:33:33 [error] [php] require(): Filename cannot be empty (C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CListView.php(291): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php(16): SiteController->widget()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(170): SiteController->renderPartial()
+#11 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(153): SiteController->actionPdf()
+#12 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#16 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php (16)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (170)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (153)
+2014/11/01 23:38:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:38:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:43:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:43:12 [error] [php] require(): Filename cannot be empty (C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CListView.php(291): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php(16): SiteController->widget()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(170): SiteController->renderPartial()
+#11 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(153): SiteController->actionPdf()
+#12 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#16 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php (16)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (170)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (153)
+2014/11/01 23:44:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:44:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:44:39 [error] [php] require(): Filename cannot be empty (C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CListView.php(291): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php(16): SiteController->widget()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(170): SiteController->renderPartial()
+#11 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(153): SiteController->actionPdf()
+#12 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#16 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php (16)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (170)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (153)
+2014/11/01 23:45:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:45:52 [error] [php] require(): Filename cannot be empty (C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CListView.php(291): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php(16): SiteController->widget()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(170): SiteController->renderPartial()
+#11 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(153): SiteController->actionPdf()
+#12 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#16 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php (16)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (170)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (153)
+2014/11/01 23:50:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:50:20 [error] [exception.CException] exception 'CException' with message 'SiteController no ha podido encontrar la vista "indexpdf" solicitada.' in C:\xampp\htdocs\optic\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(170): CController->renderPartial('indexpdf', Array, true)
+#1 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(153): SiteController->actionPdf()
+#2 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#3 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('reports')
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/reports')
+#8 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/optic/site/reports
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:50:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:51:01 [error] [php] require(): Filename cannot be empty (C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CListView.php(291): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php(16): SiteController->widget()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(170): SiteController->renderPartial()
+#11 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(153): SiteController->actionPdf()
+#12 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#16 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php (16)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (170)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (153)
+2014/11/01 23:52:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/01 23:52:48 [error] [php] require(): Filename cannot be empty (C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php:130)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CListView.php(291): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\xampp\htdocs\optic\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php(16): SiteController->widget()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#10 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(170): SiteController->renderPartial()
+#11 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(153): SiteController->actionPdf()
+#12 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#13 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#15 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#16 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#17 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\protected\views\sales\indexpdf.php (16)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (170)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (153)
+2014/11/01 23:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/02 00:26:02 [error] [php] Undefined index: s.type (C:\xampp\htdocs\optic\protected\views\sales\excel.php:56)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(162): SiteController->renderPartial()
+#2 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(150): SiteController->actionExcel()
+#3 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\protected\views\sales\excel.php (56)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (162)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (150)
+2014/11/02 00:27:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/02 00:28:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/02 00:31:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/02 00:34:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/02 00:42:38 [error] [php] Use of undefined constant it - assumed 'it' (C:\xampp\htdocs\optic\protected\views\sales\excel.php:56)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(162): SiteController->renderPartial()
+#2 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(150): SiteController->actionExcel()
+#3 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\protected\views\sales\excel.php (56)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (162)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (150)
+2014/11/02 00:43:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/02 00:43:27 [error] [php] Undefined index: type (C:\xampp\htdocs\optic\protected\views\sales\excel.php:57)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(162): SiteController->renderPartial()
+#2 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(150): SiteController->actionExcel()
+#3 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\protected\views\sales\excel.php (57)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (162)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (150)
+2014/11/02 00:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/02 00:46:40 [error] [php] Undefined variable: o (C:\xampp\htdocs\optic\themes\optic\views\site\reports.php:44)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(157): SiteController->render()
+#3 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\themes\optic\views\site\reports.php (44)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (157)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/11/02 00:46:55 [error] [php] Undefined variable: year (C:\xampp\htdocs\optic\themes\optic\views\site\reports.php:44)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(157): SiteController->render()
+#3 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\themes\optic\views\site\reports.php (44)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (157)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/11/02 00:47:14 [error] [php] Undefined variable: command (C:\xampp\htdocs\optic\themes\optic\views\site\reports.php:45)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(157): SiteController->render()
+#3 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\themes\optic\views\site\reports.php (45)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (157)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/11/02 00:47:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/02 00:47:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/02 00:48:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/02 00:53:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/02 03:54:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/02 04:11:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 04:42:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 04:42:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 04:42:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 04:42:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 04:42:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 04:42:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/office/index
+---
+2014/11/05 04:42:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/Client/index
+---
+2014/11/05 04:42:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/office/index
+---
+2014/11/05 04:42:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\optic\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('office/admin')
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/optic/office/admin
+HTTP_REFERER=http://localhost/optic/office/index
+---
+2014/11/05 04:42:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/office/admin
+---
+2014/11/05 04:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 04:43:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 04:57:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 04:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:01:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:01:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:02:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:02:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:02:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:03:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:03:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/
+---
+2014/11/05 05:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 05:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 05:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 05:05:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:05:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:12:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:14:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:15:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:16:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:16:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:17:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:18:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:21:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:21:52 [error] [php] Undefined variable: total (C:\xampp\htdocs\optic\protected\views\sales\excel.php:37)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(162): SiteController->renderPartial()
+#2 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(150): SiteController->actionExcel()
+#3 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\protected\views\sales\excel.php (37)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (162)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (150)
+2014/11/05 05:22:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 05:24:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/
+---
+2014/11/05 05:24:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 05:24:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 05:24:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 06:15:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 06:16:00 [error] [php] Undefined index: type (C:\xampp\htdocs\optic\protected\views\sales\excel.php:56)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(162): SiteController->renderPartial()
+#2 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(150): SiteController->actionExcel()
+#3 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\protected\views\sales\excel.php (56)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (162)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (150)
+2014/11/05 06:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 06:17:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 06:25:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 06:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 06:45:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 06:49:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 06:56:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 06:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:00:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:11:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:13:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:14:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:15:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:26:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:28:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:30:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:32:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:35:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:38:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 07:38:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 13:54:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 13:55:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 13:55:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 13:55:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 13:55:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 13:55:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 13:58:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:01:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css?cssReloader=1415192506926
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192506925
+---
+2014/11/05 14:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192506925
+---
+2014/11/05 14:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192506925
+---
+2014/11/05 14:02:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:02:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 14:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:03:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192648220
+---
+2014/11/05 14:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192648220
+---
+2014/11/05 14:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192648220
+---
+2014/11/05 14:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css?cssReloader=1415192648230
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:04:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css?cssReloader=1415192655775
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192655772
+---
+2014/11/05 14:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192655772
+---
+2014/11/05 14:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192655772
+---
+2014/11/05 14:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css?cssReloader=1415192658233
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192658230
+---
+2014/11/05 14:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192658230
+---
+2014/11/05 14:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192658230
+---
+2014/11/05 14:04:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:05:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css?cssReloader=1415192710298
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192710296
+---
+2014/11/05 14:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192710296
+---
+2014/11/05 14:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192710296
+---
+2014/11/05 14:05:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css?cssReloader=1415192742271
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192742269
+---
+2014/11/05 14:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192742269
+---
+2014/11/05 14:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192742269
+---
+2014/11/05 14:05:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css?cssReloader=1415192744616
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:05:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192744615
+---
+2014/11/05 14:05:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192744615
+---
+2014/11/05 14:05:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192744615
+---
+2014/11/05 14:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 14:06:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 14:06:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 14:06:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 14:06:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 14:06:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 14:06:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css?cssReloader=1415192788889
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192788888
+---
+2014/11/05 14:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192788888
+---
+2014/11/05 14:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415192788888
+---
+2014/11/05 14:06:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:10:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:17:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:19:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:19:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 14:19:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 14:19:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/05 14:22:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:24:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:35:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:41:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:42:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:45:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:47:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:48:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 14:58:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 15:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 15:19:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 15:21:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 15:21:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 15:22:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 15:24:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 15:24:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css?cssReloader=1415197478546
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 15:24:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415197478542
+---
+2014/11/05 15:24:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415197478542
+---
+2014/11/05 15:24:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css?cssReloader=1415197478542
+---
+2014/11/05 15:24:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/Provider/index
+---
+2014/11/05 15:25:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 15:25:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/glass/11
+---
+2014/11/05 15:25:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/contact
+---
+2014/11/05 15:26:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/office/index
+---
+2014/11/05 15:26:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/Client/index
+---
+2014/11/05 15:26:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/office/index
+---
+2014/11/05 15:26:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 15:26:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/05 15:26:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/office/index
+---
+2014/11/05 15:27:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/glass/12
+---
+2014/11/05 15:27:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 15:27:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/Glass/index
+---
+2014/11/05 15:27:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/mark/index
+---
+2014/11/05 15:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/examplar/index
+---
+2014/11/05 15:27:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/frames/index
+---
+2014/11/05 15:28:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/Glass/index
+---
+2014/11/05 15:30:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/office/index
+---
+2014/11/05 15:30:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/05 15:30:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 15:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 15:34:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 15:35:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 15:35:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 15:35:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 15:35:42 [error] [php] Illegal offset type (C:\xampp\htdocs\optic\yii\framework\base\CModel.php:383)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#1 C:\xampp\htdocs\optic\yii\framework\base\CModel.php(159): CInlineValidator->validate()
+#2 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(124): LoginForm->validate()
+#3 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/login
+in C:\xampp\htdocs\optic\protected\models\LoginForm.php (55)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (124)
+in C:\xampp\htdocs\optic\index.php (13)
+2014/11/05 15:37:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 15:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 15:38:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 15:38:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 15:39:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/05 15:40:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/06 20:31:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/06 20:31:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/06 20:31:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/06 20:31:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_link_bg.gif"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_link_bg.gif
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/06 20:31:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "themes/optic/css/nav2_last_li_bg.png"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/optic/cs...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/themes/optic/css/nav2_last_li_bg.png
+HTTP_REFERER=http://localhost/optic/themes/optic/css/mbmenu.css
+---
+2014/11/06 20:32:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/06 21:05:22 [error] [php] Undefined variable: totalsales (C:\xampp\htdocs\optic\protected\views\sales\excel.php:93)
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(162): SiteController->renderPartial()
+#2 C:\xampp\htdocs\optic\protected\controllers\SiteController.php(150): SiteController->actionExcel()
+#3 C:\xampp\htdocs\optic\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionReports()
+#4 C:\xampp\htdocs\optic\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CWebApplication->run()
+REQUEST_URI=/optic/site/reports
+in C:\xampp\htdocs\optic\protected\views\sales\excel.php (93)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (162)
+in C:\xampp\htdocs\optic\protected\controllers\SiteController.php (150)
+2014/11/06 21:05:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/06 21:09:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/06 21:14:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/06 21:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/login
+---
+2014/11/06 21:18:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/06 21:18:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/users/index
+---
+2014/11/06 21:18:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/users/admin
+---
+2014/11/06 21:18:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/users/update/9
+---
+2014/11/06 21:18:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/users/9
+---
+2014/11/06 21:18:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/users/admin
+---
+2014/11/06 21:18:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/users/update/8
+---
+2014/11/06 21:19:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/users/8
+---
+2014/11/06 21:19:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/users/admin
+---
+2014/11/06 21:19:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/users/update/10
+---
+2014/11/06 21:19:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/users/create
+---
+2014/11/06 21:20:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/users/11
+---
+2014/11/06 21:20:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/index
+---
+2014/11/06 21:20:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/06 21:27:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/06 21:32:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/06 21:34:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/06 21:35:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/06 21:35:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/site/reports
+---
+2014/11/06 22:06:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/office/index
+---
+2014/11/06 22:06:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\optic\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Sales/index')
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/optic/Sales/index?ido=1
+HTTP_REFERER=http://localhost/optic/office/index
+---
+2014/11/06 22:06:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/Sales/index?ido=1
+---
+2014/11/06 22:07:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/office/index
+---
+2014/11/06 22:07:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\optic\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\optic\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\optic\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\optic\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\optic\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\optic\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Sales/index')
+#9 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/optic/Sales/index?ido=1
+HTTP_REFERER=http://localhost/optic/office/index
+---
+2014/11/06 22:07:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "assets/f84f968d/mbmenu.css"' in C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\optic\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f84f968d...')
+#1 C:\xampp\htdocs\optic\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\optic\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/optic/assets/f84f968d/mbmenu.css
+HTTP_REFERER=http://localhost/optic/Sales/index?ido=1
+---

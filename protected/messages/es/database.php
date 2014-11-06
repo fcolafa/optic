@@ -79,6 +79,7 @@ return array(
 //r
 'Reports'=>'Reportes',
 'Report Type'=>'Tipo de Reporte',
+    'Data Type'=>'Tipo de Archivo',
  //Sales
 'Sales'=>'ventas',
 'Date'=>'Fecha de venta',
