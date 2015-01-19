@@ -45,6 +45,7 @@ $('.search-form form').submit(function(){
 	'id'=>'city-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+        'ajaxUpdate'=>false,
 	'columns'=>array(
 		'id_city',
 		'id_zone',

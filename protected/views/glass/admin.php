@@ -45,6 +45,7 @@ $('.search-form form').submit(function(){
 	'id'=>'glass-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+    'ajaxUpdate'=>false,
 	'columns'=>array(
 		'id_glass',
 		'sphere',

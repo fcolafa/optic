@@ -111,19 +111,23 @@ class ClientController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-            try{
-                $this->loadModel($id)->delete();
-            }catch (CDbException $e) {
-                if($e->errorInfo[1] == 1451) {
-                    header("HTTP/1.0 400 Relation Restriction");
-                     Yii::app()->user->setFlash('error', Yii::t('validation','Has this customer sales Associates. '));
-                } else {
-                    throw $e;
-                }
-            }
+          try{
+		$this->loadModel($id)->delete();
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+                if(!isset($_GET['ajax'])){
+                    Yii::app()->user->setFlash('success',Yii::t('validation','The element was deleted succesfully'));
+                    $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+                }
+                 
+            }
+            catch(CDbException $e)
+            {
+                if(!isset($_GET['ajax'])){
+                    Yii::app()->user->setFlash('error',Yii::t('validation','Can not delete this item because it have elements asociated it'));
+                    $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+                }
+                
+            } 
 	}
 
 	/**

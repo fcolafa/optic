@@ -110,11 +110,23 @@ class ProviderController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+		 try{
 		$this->loadModel($id)->delete();
-
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+                if(!isset($_GET['ajax'])){
+                    Yii::app()->user->setFlash('success',Yii::t('validation','The element was deleted succesfully'));
+                    $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+                }
+                 
+            }
+            catch(CDbException $e)
+            {
+                if(!isset($_GET['ajax'])){
+                    Yii::app()->user->setFlash('error',Yii::t('validation','Can not delete this item because it have elements asociated it'));
+                    $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+                }
+                
+            } 
 	}
 
 	/**

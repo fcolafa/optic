@@ -45,6 +45,7 @@ $('.search-form form').submit(function(){
 	'id'=>'provider-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+    'ajaxUpdate'=>false,
 	'columns'=>array(
 		'id_provider',
 		'provider_name',

@@ -45,6 +45,7 @@ $('.search-form form').submit(function(){
 	'id'=>'frames-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+    'ajaxUpdate'=>false,
 	'columns'=>array(
 		'id_frame',
 		'id_examplar',

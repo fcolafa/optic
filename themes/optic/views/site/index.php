@@ -93,7 +93,7 @@ $this->beginWidget('zii.widgets.CPortlet', array(
                         foreach ($office as $o){
                         echo "<tr>";   
                         echo "<th>".$o->office_name."</th>";
-                        $command = Yii::app()->db->createCommand(" call monthsales(". $o->id_office .",'".  date("y-m-d")."') ");
+                        $command = Yii::app()->db->createCommand(" call monthsales(". $o->id_office .",'".  date("Y")."') ");
                         $month = $command->queryAll();
                         $i=1;
                         foreach($month as $m){

@@ -29,7 +29,7 @@ class SalesController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'roles'=>array('Supervisor','Administrador','Control total'),
+				'roles'=>array('Supervisor','Administrador','Control Total'),
 			),
 			
 			array('allow',// allow authenticated user to perform 'create' and 'update' actions
@@ -136,11 +136,23 @@ class SalesController extends Controller
                     Yii::app()->user->setFlash('notice',Yii::t('validation','This sale cannot be deleted, because it has finished'));
                     $this->redirect(array('view','id'=>$model->id_sales,'ido'=>$model->id_office));
                 }else{
+                    try{
 		$this->loadModel($id)->delete();
-
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+                if(!isset($_GET['ajax'])){
+                    Yii::app()->user->setFlash('success',Yii::t('validation','The element was deleted succesfully'));
+                    $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+                }
+                 
+            }
+            catch(CDbException $e)
+            {
+                if(!isset($_GET['ajax'])){
+                    Yii::app()->user->setFlash('error',Yii::t('validation','Can not delete this item because it have elements asociated it'));
+                    $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+                }
+                
+            } 
 	}
         }
 	/**

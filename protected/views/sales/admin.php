@@ -55,11 +55,12 @@ $('.search-form form').submit(function(){
 	'id'=>'sales-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+        'ajaxUpdate'=>false,
         'afterAjaxUpdate'=>"function(){
-                                                        $.datepicker.setDefaults($.datepicker.regional['es']);
-                                                        $('#datepicker_for_due_date').datepicker({'dateFormat': 'yy-mm-dd'});
-                                                        
-                                                }",  // (#4)
+                $.datepicker.setDefaults($.datepicker.regional['es']);
+                $('#datepicker_for_due_date').datepicker({'dateFormat': 'yy-mm-dd'});
+
+            }",  
 	'columns'=>array(
 		'id_sales',
                 array('name'=>'idClient.client_rut',
@@ -137,6 +138,8 @@ $('.search-form form').submit(function(){
                          ),
                             'delete'=>array(
                                 'visible'=>'true',
+                                'url'=>'Yii::app()->controller->createUrl("delete",array("id"=>"$data->id_sales"));',
+                                'afterDelete'=>'function(link,success,data){ if(success) $("#flashes").html(data); }',
                             )
                         ),
 		),

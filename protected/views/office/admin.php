@@ -45,6 +45,7 @@ $('.search-form form').submit(function(){
 	'id'=>'office-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+    'ajaxUpdate'=>false,
 	'columns'=>array(
                 'id_office',
                  array('name'=>'idZone.zone_name',

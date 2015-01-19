@@ -111,8 +111,6 @@
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
                 
-                
-                
                 <!-- some validation message -->
         <div class="info" style="text-align: left;">
         <?php $flashMessages=Yii::app()->user->getFlashes();

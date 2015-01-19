@@ -45,6 +45,7 @@ $('.search-form form').submit(function(){
 	'id'=>'examplar-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+        'ajaxUpdate'=>false,
 	'columns'=>array(
 		'id_examplar',
 		'id_mark',

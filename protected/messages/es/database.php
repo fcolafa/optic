@@ -46,6 +46,8 @@ return array(
  'Sphere'=>'Esfera',
  'Cylinder'=>'Cilindro',
  'Critical Stock'=>'Stock Critico',
+    
+  'Login'=>'Conexión',
 
     
   //h  

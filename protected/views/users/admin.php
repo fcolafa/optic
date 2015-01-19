@@ -45,14 +45,40 @@ $('.search-form form').submit(function(){
 	'id'=>'users-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+      'afterAjaxUpdate'=>"function(){
+                $.datepicker.setDefaults($.datepicker.regional['es']);
+                $('#datepicker_for_due_date').datepicker({'dateFormat': 'yy-mm-dd'});
+
+            }",  
 	'columns'=>array(
 		'id_user',
 		'user_name',
-		  array(
-                'name'=>'date_create',
-                //'value'=>'date("d M Y",strtotime($data["work_date"]))'
-                'value'=>'Yii::app()->dateFormatter->format("d MMMM y \n HH:mm:ss",strtotime($data->date_create))'
-                ),
+		      array(
+                        'name' => 'date_create',
+                        'value'=>'Yii::app()->dateFormatter->format("d MMMM y \n HH:mm:ss",strtotime($data->date_create))',
+                        'filter' => $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+                            'model'=>$model, 
+                            'attribute'=>'date_create', 
+                            'language' => 'es',
+                         //   'i18nScriptFile' => 'jquery.ui.datepicker-en.js', 
+                            'htmlOptions' => array(
+                                'id' => 'datepicker_for_due_date',
+                                'size' => '10',
+                            ),
+                            'defaultOptions' => array(  
+                                'showOn' => 'focus', 
+                                'dateFormat' => 'yy-mm-dd',
+                                'showOtherMonths' => true,
+                                'selectOtherMonths' => true,
+                                'changeMonth' => true,
+                                'changeYear' => true,
+                                'showButtonPanel' => true,
+                              
+                            )
+                        ), 
+                        true),
+                       
+                    ),
              
 		'email',
                 'role',

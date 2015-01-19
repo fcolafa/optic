@@ -34,7 +34,7 @@ class Users extends CActiveRecord
 		return array(
 			array('user_name, password, password_repeat, email', 'required'),
                         array('_oldpassword,password, password_repeat','required' ,'on'=>'update'),
-                        array('user_name','unique'),
+                        array('user_name,email','unique'),
 			array('user_name, password, session, role, email', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

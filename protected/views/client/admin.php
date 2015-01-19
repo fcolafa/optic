@@ -45,6 +45,7 @@ $('.search-form form').submit(function(){
 	'id'=>'client-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+        'ajaxUpdate'=>false,
 	'columns'=>array(
 		'id_client',
 		'client_name',

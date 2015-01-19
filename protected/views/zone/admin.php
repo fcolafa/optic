@@ -45,11 +45,13 @@ $('.search-form form').submit(function(){
 	'id'=>'zone-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+        'ajaxUpdate'=>false,
 	'columns'=>array(
 		'id_zone',
 		'zone_name',
 		array(
 			'class'=>'CButtonColumn',
+                        //'afterDelete'=>'function(link,success,data){ if(success) $(".info").html(data); }',
 		),
 	),
 )); ?>

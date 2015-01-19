@@ -45,6 +45,7 @@ $('.search-form form').submit(function(){
 	'id'=>'mark-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+    'ajaxUpdate'=>false,
 	'columns'=>array(
 		'id_mark',
 		'mark_name',

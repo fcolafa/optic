@@ -21,7 +21,7 @@ if(isset($office)){?>
                 
                 
                     <?php 
-                        $command = Yii::app()->db->createCommand(" call monthsales(". $o->id_office .",'".$year."-01-01') ");
+                        $command = Yii::app()->db->createCommand(" call monthsales(". $o->id_office .",".$year.") ");
                         $month = $command->queryAll();
                         $total=0;
                         $sales=array_fill(1,13,0);
