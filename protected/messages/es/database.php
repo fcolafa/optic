@@ -47,13 +47,14 @@ return array(
  'Cylinder'=>'Cilindro',
  'Critical Stock'=>'Stock Critico',
     
-  'Login'=>'Conexión',
-
+ 
+ 'Global Configuration'=>'Configuración Global',
+ 'Languaje'=>'Idioma',
     
   //h  
  'Home'=>'Inicio',
 
-    
+ 'Login'=>'Conexión',  
  //marks
  'Mark'=>'Marca',
  'Marks'=>'Marcas',

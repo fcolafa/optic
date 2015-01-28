@@ -26,17 +26,14 @@
         <a href="<?php echo Yii::app()->createUrl('/site/report') ?>"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-chart.png" alt="Page" /></a>
         <div class="dashIconText"><a href="<?php echo Yii::app()->createUrl('/site/reports') ?>"><?php echo Yii::t('database','Reports')?></a></div>
     </div>
-    
-  
-    
-    <div class="dashIcon span-3">
-        <a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-calendar.png" alt="Calendar" /></a>
-        <div class="dashIconText"><a href="#">Calendar</a></div>
-    </div>
   <?php if(Yii::app()->user->checkAccess('Control Total')){?>
      <div class="dashIcon span-3">
-        <a href="<?php echo Yii::app()->baseurl?>/zone/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-map2.png" alt="Calendar" /></a>
+        <a href="<?php echo Yii::app()->baseurl?>/zone/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-map2.png" /></a>
         <div class="dashIconText"><a href="<?php echo Yii::app()->baseurl?>/zone/"><?php echo Yii::t('database','Zones') ?></a></div>
+    </div>
+    <div class="dashIcon span-3">
+        <a href="<?php echo Yii::app()->baseurl?>/site/globalConfig/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-gears.png" /></a>
+        <div class="dashIconText"><a href="<?php echo Yii::app()->baseurl?>/site/globalConfig/"><?php echo Yii::t('database','Global Configuration') ?></a></div>
     </div>
   <?php }?>
      

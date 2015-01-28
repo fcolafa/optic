@@ -58,42 +58,54 @@ class SiteController extends Controller
 	/**
 	 * Displays the contact page
 	 */
-	public function actionContact()
+	public function actionContact($cuerpo="")
 	{
 		$model=new ContactForm;
+                $model->body=$cuerpo;
                 
 		if(isset($_POST['ContactForm']))
 		{
 			$model->attributes=$_POST['ContactForm'];
-                        $model->verifyCode->refresh();
-			if($model->validate())
+       			if($model->validate())
 			{
                             Yii::import('application.extensions.phpmailer.JPhpMailer');
                             $mail = new JPhpMailer;
                             $mail->IsSMTP();
-                            $mail->Host = 'smtp.googlemail.com';
-                            $mail->Port='465'; 
-                            $mail->SMTPSecure = "ssl";
+                            if( strpos(Yii::app()->params['adminEmail'],'gmail.com')==true){
+                                $mail->Host = 'smtp.googlemail.com';
+                                $mail->Port='465'; 
+                                $mail->SMTPSecure = "ssl";
+                            }
+                            elseif( strpos(Yii::app()->params['adminEmail'],'hotmail.com')==true){
+                                $mail->Host='smtp.live.com';
+                                $mail->Port='587';
+                                $mail->SMTPSecure = "tls";    
+                            }
+                            else
+                                Yii::app()->user->setFlash('error',"No existe SMTP para la direccion de correo seleccionada");  
+                           
+                            
                             $mail->SMTPAuth = true;
-                            $mail->Username = 'fco.lafa@gmail.com';
-                            $mail->Password = 'badreligion12689';
+                            $mail->Username = Yii::app()->params['adminEmail'];
+                            $mail->Password = Yii::app()->params['passwordEmail'];
                             $mail->SetFrom('fco.lafa@gmail.com', 'ñeflen');
                             $mail->Subject = $model->subject;
                             $mail->AltBody = 'To view the message, please use an HTML compatible email viewer!';
-                            $mail->MsgHTML('<h1>JUST A TEST!</h1><br>'.$model->body);
+                            $mail->MsgHTML('<h1>Optilens!</h1><br>'.$model->body);
                             $provider=  Provider::model()->findbyPk($model->email);
                             $mail->AddAddress($provider->email_provider,$provider->provider_name );
-
-                            if ($mail->send()) {
+                            try {
+                            if ($mail->send())
                                 Yii::app()->user->setFlash('notice',"mensaje enviado");
-                                $model->verifyCode->refresh();
+                            else 
+                                Yii::app()->user->setFlash('error',"error al enviar mensaje");                            
                             }
-                            else {
-                                Yii::app()->user->setFlash('error',"error al enviar mensaje");
-                                $model->verifyCode->refresh();
-                            }
-			}
+                            catch (Exception $ex) {
+                                Yii::app()->user->setFlash('error',"Error de Auntetificacion, verifique email y contraseña en configuracion global");  
+                        }
+			
 		}
+                }
                  
                  
                 if(Yii::app()->user->isGuest)
@@ -101,6 +113,30 @@ class SiteController extends Controller
                  else
 		$this->render('contact',array('model'=>$model));
 	}
+        public function actionGlobalConfig()
+        {
+            $file = dirname(__FILE__).'../../config/params.inc';
+            $content = file_get_contents($file);
+            $arr = unserialize(base64_decode($content));
+            $model=new GlobalConfig;
+            $model->setAttributes($arr);
+            if(isset($_POST['GlobalConfig']))
+            {
+                $model->attributes=$_POST['GlobalConfig'];
+                 $config = array(        
+                'adminEmail'=>$_POST['GlobalConfig']['adminEmail'],
+                'passwordEmail'=>$_POST['GlobalConfig']['passwordEmail'],
+                );
+                 $str = base64_encode(serialize($config));
+                 file_put_contents($file, $str);
+                 $model->setAttributes($config);
+                 Yii::app()->user->setFlash('notice',"Configuracion Guardada Correctamente ");
+                 $this->redirect(Yii::app()->baseUrl.'/site/index');
+            }
+            $this->render('GlobalConfig',array('model'=>$model));
+                
+            
+        }
 
 	/**
 	 * Displays the login page

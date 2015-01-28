@@ -32,9 +32,14 @@
 <div class="container" id="page">
 
 	<div id="topnav">
+            
+              
             <div class="topnav_text"> 
-               
-                <?php 
+                
+              
+              
+               <?php 
+             
                 if(!Yii::app()->user->isGuest){?>
                
                 <?php
@@ -59,16 +64,24 @@
                        $glass=  Glass::model()->findAll('amount<=critical_stock');
                        if(isset($glass)){
                            echo "los siguientes Cristales estan bajo el stock deseado <br>";
+                           $cuerpo="";
                            foreach($glass as $gl){
-                           echo CHtml::link( "id(".$gl->id_glass.")  Esfera(". $gl->sphere.") Cilindro(".$gl->cylinder.") <br> ",array("glass/view", 'id'=>$gl->id_glass));                          
-                           }
+                           $linea="Esfera(". $gl->sphere.") Cilindro(".$gl->cylinder.") ";
+                           $cuerpo.=$linea."\n";
+                           $linea.="<br>";
+                           echo CHtml::link($linea,array("glass/view", 'id'=>$gl->id_glass)); 
+                              }
+                           echo CHtml::link("solicitar Cristales",array('site/contact','cuerpo'=>$cuerpo));
+                             
                        }
                     $this->endWidget('zii.widgets.jui.CJuiDialog');
                     /** End Widget **/
                     echo CHtml::button(Yii::t('actions','System Alerts'), array(
                        'class'=>'button grey',
                        'onclick'=>'$("#dialog-animation").dialog("open"); return false;',
-                    ));}?>               
+                    ));}?>
+              
+                   
             </div>
 	</div>
     
@@ -105,6 +118,8 @@
   ));?> 
 
 	</div> <!--mainmenu -->
+            <?php    $this->widget('ext.LangPick.ELangPick', array(      
+               )); ?>
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
@@ -123,13 +138,14 @@
             }   
         ?>
         </div>
-
+               
 	<?php echo $content; ?>
 
         <div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by Francisco Lagos.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered();  ?>
+                
 	</div><!-- footer -->
 
 </div><!-- page -->
