@@ -7,10 +7,12 @@
  * @property integer $id_frame
  * @property integer $id_examplar
  * @property integer $id_mark
+ * @property string $frame_name
  *
  * The followings are the available model relations:
- * @property Mark $idMark
  * @property Examplar $idExamplar
+ * @property Mark $idMark
+ * @property Sales[] $sales
  */
 class Frames extends CActiveRecord
 {
@@ -32,9 +34,10 @@ class Frames extends CActiveRecord
 		return array(
 			array('id_examplar, id_mark', 'required'),
 			array('id_examplar, id_mark', 'numerical', 'integerOnly'=>true),
+                        array('frame_name', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_frame, id_examplar, id_mark', 'safe', 'on'=>'search'),
+			array('id_frame, id_examplar, id_mark, frame_name', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -46,8 +49,9 @@ class Frames extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idMark' => array(self::BELONGS_TO, 'Mark', 'id_mark'),
 			'idExamplar' => array(self::BELONGS_TO, 'Examplar', 'id_examplar'),
+                        'idMark' => array(self::BELONGS_TO, 'Mark', 'id_mark'),
+                        'sales' => array(self::HAS_MANY, 'Sales', 'id_frame'),
 		);
 	}
 
@@ -60,6 +64,7 @@ class Frames extends CActiveRecord
 			'id_frame' => Yii::t('database','Id Frame'),
 			'id_examplar' => Yii::t('database','Id Examplar'),
 			'id_mark' => Yii::t('database','Id Mark'),
+                        'frame_name' => Yii::t('database','Frame Name'),
 		);
 	}
 
@@ -84,6 +89,7 @@ class Frames extends CActiveRecord
 		$criteria->compare('id_frame',$this->id_frame);
 		$criteria->compare('id_examplar',$this->id_examplar);
 		$criteria->compare('id_mark',$this->id_mark);
+                $criteria->compare('frame_name',$this->frame_name,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

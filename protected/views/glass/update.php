@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>Yii::t('actions','List')." ". Yii::t('database','Glass'), 'url'=>array('index')),
+	array('label'=>Yii::t('actions','List')." ". Yii::t('database','Glasses'), 'url'=>array('index')),
 	array('label'=>Yii::t('actions','Create')." ". Yii::t('database','Glass'), 'url'=>array('create')),
 	array('label'=>Yii::t('actions','View')." ". Yii::t('database','Glass'), 'url'=>array('view', 'id'=>$model->id_glass)),
-	array('label'=>Yii::t('actions','Manage')." ". Yii::t('database','Glass'), 'url'=>array('admin')),
+	array('label'=>Yii::t('actions','Manage')." ". Yii::t('database','Glasses'), 'url'=>array('admin')),
 );
 ?>
 

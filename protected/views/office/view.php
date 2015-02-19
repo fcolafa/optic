@@ -22,8 +22,8 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id_office',
-		'id_city',
-		'id_zone',
+                'idZone.zone_name',
+		'idCity.city_name',
 		'office_name',
                 'office_address',
 	),

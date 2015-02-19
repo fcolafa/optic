@@ -31,15 +31,29 @@ return array(
  'Body'=>'Cuerpo',
  'Verification Code'=>'Codigo de Verificación',
   'Contact Providers'=>'Contactar Proveedores',
+    //Contactlenses
+    'Contact Lenses'=>'lentes de contacto',
+    'ContactLense'=>'lente de contacto',
+   'ContactLenses'=>'lentes de Contacto', 
+  'Id Contactlenses'=>'Id lente Contacto',
+  'Material'=>'Material',
+  'Base Curve'=>'Curva Base',
+  'Laboratory'=>'Laboratorio',
+    'Dk'=>'DK',
+    'Amount'=>'Cantidad',
   //examplar
  'Examplar'=>'Modelo',
  'Examplars'=>'Modelos',
  'Id Examplar'=>'Id Modelo',
  'Examplar Name'=>'Nombre Modelo' ,  
+  //File
+ 'File'=>'Archivo',
+ 'Import Data'=>'Importar Datos',
  //frames
  'Frame'=>'Armazon',
  'Frames'=>'Armazones',
  'Id Frame'=>'Id Armazon',
+ 'Frame Name'=>'Nombre Armazon',
  //glass
  'Glass'=>'Cristal',
  'Glasses'=>'Cristales',
@@ -82,7 +96,9 @@ return array(
 //r
 'Reports'=>'Reportes',
 'Report Type'=>'Tipo de Reporte',
-    'Data Type'=>'Tipo de Archivo',
+'Data Type'=>'Tipo de Archivo',
+'Init Date'=>'Fecha Inicial',
+'End Date'=>'Fecha Final',
  //Sales
 'Sales'=>'ventas',
 'Date'=>'Fecha de venta',

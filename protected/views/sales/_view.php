@@ -33,6 +33,9 @@
          <b><?php echo CHtml::encode($data->getAttributeLabel('id_user')); ?>:</b>
 	<?php echo CHtml::encode($data->id_user); ?>
 	<br />
+        <b><?php echo CHtml::encode($data->getAttributeLabel('id_frame')); ?>:</b>
+	<?php echo CHtml::encode($data->id_frame); ?>
+	<br />
 
 
 </div>

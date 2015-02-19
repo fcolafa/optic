@@ -43,6 +43,10 @@
 		<?php echo $form->label($model,'id_user'); ?>
 		<?php echo $form->textField($model,'id_user'); ?>
 	</div>
+        <div class="row">
+		<?php echo $form->label($model,'id_frame'); ?>
+		<?php echo $form->textField($model,'id_frame'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton(Yii::t('actions','Search'),array('class'=>Yii::app()->params['btnclass'])); ?>

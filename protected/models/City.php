@@ -16,7 +16,9 @@ class City extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
+         * 
 	 */
+        public $_zonename;
 	public function tableName()
 	{
 		return 'city';
@@ -36,6 +38,7 @@ class City extends CActiveRecord
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id_city, id_zone, city_name', 'safe', 'on'=>'search'),
+                        array('_zonename','safe', 'on'=>'search'),
 		);
 	}
 
@@ -81,11 +84,13 @@ class City extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
+                $criteria->with=array('idZone');
+                $criteria->together=true;
 
 		$criteria->compare('id_city',$this->id_city);
 		$criteria->compare('id_zone',$this->id_zone);
 		$criteria->compare('city_name',$this->city_name,true);
-
+                $criteria->compare('idZone.zone_name', $this->_zonename,true);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

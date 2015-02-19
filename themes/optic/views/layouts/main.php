@@ -99,6 +99,7 @@
                   'visible'=>!Yii::app()->user->isGuest,
                   'items'=>array(
                     array('label'=>Yii::t('database','Glasses'), 'url'=>array('/Glass/index')),
+                    array('label'=>Yii::t('database','Contact Lenses'), 'url'=>array('/contactlenses/index')),
                     array('label'=>Yii::t('database','Marks'), 'url'=>array('/mark/index')),
                     array('label'=>Yii::t('database','Examplars'), 'url'=>array('/examplar/index')),
                     array('label'=>Yii::t('database','Frames'), 'url'=>array('/frames/index')),

@@ -41,6 +41,7 @@ if(isset($ido))
                 'type',
                 'pay',
 		'price',
+            'id_frame',
                 array(
                   'name'=>'status',
                     'value'=>$model->status==1?"Finalizada":"Pendiente",

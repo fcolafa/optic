@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>Yii::t('actions','List')." ". Yii::t('database','Sales'), 'url'=>array('index')),
-	array('label'=>Yii::t('actions','Create')." ". Yii::t('database','Sales'), 'url'=>array('create')),
-	array('label'=>Yii::t('actions','View')." ". Yii::t('database','Sales'), 'url'=>array('view', 'id'=>$model->id_sales)),
-	array('label'=>Yii::t('actions','Manage')." ". Yii::t('database','Sales'), 'url'=>array('admin')),
+        array('label'=>Yii::t('actions','List')." ". Yii::t('database','Sales'), 'url'=>array('index','ido'=>$ido)),
+	array('label'=>Yii::t('actions','Manage')." ". Yii::t('database','Sales'), 'url'=>array('admin','ido'=>$ido)),
+	array('label'=>Yii::t('actions','Create')." ". Yii::t('database','Sales'), 'url'=>array('create','ido'=>$ido)),
+	array('label'=>Yii::t('actions','View')." ". Yii::t('database','Sales'), 'url'=>array('view', 'id'=>$model->id_sales, 'ido'=>$ido)),
 );
 ?>
 

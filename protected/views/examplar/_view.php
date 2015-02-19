@@ -10,7 +10,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id_mark')); ?>:</b>
-	<?php echo CHtml::encode($data->id_mark); ?>
+	<?php echo CHtml::encode($data->idMark->mark_name); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('examplar_name')); ?>:</b>

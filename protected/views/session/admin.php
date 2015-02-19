@@ -58,31 +58,8 @@ $('.search-form form').submit(function(){
                     ),
                     array(
                         'name' => 'login',
-                        'value'=>'Yii::app()->dateFormatter->format("d MMMM y \n HH:mm:ss",strtotime($data->login))',
-                        'filter' => $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-                            'model'=>$model, 
-                            'attribute'=>'login', 
-                            'language' => 'es',
-                            
-                         //   'i18nScriptFile' => 'jquery.ui.datepicker-en.js', 
-                            'htmlOptions' => array(
-                                'id' => 'datepicker_for_due_date',
-                                'size' => '10',
-                                  'dateFormat' => 'yy-mm-dd',
-                            ),
-                            'defaultOptions' => array(  
-                                'showOn' => 'focus', 
-                                'dateFormat' => 'yy-mm-dd',
-                                'showOtherMonths' => true,
-                                'selectOtherMonths' => true,
-                                'changeMonth' => true,
-                                'changeYear' => true,
-                                'showButtonPanel' => true,
-                              
-                            )
-                        ), 
-                        true),
-                       
+                            'value'=>'Yii::app()->dateFormatter->format("d MMMM y \n HH:mm:ss",strtotime($data->login))',
+
                     ),
              
             

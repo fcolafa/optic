@@ -1,3 +1,20 @@
+<script type='text/javascript'>
+       $(document).ready(function(){
+
+  var droplist = $('#Sales_type');
+  if(droplist.val()=='Contacto')
+       $('#frame').hide();
+  droplist.change(function(e){
+    if (droplist.val() == 'Optico') {
+      $('#frame').show();
+    }
+    else {
+      $('#frame').hide();
+    }
+  })
+});
+ 
+</script>
 <?php
 /* @var $this SalesController */
 /* @var $model Sales */
@@ -61,6 +78,12 @@
 		<?php echo $form->dropDownList($model,'type',array('Contacto'=>'Contacto','Optico'=>'Optico')); ?>
 		<?php echo $form->error($model,'type'); ?>
 	</div>
+         
+        <div class="row" id="frame">
+		<?php echo $form->labelEx($model,'id_frame'); ?>
+		<?php echo $form->dropDownList($model,'id_frame',CHtml::listData(Frames::model()->findAll(),'id_frame','frame_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Frame'))); ?>
+		<?php echo $form->error($model,'id_frame'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'pay'); ?>
@@ -72,6 +95,7 @@
 		<?php echo $form->textField($model,'price'); ?>
 		<?php echo $form->error($model,'price'); ?>
 	</div>
+       
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save'),array('class'=>Yii::app()->params['btnclass'])); ?>

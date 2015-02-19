@@ -50,6 +50,7 @@ $('.search-form form').submit(function(){
 		'id_frame',
 		'id_examplar',
 		'id_mark',
+                'frame_name',
 		array(
 			'class'=>'CButtonColumn',
 		),

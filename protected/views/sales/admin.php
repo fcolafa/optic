@@ -76,47 +76,25 @@ $('.search-form form').submit(function(){
                     'filter'=>  CHtml::activeTextField($model, '_clientlname'),
                     ),
             
-                array('name'=>'idUser.user_name',
+                array(
+                    'name'=>'idUser.user_name',
                     'value'=>'$data->idUser->user_name',
                     'filter'=>  CHtml::activeTextField($model, '_username'),
                     ),
+            
                 array(    
                     'name'=>'type',
                     'filter'=>array('Optico'=>'Optico','Contacto'=>'Contacto'),
                     'value'=>'$data->type',
       
                 ),
-                     array(
-                        'name' => 'date',
-                        'value'=>'Yii::app()->dateFormatter->format("d MMMM y \n HH:mm:ss",strtotime($data->date))',
-                        'filter' => $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-                            'model'=>$model, 
-                            'attribute'=>'date', 
-                            'language' => 'es',
-                         //   'i18nScriptFile' => 'jquery.ui.datepicker-en.js', 
-                            'htmlOptions' => array(
-                                'id' => 'datepicker_for_due_date',
-                                'size' => '10',
-                            ),
-                            'defaultOptions' => array(  
-                                'showOn' => 'focus', 
-                                'dateFormat' => 'yy-mm-dd',
-                                'showOtherMonths' => true,
-                                'selectOtherMonths' => true,
-                                'changeMonth' => true,
-                                'changeYear' => true,
-                                'showButtonPanel' => true,
-                              
-                            )
-                        ), 
-                        true),
-                       
-                    ),
-		/**  array(
+              
+          
+		  array(
                 'name'=>'date',
                 //'value'=>'date("d M Y",strtotime($data["work_date"]))'
                 'value'=>'Yii::app()->dateFormatter->format("d MMMM y \n HH:mm:ss",strtotime($data->date))'
-                ),**/
+                ),
 		'price',
                 array(
                     
@@ -125,6 +103,7 @@ $('.search-form form').submit(function(){
                     'value'=>'($data->status=="1")?("Finalizada"):("Pendiente")'
       
                 ),
+            
                
         
 		array(
@@ -143,6 +122,7 @@ $('.search-form form').submit(function(){
                             )
                         ),
 		),
+            
             
 	),
 )); 

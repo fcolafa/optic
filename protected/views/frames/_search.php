@@ -25,6 +25,10 @@
 		<?php echo $form->label($model,'id_mark'); ?>
 		<?php echo $form->textField($model,'id_mark'); ?>
 	</div>
+        <div class="row">
+		<?php echo $form->label($model,'frame_name'); ?>
+		<?php echo $form->textField($model,'frame_name',array('size'=>45,'maxlength'=>45)); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton(Yii::t('actions','Search'),array('class'=>Yii::app()->params['btnclass'])); ?>

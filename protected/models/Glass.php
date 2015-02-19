@@ -30,6 +30,7 @@ class Glass extends CActiveRecord
 			array('amount, critical_stock', 'numerical', 'integerOnly'=>true),
 			array('sphere, cylinder', 'numerical','max'=>30,'min'=>-30),
                         array('sphere, cylinder','validateUnique'),
+                        array('critical_stock','compare','compareAttribute'=>'amount','operator'=>'<=','message'=>' el stock critico no puede ser mayor a la cantidad de cristales'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id_glass, sphere, cylinder, amount, critical_stock', 'safe', 'on'=>'search'),
@@ -118,4 +119,5 @@ class Glass extends CActiveRecord
 
             
         }
+        
 }

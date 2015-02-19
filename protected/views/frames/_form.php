@@ -41,7 +41,12 @@
 		<?php echo $form->dropDownList($model,'id_examplar',CHtml::listData(Examplar::model()->findAll('id_mark=:id_mark',array(':id_mark'=>$model->id_mark)),'id_examplar','examplar_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Examplar'))); ?>
 		<?php echo $form->error($model,'id_examplar'); ?>
 	</div>
-
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'frame_name'); ?>
+		<?php echo $form->textField($model,'frame_name',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->error($model,'frame_name'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save'),array('class'=>Yii::app()->params['btnclass'])); ?>

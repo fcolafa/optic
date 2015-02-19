@@ -11,6 +11,7 @@ return array(
 'Has this customer sales Associates. '=>'Tiene ventas Asosiciadas a este Cliente. ',    
 'Invalid Rut'=>'Rut Incorrecto',
 'This crystal already exists'=>'Este Crystal Existe en stock',
+'This Conctact Lense already exists'=>'Este lente de Contacto Existe en Stock',
 'The pay must be lower than price'=>'El monto del abono debe ser menor que el monto de la venta',
 'This sale cannot be updated, because it has finished'=>'No se puede modificar esta venta, debido a que ha sido finalizada',
 'This sale cannot be deleted, because it has finished'=>'No se puede eliminar esta venta, debido a que ha sido finalizada',

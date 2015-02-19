@@ -48,7 +48,10 @@ $('.search-form form').submit(function(){
         'ajaxUpdate'=>false,
 	'columns'=>array(
 		'id_city',
-		'id_zone',
+		  array('name'=>'idZone.zone_name',
+                    'value'=>'$data->idZone->zone_name',
+                    'filter'=>  CHtml::activeTextField($model, '_zonename'),
+                    ),
 		'city_name',
 		array(
 			'class'=>'CButtonColumn',

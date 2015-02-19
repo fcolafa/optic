@@ -88,7 +88,7 @@ class SiteController extends Controller
                             $mail->SMTPAuth = true;
                             $mail->Username = Yii::app()->params['adminEmail'];
                             $mail->Password = Yii::app()->params['passwordEmail'];
-                            $mail->SetFrom('fco.lafa@gmail.com', 'ñeflen');
+                            $mail->SetFrom(Yii::app()->params['adminEmail'], Yii::app()->params['adminEmail']);
                             $mail->Subject = $model->subject;
                             $mail->AltBody = 'To view the message, please use an HTML compatible email viewer!';
                             $mail->MsgHTML('<h1>Optilens!</h1><br>'.$model->body);
@@ -137,7 +137,7 @@ class SiteController extends Controller
                 
             
         }
-
+   
 	/**
 	 * Displays the login page
 	 */
@@ -182,30 +182,24 @@ class SiteController extends Controller
             {
                 $model->attributes=$_POST['Reports'];
                 if($model->validate()){
-                 //   if($model->datatype=='Excel')
-                        $this->actionExcel($model->reportyear);
-                    
-                   // if($model->datatype=='PDF')
-                   //  $this->actionPdf();   
+                   if($model->reportype=='1'){
+                       
+                        $Office= Office::model()->findAll();
+                        Yii::app()->request->sendFile('ReporteAnual-'.$model->reportyear .'.xls',  
+                        $this->renderPartial('/Sales/excel',array('office'=>$Office,'year'=>$model->reportyear)),true);
+                      
+                   }
+                    elseif($model->reportype=='2')
+                        $Office= Office::model()->findByPk($model->office);
+                        $initdate=Yii::app()->dateFormatter->format('yyyy/MM/dd, hh:mm',$model->initdate);
+                        $endate=Yii::app()->dateFormatter->format('yyyy/MM/dd, hh:mm',$model->endate);
+                        Yii::app()->request->sendFile('ReporteDetallado-'.$model->initdate.'al'.$model->endate.'.xls', 
+               
+                        $this->renderPartial('/Sales/rangexcel',array('office'=>$Office,'initdate'=>$initdate, 'endate'=>$endate)),true);
                     
                 }
             }
             $this->render('reports',array('model'=>$model));
         }
-        public function actionExcel($year){
-            $Office= Office::model()->findAll();
-            Yii::app()->request->sendFile('ReporteAnual-'.$year .'.xls',  
-            $this->renderPartial('/Sales/excel',array('office'=>$Office,'year'=>$year)),true);
-            $this->render('reports',array('model'=>$model));
-
-        }
         
-        
-         public function actionPdf(){
-            $office=new CActiveDataProvider('Office');
-            $html2pdf = Yii::app()->ePdf->HTML2PDF();
-            $html2pdf = new HTML2PDF('P', 'A4', 'es');
-            $html2pdf->WriteHTML($this->renderPartial('/Sales/indexpdf', array('office'=>$office,), true));
-            $html2pdf->Output();	
-        }
 }

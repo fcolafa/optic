@@ -32,6 +32,7 @@ class Sales extends CActiveRecord
          public $_username;
          public $_reportype;
          public $_reportyear;
+        
          public function tableName()
 	{
 		return 'sales';
@@ -46,12 +47,12 @@ class Sales extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('id_client, id_office, date, type', 'required'),
-			array('id_client, id_office, id_user' , 'numerical', 'integerOnly'=>true),
+			array('id_client, id_office, id_user, id_frame' , 'numerical', 'integerOnly'=>true),
 			array('pay, price, status' , 'numerical'),
                         array('type', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_sales, id_client, id_office, type, pay, date,status, price', 'safe', 'on'=>'search'),
+			array('id_sales, id_client, id_office, type, pay, date,status, price, id_frame', 'safe', 'on'=>'search'),
                         array('_officename,_username, _clientname, _clientrut, _clientlname,id_user','safe','on'=>'search'),
                         array('pay','compare','compareAttribute'=>'price','operator'=>'<=','message'=>' El abono no puede ser mayor al precio'),
                     );
@@ -65,6 +66,7 @@ class Sales extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'idClient' => array(self::BELONGS_TO, 'Client', 'id_client'),
+                        'idFrame' => array(self::BELONGS_TO, 'Frames', 'id_frame'),
 			'idOffice' => array(self::BELONGS_TO, 'Office', 'id_office'),
                         'idUser' => array(self::BELONGS_TO, 'Users', 'id_user'),
 		);
@@ -86,6 +88,8 @@ class Sales extends CActiveRecord
                         'status'=>  Yii::t('database','Status'),
                         '_reportype'=>Yii::t('database','Report Type'),
                         '_reportyear'=>Yii::t('database',' Report Year'),
+                        'id_frame' => Yii::t('database','Id Frame'),
+                        '_framename'=>Yii::t('database','Frame Name'),
                         
 		);
 	}
@@ -118,12 +122,14 @@ class Sales extends CActiveRecord
                 $criteria->compare('type',$this->type,true);
 		$criteria->compare('pay',$this->pay);
                 $criteria->compare('status', $this->status);
+              
                 
                 $criteria->compare('idOffice.office_name',$this->_officename, true);
                 $criteria->compare('idClient.client_name',$this->_clientname, true);
                 $criteria->compare('idClient.client_lastname',$this->_clientlname, true);
                 $criteria->compare('idClient.client_rut',$this->_clientrut, true);
                 $criteria->compare('idUser.user_name',$this->_username, true);
+        
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -17,5 +17,9 @@
 	<?php echo CHtml::encode($data->id_mark); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('frame_name')); ?>:</b>
+	<?php echo CHtml::encode($data->frame_name); ?>
+	<br />
+
 
 </div>

@@ -24,5 +24,6 @@ $this->menu=array(
 		'id_frame',
 		'id_examplar',
 		'id_mark',
+                'frame_name',
 	),
 )); ?>

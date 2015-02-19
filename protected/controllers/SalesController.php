@@ -75,6 +75,97 @@ class SalesController extends Controller
                         date_default_timezone_set('America/Santiago');
                         $model->date=  date("y-m-d H:i:s");
                         $model->id_user=Yii::app()->user->id;
+                        if($model->type=="Optico"){
+                            $criteria= new CDbCriteria();
+                            $criteria->condition = 'sphere='.$model->idClient->righteye_sphere.' AND cylinder='.$model->idClient->righteye_cylinder;        
+                            $right=Glass::model()->find($criteria);
+                            $criteria2= new CDbCriteria();
+                            $criteria2->condition='sphere='.$model->idClient->lefteye_sphere.' AND cylinder='.$model->idClient->lefteye_cylinder; 
+                            $left=  Glass::model()->find($criteria2);
+                            if($right && $left){
+                                Yii::app()->user->setFlash('success','Cristales descontados de Stock');
+                                $sql = "UPDATE glass SET amount=amount-1 WHERE sphere=".
+                                $model->idClient->righteye_sphere." AND cylinder=".
+                                $model->idClient->righteye_cylinder. "OR sphere=".
+                                $model->idClient->lefteye_sphere." AND cylinder=".
+                                $model->idClient->lefteye_cylinder; 
+                                $connection = Yii::app() -> db;
+                                $command = $connection -> createCommand($sql);
+                                $command -> execute();
+                            }
+                            elseif($right && !$left) {
+                                $cuerpo='Esfera= '.$model->idClient->lefteye_sphere.' Cilindro='.$model->idClient->lefteye_cylinder;
+                                $sql = "UPDATE glass SET amount=amount-1 WHERE sphere=".
+                                $model->idClient->righteye_sphere." AND cylinder=".
+                                $model->idClient->righteye_cylinder;
+                                $connection = Yii::app() -> db;
+                                $command = $connection -> createCommand($sql);
+                                $command -> execute();
+                                Yii::app()->user->setFlash('notice', 'Cristal Ojo Derecho Descontado de Stock, desea solicitar'.  CHtml::link(" Cristal Ojo izquierdo",array('site/contact','cuerpo'=>$cuerpo)));
+                                
+                            }elseif(!$right && $left){
+                                $cuerpo='Esfera= '.$model->idClient->righteye_sphere.' Cilindro='.$model->idClient->righteye_cylinder;
+                                $sql = "UPDATE glass SET amount=amount-1 WHERE sphere=".
+                                $model->idClient->lefteye_sphere." AND cylinder=".
+                                $model->idClient->lefteye_cylinder; 
+                                $connection = Yii::app() -> db;
+                                $command = $connection -> createCommand($sql);
+                                $command -> execute();
+                                Yii::app()->user->setFlash('notice', 'Cristal Ojo izquierdo Descontado de Stock, Desea solicitar'. CHtml::link(" Cristal Ojo Derecho",array('site/contact','cuerpo'=>$cuerpo)));
+                            }else{
+                              
+                                $cuerpo=' Ojo Izquierdo Esfera= '.$model->idClient->lefteye_sphere.' Cilindro='.$model->idClient->lefteye_cylinder."\n";
+                                $cuerpo.='Ojo Derecho Esfera= '.$model->idClient->righteye_sphere.' Cilindro='.$model->idClient->righteye_cylinder;
+                                Yii::app()->user->setFlash('notice', "Cristales no Encontrados\n". CHtml::link("solicitar Cristales",array('site/contact','cuerpo'=>$cuerpo)));
+                            }
+                                    
+                         
+                        }elseif($model->type=="Contacto"){
+                            $criteria= new CDbCriteria();
+                            $criteria->condition = 'sphere='.$model->idClient->righteye_sphere.' AND cylinder='.$model->idClient->righteye_cylinder;        
+                            $right=  ContactLenses::model()->find($criteria);
+                            $criteria2= new CDbCriteria();
+                            $criteria2->condition='sphere='.$model->idClient->lefteye_sphere.' AND cylinder='.$model->idClient->lefteye_cylinder; 
+                            $left= ContactLenses::model()->find($criteria2);
+                            if($right && $left){
+                                Yii::app()->user->setFlash('success','Lentes de Contacto descontados de Stock');
+                                $sql = "UPDATE contact_lenses SET amount=amount-1 WHERE sphere=".
+                                $model->idClient->righteye_sphere." AND cylinder=".
+                                $model->idClient->righteye_cylinder. "OR sphere=".
+                                $model->idClient->lefteye_sphere." AND cylinder=".
+                                $model->idClient->lefteye_cylinder; 
+                                $connection = Yii::app() -> db;
+                                $command = $connection -> createCommand($sql);
+                                $command -> execute();
+                            }
+                            elseif($right && !$left) {
+                                $cuerpo='Esfera= '.$model->idClient->lefteye_sphere.' Cilindro='.$model->idClient->lefteye_cylinder;
+                                $sql = "UPDATE contact_lenses SET amount=amount-1 WHERE sphere=".
+                                $model->idClient->righteye_sphere." AND cylinder=".
+                                $model->idClient->righteye_cylinder;
+                                $connection = Yii::app() -> db;
+                                $command = $connection -> createCommand($sql);
+                                $command -> execute();
+                                Yii::app()->user->setFlash('notice', 'Lente de Contacto Ojo Derecho Descontado de Stock, desea solicitar'.  CHtml::link(" Lente de Contacto Ojo izquierdo",array('site/contact','cuerpo'=>$cuerpo)));
+                                
+                            }elseif(!$right && $left){
+                                $cuerpo='Esfera= '.$model->idClient->righteye_sphere.' Cilindro='.$model->idClient->righteye_cylinder;
+                                $sql = "UPDATE contact_lenses SET amount=amount-1 WHERE sphere=".
+                                $model->idClient->lefteye_sphere." AND cylinder=".
+                                $model->idClient->lefteye_cylinder; 
+                                $connection = Yii::app() -> db;
+                                $command = $connection -> createCommand($sql);
+                                $command -> execute();
+                                Yii::app()->user->setFlash('notice', 'Lente de Conctacto Ojo izquierdo Descontado de Stock, Desea solicitar'. CHtml::link(" Lente de Contacto Ojo Derecho",array('site/contact','cuerpo'=>$cuerpo)));
+                            }else{
+                              
+                                $cuerpo=' Ojo Izquierdo Esfera= '.$model->idClient->lefteye_sphere.' Cilindro='.$model->idClient->lefteye_cylinder."\n";
+                                $cuerpo.='Ojo Derecho Esfera= '.$model->idClient->righteye_sphere.' Cilindro='.$model->idClient->righteye_cylinder;
+                                Yii::app()->user->setFlash('notice', "Lentes de contacto no Encontrados\n". CHtml::link("solicitar ?",array('site/contact','cuerpo'=>$cuerpo)));
+                            }
+                            
+                        }
+                        
                         if($model->price==$model->pay)
                             $model->status=1;
                         else
@@ -141,7 +232,7 @@ class SalesController extends Controller
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
                 if(!isset($_GET['ajax'])){
                     Yii::app()->user->setFlash('success',Yii::t('validation','The element was deleted succesfully'));
-                    $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+                     $this->redirect(array('admin','ido'=>$model->id_office));
                 }
                  
             }
@@ -149,7 +240,7 @@ class SalesController extends Controller
             {
                 if(!isset($_GET['ajax'])){
                     Yii::app()->user->setFlash('error',Yii::t('validation','Can not delete this item because it have elements asociated it'));
-                    $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+                    $this->redirect(array('admin','ido'=>$model->id_office));
                 }
                 
             } 

@@ -5,12 +5,23 @@
   var droplist = $('#Reports_reportype');
   if(droplist.val()!='1')
        $('#yearrow').hide();
+   if(droplist.val()!='2')
+       $('#range').hide();
   droplist.change(function(e){
     if (droplist.val() == '1') {
       $('#yearrow').show();
     }
     else {
       $('#yearrow').hide();
+      $('#Reports_reportyear').val("");
+    }
+      if (droplist.val() == '2') {
+      $('#range').show();
+    }
+    else {
+      $('#range').hide();
+      $('#Reports_initdate').val("");
+      $('#Reports_endate').val("");
     }
   })
 });
@@ -48,7 +59,7 @@ $this->breadcrumbs=array(
 	<?php echo $form->errorSummary($model); ?>
     <div class="row">
         <?php echo $form->labelEx($model,'reportype'); ?>
-        <?php echo $form->dropDownList($model,'reportype',array('1'=>'Anual','2'=>'Intervalo de tiempo'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Report Type'))); ?>
+        <?php echo $form->dropDownList($model,'reportype',array('1'=>'Anual','2'=>'Detallado'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Report Type'))); ?>
         <?php echo $form->error($model,'reporttype'); ?>
     </div>
  
@@ -67,7 +78,35 @@ $this->breadcrumbs=array(
         <?php echo  $form->dropDownList($model,'reportyear',$yfinal,array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Year')));?>
         <?php echo $form->error($model,'reportyear'); ?>
      
- 
+ </div>
+ <div class="row" id="range">
+        
+        <?php echo $form->labelEx($model,'office'); ?>
+        <?php echo  $form->dropDownList($model,'office',CHtml::listData(Office::model()->findAll(),'id_office','office_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Office')));?>
+        <?php echo $form->error($model,'office'); ?>
+     
+        <?php echo $form->labelEx($model,'initdate'); ?>
+        <?php Yii::import('application.extensions.CJuiDateTimePicker.CJuiDateTimePicker');
+        $this->widget('CJuiDateTimePicker',array(
+        'model'=>$model, //Model object
+        'attribute'=>'initdate', //attribute name
+                'mode'=>'datetime', //use "time","date" or "datetime" (default)
+        'options'=>array(), // jquery plugin options
+    ));
+        
+?>
+     <?php echo $form->error($model,'initdate'); ?>
+        <?php echo $form->labelEx($model,'endate'); ?>
+        <?php $this->widget('CJuiDateTimePicker',array(
+        'model'=>$model, //Model object
+        'attribute'=>'endate', //attribute name
+                'mode'=>'datetime', //use "time","date" or "datetime" (default)
+        'options'=>array(), // jquery plugin options
+    ));
+?><?php echo $form->error($model,'endate'); ?>
+     
+     
+     
  </div>
    
  <?php if(CCaptcha::checkRequirements()): ?>

@@ -231,6 +231,7 @@ return array (
   '{attribute} "{value}" is invalid.' => '{attribute} "{value}" es inválido.',
   '{attribute} cannot accept more than {limit} files.' => '{attribute} no puede aceptar más de {limit} archivos.',
   '{attribute} cannot be blank.' => '{attribute} no puede ser nulo.',
+  '{attribute} cannot be bigger than today.'=>'La {attribute} no puede ser mayor a la actual.',
   '{attribute} is in the list.' => '{attribute} está en la lista.',
   '{attribute} is invalid.' => '{attribute} es inválido.',
   '{attribute} is not a valid URL.' => '{attribute} no es una URL válida.',
@@ -251,6 +252,7 @@ return array (
   '{attribute} must be repeated exactly.' => '{attribute} debe ser repetido exactamente.',
   '{attribute} must be {type}.' => '{attribute} debe ser {type}.',
   '{attribute} must be {value}.' => '{attribute} debe ser {value}.',
+
   '{attribute} must not be equal to "{compareValue}".' => '{attribute} no debe ser igual a "{compareValue}".',
   '{className} does not support add() functionality.' => '{className} no soporta la funcionalidad add().',
   '{className} does not support delete() functionality.' => '{className} no soporta la funcionalidad delete().',
