@@ -25,5 +25,7 @@ $this->menu=array(
                 'idMark.mark_name',
 		'idExamplar.examplar_name',
                 'frame_name',
+                'amount',
+                'critical_stock',
 	),
 )); ?>

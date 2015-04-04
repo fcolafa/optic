@@ -46,9 +46,7 @@ class Client extends CActiveRecord
 			array('height', 'numerical'),
                         array('righteye_sphere, righteye_cylinder, lefteye_sphere, lefteye_cylinder','numerical','max'=>30,'min'=>-30),
                         array('righteye_axis, lefteye_axis','numerical','integerOnly'=>true,'min'=>0,'max'=>359),
-                      
-                        array('pupillary_distance', 'validp'),
-                       // array('pupillary_distance','pattern'=>'/^[A-Za-z0-9_!@#$%^&*()+=?.,]+$/u', 'message'=>'Spaces or given characters are not allowed'),
+  
 			array('client_name, client_lastname', 'length', 'max'=>45),
 			array('client_rut', 'length', 'max'=>20),
                         array('pupillary_distance', 'length', 'max'=>10),

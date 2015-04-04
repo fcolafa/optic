@@ -32,7 +32,12 @@ $this->breadcrumbs=array(
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->dropDownList($model,'email',CHtml::listData(Provider::model()->findAll(),'id_provider','provider_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Provider'))); ?>
+            
+                <?php
+                if(isset($provider))
+                echo $form->dropDownList($model,'email',$provider,array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Provider')));
+                else
+                echo $form->dropDownList($model,'email',CHtml::listData(Provider::model()->findAll(),'id_provider','provider_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Provider'))); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 

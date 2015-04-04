@@ -35,12 +35,13 @@ class Frames extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('id_examplar, id_mark, amount', 'required'),
-			array('id_examplar, id_mark', 'numerical', 'integerOnly'=>true),
+			array('id_examplar, id_mark,critical_stock', 'numerical', 'integerOnly'=>true),
                         array('frame_name', 'length', 'max'=>45),
+                     array('critical_stock','compare','compareAttribute'=>'amount','operator'=>'<=','message'=>' el stock critico no puede ser mayor a la cantidad de Armazones'),
                         
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('_examplarname,_markname, id_frame, id_examplar, id_mark, frame_name', 'safe', 'on'=>'search'),
+			array('_examplarname,_markname, id_frame, id_examplar, id_mark, frame_name,critical_stock', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -68,6 +69,8 @@ class Frames extends CActiveRecord
 			'id_examplar' => Yii::t('database','Id Examplar'),
 			'id_mark' => Yii::t('database','Id Mark'),
                         'frame_name' => Yii::t('database','Frame Name'),
+                    'amount' => Yii::t('database','Amount'),
+                    'critical_stock' => Yii::t('database','Critical Stock'),
 		);
 	}
 
@@ -94,7 +97,8 @@ class Frames extends CActiveRecord
 		$criteria->compare('id_examplar',$this->id_examplar);
 		$criteria->compare('id_mark',$this->id_mark);
                 $criteria->compare('frame_name',$this->frame_name,true);
-                
+               $criteria->compare('amount',$this->amount);
+                $criteria->compare('critical_stock',$this->critical_stock);
                 $criteria->compare('idExamplar.examplar_name',$this->_examplarname, true);
                 $criteria->compare('idMark.mark_name',$this->_markname, true);
 		return new CActiveDataProvider($this, array(

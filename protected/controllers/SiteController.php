@@ -58,11 +58,19 @@ class SiteController extends Controller
 	/**
 	 * Displays the contact page
 	 */
-	public function actionContact($cuerpo="")
+	public function actionContact($cuerpo="",$type=null)
 	{
 		$model=new ContactForm;
                 $model->body=$cuerpo;
-                
+                if($type!=null){
+                    $provider=Provider::model()->findAll('id_type='.$type);
+                if(!empty($provider))
+                    $provider=CHtml::listData($provider,'id_provider','provider_name');
+                else{
+                    Yii::app()->user->setFlash('error',"No existen proveedores para este tipo de producto");
+                    $this->redirect(array('provider/index'));
+                    }
+                }
 		if(isset($_POST['ContactForm']))
 		{
 			$model->attributes=$_POST['ContactForm'];
@@ -111,7 +119,10 @@ class SiteController extends Controller
                 if(Yii::app()->user->isGuest)
                     $this->redirect(Yii::app()->baseUrl);
                  else
-		$this->render('contact',array('model'=>$model));
+                     if(!empty ($provider))
+		$this->render('contact',array('model'=>$model,'provider'=>$provider));
+                     else
+                         $this->render('contact',array('model'=>$model));
 	}
         public function actionGlobalConfig()
         {
@@ -195,8 +206,10 @@ class SiteController extends Controller
                         $endate=Yii::app()->dateFormatter->format('yyyy-MM-dd HH:mm',$model->endate);
                         $command = Yii::app()->db->createCommand(" call rangereport(". $model->office .",'".$initdate."','".$endate ."') ");
                         $range = $command->queryAll();
+                        $model=new Reports;
                         Yii::app()->request->sendFile('ReporteDetallado-'.$model->initdate.'al'.$model->endate.'.xls', 
                         $this->renderPartial('/Sales/rangexcel',array('range'=>$range,'office'=>$office)),true);
+                       
                     
                 }
             }

@@ -63,19 +63,47 @@
                         ));
                        $glass=  Glass::model()->findAll('amount<=critical_stock');
                        if(!empty($glass)){
-                           echo "los siguientes Cristales estan bajo el stock deseado <br>";
-                           $cuerpo="";
+                           echo "Los siguientes Cristales estan bajo el stock deseado <br>";
+                           $cuerpo="Cristales \n";
                            foreach($glass as $gl){
                            $linea="Esfera(". $gl->sphere.") Cilindro(".$gl->cylinder.") ";
                            $cuerpo.=$linea."\n";
                            $linea.="<br>";
-                           echo CHtml::link($linea,array("glass/view", 'id'=>$gl->id_glass)); 
+                           echo "<li>".CHtml::link($linea,array("glass/view", 'id'=>$gl->id_glass))."</li>"; 
                            }
-                           echo CHtml::link("solicitar Cristales",array('site/contact','cuerpo'=>$cuerpo));
+                           echo CHtml::link("solicitar Cristales <br>",array('site/contact','cuerpo'=>$cuerpo,'type'=>2));
+                          
                        }
                        
-                       
                        $contactl=  ContactLenses::model()->findAll('amount<=critical_stock');
+                       if(!empty($contactl))
+                       {
+                           echo "<br>Los siguientes lentes de contacto estan bajo el stock deseado <br>";
+                           $cuerpo="Lentes de Contacto \n";
+                           foreach($contactl as $cl){
+                           $linea="Esfera(". $cl->sphere.") Cilindro(".$cl->cylinder.") ";
+                           $cuerpo.=$linea."\n";
+                           $linea.="<br>";
+                           echo "<li>". CHtml::link($linea,array("contactlenses/view", 'id'=>$cl->id_contactlenses))."</li>"; 
+                           }
+                           echo CHtml::link("solicitar Lentes de Contacto",array('site/contact','cuerpo'=>$cuerpo,'type'=>1));
+                           echo "<br>";
+                       }
+                       
+                       $frame= Frames::model()->findAll('amount<=critical_stock');
+                          if(!empty($frame))
+                       {
+                           echo "<br>Los siguientes Armazones estan bajo el stock deseado <br>";
+                           $cuerpo="Armazones \n";
+                           foreach($frame as $f){
+                           $linea=$f->frame_name." ,modelo:".$f->idExamplar->examplar_name." de ".$f->idMark->mark_name;
+                           $cuerpo.=$linea."\n";
+                           $linea.="<br>";
+                           echo "<li>". CHtml::link($linea,array("frames/view", 'id'=>$f->id_frame))."</li>"; 
+                           }
+                           echo CHtml::link("solicitar armazones",array('site/contact','cuerpo'=>$cuerpo,'type'=>3));
+                           echo "<br>";
+                       }
                     $this->endWidget('zii.widgets.jui.CJuiDialog');
                     /** End Widget **/
                     echo CHtml::button(Yii::t('actions','System Alerts'), array(

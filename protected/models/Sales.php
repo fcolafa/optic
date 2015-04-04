@@ -56,8 +56,7 @@ class Sales extends CActiveRecord
 			array('pay, price, status' , 'numerical'),
                         array('payment_method', 'length', 'max'=>45),
                         array('price','numerical', 'min'=>2000),
-                        
-                 
+                        array('id_client','validateid'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id_sales, id_client, id_office, pay, date,status, price, id_frame,payment_method, delivered', 'safe', 'on'=>'search'),
@@ -161,5 +160,12 @@ class Sales extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+        public function validateid($model,$attribute)
+        {
+            if($this->id_client==0|| empty ($this->id_client))
+                    $this->addError('id_client', "Ingresar Cliente Valido");
+        
+        }
+        
   
 }

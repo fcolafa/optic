@@ -40,7 +40,7 @@
          <?php echo $form->labelEx($model,'id_client'); ?>
          <?php
            
-             if ($model->id_client)
+             if ($model->id_client&& $model->id_client!=0)
              {
                  $value=($model->idClient->client_name.' '.$model->idClient->client_lastname .' ('.$model->idClient->client_rut.')');
              }
@@ -60,7 +60,7 @@
              'select' => 'js:function(event, ui)
              { jQuery("#Sales_id_client").val(ui.item["id"]); }',
              'search'=> 'js:function(event, ui)
-             { jQuery("#Sales_id_client").val(1); }'
+             { jQuery("#Sales_id_client").val(0); }'
              ),
              ));
          ?>

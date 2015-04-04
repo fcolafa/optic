@@ -39,7 +39,7 @@ class ContactLenses extends CActiveRecord
                         array('sphere, cylinder', 'numerical','max'=>30,'min'=>-30),
                         array('sphere, cylinder','validateUnique'),
 			array('material, laboratory', 'length', 'max'=>45),
-                        array('critical_stock','compare','compareAttribute'=>'amount','operator'=>'<=','message'=>' el stock critico no puede ser mayor a la cantidad de cristales'),
+                        array('critical_stock','compare','compareAttribute'=>'amount','operator'=>'<=','message'=>' el stock critico no puede ser mayor a la cantidad de lentes de contacto'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id_contactlenses, base_curve, material, laboratory, dk, sphere, cylinder, amount, critical_stock', 'safe', 'on'=>'search'),

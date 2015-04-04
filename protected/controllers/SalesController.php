@@ -34,11 +34,11 @@ class SalesController extends Controller
 				'roles'=>array('Supervisor'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index','view','create','update','listclient','reports','assign'),
+				'actions'=>array('index','view','create','update','listclient','reports','assign','discount'),
 				'roles'=>array('Administrador'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('index','view','create','update','admin','delete','listclient','reports','assign'),
+				'actions'=>array('index','view','create','update','admin','delete','listclient','reports','assign','discount'),
 				'roles'=>array('Control Total'),
 			),
 			array('deny',  // deny all users
@@ -78,11 +78,34 @@ class SalesController extends Controller
                         $model->date=  date("y-m-d H:i:s");
                         $model->id_user=Yii::app()->user->id;
                         $model->delivered=0;
-                        $type="";
-
-                            if($model->save()){
+                      
+                       
+                      
+                        if($model->save()){
                                 
-                        if($model->id_type!=3){
+                        $this->discount($model);
+                    
+               
+                     $this->redirect(array('view','id'=>$model->id_sales,'ido'=>$model->id_office));
+                            }
+                }
+		$this->render('create',array(
+			'model'=>$model,'ido'=>$ido,
+		));
+	}
+    
+
+	/**
+	 * Updates a particular model.
+	 * If update is successful, the browser will be redirected to the 'view' page.
+	 * @param integer $id the ID of the model to be updated
+	 */
+        
+        private function discount($model){
+              $type="";
+              $sqlfr="";
+              $frmsg=" ";
+            if($model->id_type!=3){
                             if($model->idClient->righteye_sphere== null)
                                 $rsphere= "is null";
                              else
@@ -104,7 +127,7 @@ class SalesController extends Controller
                             $criteria= new CDbCriteria();
                             $criteria->condition = 'sphere '.$rsphere.' AND cylinder '.$rcylinder .' AND amount>0'; 
                             $criteria2= new CDbCriteria();
-                            $criteria2->condition='sphere '.$lsphere.' AND cylinder '.$lcylinder.' AND amount>0';; 
+                            $criteria2->condition='sphere '.$lsphere.' AND cylinder '.$lcylinder.' AND amount>0'; 
                             
                             $both=false;
                             
@@ -115,36 +138,51 @@ class SalesController extends Controller
                                 $plutype="Cristales";
                                 $right=Glass::model()->find($criteria);
                                 $left= Glass::model()->find($criteria2); 
-                            }elseif($model->id_type==1)   {                           
-                                $sql = "UPDATE contact_lenses SET amount=amount-1 WHERE  ";
+                                
+                                if(!empty($model->id_frame)){  
+                                    $sqlfr="UPDATE frames SET amount=amount-1 WHERE amount>0 and id_frame=".$model->id_frame;
+                                    $connection = Yii::app() -> db;
+                                    $command = $connection -> createCommand($sqlfr);
+                                    if($command -> execute())
+                                    $frmsg="<br>Armazon descontado";
+                                    else{
+                                           $cuerpo=$model->idFrame->frame_name." ,modelo:".$model->idFrame->idExamplar->examplar_name." de ".$model->idFrame->idMark->mark_name;
+                                           $frmsg="<br>Arnazon no encontrado, ".CHtml::link("desea solicitar?",array('site/contact','cuerpo'=>$cuerpo,'type'=>3));
+                                    }  
+                                }
+                            }elseif($model->id_type==1)   { 
+                                
+                              
+                                $sql ="UPDATE contact_lenses SET amount=amount-1 WHERE  ";
                                 $sql2="UPDATE contact_lenses SET amount=amount-1 WHERE  "; 
                                 $type="Lente de Contacto";
                                 $plutype="Lentes de Contacto";
                                 $right=  ContactLenses::model()->find($criteria);
                                 $left= ContactLenses::model()->find($criteria2);  
+                             
                             }
                             
                             if(!$right && !$left)
                             {
                                 $cuerpo=' Ojo Izquierdo Esfera '.$lsphere.' Cilindro '.$lcylinder."\n";
                                 $cuerpo.='Ojo Derecho Esfera= '.$rsphere.' Cilindro='.$rcylinder;
-                                Yii::app()->user->setFlash('notice', $plutype." no Encontrados\n". CHtml::link("solicitar ".$plutype,array('site/contact','cuerpo'=>$cuerpo)));
+                                Yii::app()->user->setFlash('notice', $plutype." no Encontrados\n". CHtml::link("solicitar ".$plutype,array('site/contact','cuerpo'=>$cuerpo,'type'=>$model->id_type)).$frmsg);
                             }else{
                             if($right && $left){
                                 $both=true;
-                                Yii::app()->user->setFlash('success',$plutype." descontados de Stock");
+                                Yii::app()->user->setFlash('success',$plutype." descontados de Stock".$frmsg);
                                 $sql .=" sphere ".$rsphere." AND cylinder ".$rcylinder;
                                 $sql2.=" sphere ".$rsphere." AND cylinder ".$rcylinder;
                             }
                             elseif($right && !$left) {
                                 $cuerpo='Esfera '.$lsphere.' Cilindro '.$lcylinder;
                                 $sql .= " sphere ".$rsphere." AND cylinder ".$rcylinder;
-                                Yii::app()->user->setFlash('notice', $type.' Ojo Derecho Descontado de Stock, desea solicitar '.  CHtml::link($type." Ojo izquierdo?",array('site/contact','cuerpo'=>$cuerpo)));
+                                Yii::app()->user->setFlash('notice', $type.' Ojo Derecho Descontado de Stock, desea solicitar '.  CHtml::link($type." Ojo izquierdo?",array('site/contact','cuerpo'=>$cuerpo,'type'=>$model->id_type)).$frmsg);
                                 
                             }elseif(!$right && $left){
                                 $cuerpo='Esfera '.$rsphere.' Cilindro '.$rcylinder;
                                 $sql .= " sphere ".$lsphere." AND cylinder ".$lcylinder;
-                                Yii::app()->user->setFlash('notice', $type.' Ojo izquierdo Descontado de Stock, Desea solicitar '. CHtml::link($type." Ojo Derecho?",array('site/contact','cuerpo'=>$cuerpo)));
+                                Yii::app()->user->setFlash('notice', $type.' Ojo izquierdo Descontado de Stock, Desea solicitar '. CHtml::link($type." Ojo Derecho?",array('site/contact','cuerpo'=>$cuerpo,'type'=>$model->id_type)).$frmsg);
                             }
                                 $connection = Yii::app() -> db;
                                 $command = $connection -> createCommand($sql);
@@ -153,30 +191,15 @@ class SalesController extends Controller
                                 $command = $connection -> createCommand($sql2);
                                 $command -> execute();
                                 }
+           
                             }      
                      }
-                    
-               
-                     $this->redirect(array('view','id'=>$model->id_sales,'ido'=>$model->id_office));
-                            }
-                }
-		$this->render('create',array(
-			'model'=>$model,'ido'=>$ido,
-		));
-	}
-    
-
-	/**
-	 * Updates a particular model.
-	 * If update is successful, the browser will be redirected to the 'view' page.
-	 * @param integer $id the ID of the model to be updated
-	 */
+        }
 	public function actionUpdate($id,$ido)
 	{
 		$model=$this->loadModel($id);
                 $model->id_office=$ido;
-                 
-                 
+                $idc=$model->id_client;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -184,8 +207,12 @@ class SalesController extends Controller
 		if(isset($_POST['Sales']))
 		{
 			$model->attributes=$_POST['Sales'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_sales,'ido'=>$ido));
+			if($model->save()){
+                            if($idc!=$model->id_client)
+                                $this->discount ($model);
+                            
+			$this->redirect(array('view','id'=>$model->id_sales,'ido'=>$ido));
+                        }
 		}
                 if($model->status==1){
                     Yii::app()->user->setFlash('notice',Yii::t('validation','This sale cannot be updated, because it has finished'));
@@ -332,5 +359,6 @@ class SalesController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
-	}     
+	} 
+        
 }
