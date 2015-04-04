@@ -8,15 +8,19 @@
  * @property integer $price
  * @property integer $pay
  * @property integer $status
- * @property string $type
  * @property integer $id_office
  * @property integer $id_client
  * @property string $date
- * @property integer $id_user
+ * @property integer $id_frame
+ * @property string $payment_method
+ * @property integer $delivered
+ *
  * The followings are the available model relations:
  * @property Client $idClient
+ * @property Frames $idFrame
  * @property Office $idOffice
  * @property Users $idUser
+ * @property Type $idType
  *
  */
 class Sales extends CActiveRecord
@@ -30,6 +34,7 @@ class Sales extends CActiveRecord
          public $_clientlname;
          public $_status;
          public $_username;
+         public $_typename;
          public $_reportype;
          public $_reportyear;
         
@@ -46,14 +51,17 @@ class Sales extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_client, id_office, date, type', 'required'),
-			array('id_client, id_office, id_user, id_frame' , 'numerical', 'integerOnly'=>true),
+			array('id_client, id_office, date, payment_method, price,  id_type', 'required'),
+			array('id_client, id_office, id_user, id_frame, delivered', 'numerical', 'integerOnly'=>true),
 			array('pay, price, status' , 'numerical'),
-                        array('type', 'length', 'max'=>10),
+                        array('payment_method', 'length', 'max'=>45),
+                        array('price','numerical', 'min'=>2000),
+                        
+                 
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_sales, id_client, id_office, type, pay, date,status, price, id_frame', 'safe', 'on'=>'search'),
-                        array('_officename,_username, _clientname, _clientrut, _clientlname,id_user','safe','on'=>'search'),
+			array('id_sales, id_client, id_office, pay, date,status, price, id_frame,payment_method, delivered', 'safe', 'on'=>'search'),
+                        array('_typename, _officename,_username, _clientname, _clientrut, _clientlname,id_user','safe','on'=>'search'),
                         array('pay','compare','compareAttribute'=>'price','operator'=>'<=','message'=>' El abono no puede ser mayor al precio'),
                     );
 	}
@@ -68,6 +76,7 @@ class Sales extends CActiveRecord
 			'idClient' => array(self::BELONGS_TO, 'Client', 'id_client'),
                         'idFrame' => array(self::BELONGS_TO, 'Frames', 'id_frame'),
 			'idOffice' => array(self::BELONGS_TO, 'Office', 'id_office'),
+                        'idType' => array(self::BELONGS_TO, 'Type', 'id_type'),
                         'idUser' => array(self::BELONGS_TO, 'Users', 'id_user'),
 		);
 	}
@@ -83,13 +92,16 @@ class Sales extends CActiveRecord
 			'id_office' => Yii::t('database','Id Office'),
 			'date' => Yii::t('database','Date'),
 			'price' => Yii::t('database','Price'),
-                        'type' => Yii::t('database','Type'),
 			'pay' => Yii::t('database','Pay'),
                         'status'=>  Yii::t('database','Status'),
+                        'delivered'=>Yii::t('database','Delivered?'),
                         '_reportype'=>Yii::t('database','Report Type'),
                         '_reportyear'=>Yii::t('database',' Report Year'),
                         'id_frame' => Yii::t('database','Id Frame'),
                         '_framename'=>Yii::t('database','Frame Name'),
+                        'payment_method' => Yii::t('database','Payment Method'),
+			'delivered' => Yii::t('database','Delivered?'),
+                        'id_type' => Yii::t('database','Id Type'),
                         
 		);
 	}
@@ -111,7 +123,7 @@ class Sales extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-                $criteria->with=array('idOffice','idClient','idUser');
+                $criteria->with=array('idOffice','idClient','idUser','idType');
                 $criteria->together=true;
 
 		$criteria->compare('id_sales',$this->id_sales);
@@ -119,9 +131,11 @@ class Sales extends CActiveRecord
 		$criteria->compare('id_office',$this->id_office);
 		$criteria->compare('date',$this->date,true);
 		$criteria->compare('price',$this->price);
-                $criteria->compare('type',$this->type,true);
 		$criteria->compare('pay',$this->pay);
                 $criteria->compare('status', $this->status);
+                $criteria->compare('payment_method',$this->payment_method,true);
+		$criteria->compare('delivered',$this->delivered);
+                $criteria->compare('id_type',$this->id_type);
               
                 
                 $criteria->compare('idOffice.office_name',$this->_officename, true);
@@ -129,6 +143,7 @@ class Sales extends CActiveRecord
                 $criteria->compare('idClient.client_lastname',$this->_clientlname, true);
                 $criteria->compare('idClient.client_rut',$this->_clientrut, true);
                 $criteria->compare('idUser.user_name',$this->_username, true);
+                $criteria->compare('idType.type_name',$this->_typename, true);
         
 
 		return new CActiveDataProvider($this, array(
@@ -146,5 +161,5 @@ class Sales extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-       
+  
 }

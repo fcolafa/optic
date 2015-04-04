@@ -47,6 +47,17 @@
 		<?php echo $form->textField($model,'frame_name',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'frame_name'); ?>
 	</div>
+        <div class="row">
+		<?php echo $form->labelEx($model,'amount'); ?>
+		<?php echo $form->numberField($model,'amount'); ?>
+		<?php echo $form->error($model,'amount'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'critical_stock'); ?>
+		<?php echo $form->numberField($model, 'critical_stock') ;?>
+		<?php echo $form->error($model,'critical_stock'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save'),array('class'=>Yii::app()->params['btnclass'])); ?>

@@ -43,17 +43,24 @@ if(isset($office)){?>
                                  $type = $cmdtype->queryAll();
                                  $totalc=0;
                                  $totalo=0;
+                                 $totalot=0;
                                  $contact=  array_fill(1, 13, 0);
                                  $optic= array_fill(1, 13, 0);
+                                 $other= array_fill(1, 13, 0);
                                  foreach ($type as $ty){
                                      for($i=1;$i<13;$i++){
-                                          if($i==intval($ty['month(s.date)'])&&$ty['type']=="Optico" ){
+                                          if($i==intval($ty['month(s.date)'])&&$ty['type_name']=="Optico" ){
                                              $optic[$i]=intval($ty['sum(s.price)']);
                                              $totalo+=intval($ty['sum(s.price)']);
                                             }
-                                            if($i==intval($ty['month(s.date)'])&&$ty['type']=="Contacto" ){
+                                            if($i==intval($ty['month(s.date)'])&&$ty['type_name']=="Contacto" ){
                                              $contact[$i]=intval($ty['sum(s.price)']);
                                              $totalc+=intval($ty['sum(s.price)']);
+                                            }
+                                            if($i==intval($ty['month(s.date)'])&&$ty['type_name']=="Otro" ){
+                                             $other[$i]=intval($ty['sum(s.price)']);
+                                              $totalot+=intval($ty['sum(s.price)']);
+                                             
                                             }
                                   }
                                   $contact[13]=$totalc;
@@ -70,12 +77,22 @@ if(isset($office)){?>
                                      foreach($contact as $co){
                                             echo "<td>".$co."</td>";
                                      }
-                                     echo "</tr>";   
-                            }
+                                     echo "</tr>";
+                                      echo "<tr>";
+                                      echo "<td>Otros</td>";
+                                     foreach($other as $ot){
+                                            echo "<td>".$ot."</td>";
+                                     }
+                                     echo "</tr>";
+                                     
+          echo "<br>";                           
+        }      
                          ?>  
   
     </table>
-   <br>
+   
+   <h2> Reporte por Usuarios  </h2>
+  
    <table style='border: solid 1px'>
        <?php 
        $user=  Users::model()->findAll();
@@ -99,12 +116,10 @@ if(isset($office)){?>
           $color+=1;
           echo "<td bgcolor='#bcf959' style='font-weight:bold'>".$u->user_name."</td>";
           foreach($salesusers as $su){
-             echo  "<td>".$su."</td>";
+             echo  "<td>".$su."</td><br>";
           }
         }
         ?>
-       
-   </table>
          
        
 <?php } ?>

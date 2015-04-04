@@ -26,17 +26,17 @@ class OfficeController extends Controller
 	 */
 	public function accessRules()
 	{
-		return array(
+			return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'roles'=>array('Supervisor','Control Total','Administrador'),
+				'roles'=>array('Supervisor'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','fillcity'),
-				'roles'=>array('Administrador','Control Total'),
+				'actions'=>array('index','view','create','update','fillcity'),
+				'roles'=>array('Administrador'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('create','admin','delete'),
+				'actions'=>array('index','view','create','update','admin','delete','fillcity'),
 				'roles'=>array('Control Total'),
 			),
 			array('deny',  // deny all users
@@ -70,6 +70,8 @@ class OfficeController extends Controller
 		if(isset($_POST['Office']))
 		{
 			$model->attributes=$_POST['Office'];
+                        $model->office_name=ucwords(strtolower($model->office_name));
+                        $model->office_address=ucwords(strtolower($model->office_address));
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_office));
 		}
@@ -94,6 +96,8 @@ class OfficeController extends Controller
 		if(isset($_POST['Office']))
 		{
 			$model->attributes=$_POST['Office'];
+                         $model->office_name=  ucwords(strtolower($model->office_name));
+                         $model->office_address=ucwords(strtolower($model->office_address));
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_office));
 		}

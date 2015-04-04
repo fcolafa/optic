@@ -81,18 +81,19 @@ $('.search-form form').submit(function(){
                     'value'=>'$data->idUser->user_name',
                     'filter'=>  CHtml::activeTextField($model, '_username'),
                     ),
-            
                 array(    
-                    'name'=>'type',
-                    'filter'=>array('Optico'=>'Optico','Contacto'=>'Contacto'),
-                    'value'=>'$data->type',
+                    'name'=>'idType.type_name',
+                    'value'=>'$data->idType->type_name',
+                    'filter'=>  CHtml::activeTextField($model, '_typename'),
+                    ),
+                array(    
+                    'name'=>'payment_method',
+                    'filter'=>array('Efectivo'=>'Efectivo','Cheque'=>'Cheque','TransBank'=>'Transbank'),
+                    'value'=>'$data->payment_method',
       
                 ),
-              
-          
 		  array(
                 'name'=>'date',
-                //'value'=>'date("d M Y",strtotime($data["work_date"]))'
                 'value'=>'Yii::app()->dateFormatter->format("d MMMM y \n HH:mm:ss",strtotime($data->date))'
                 ),
 		'price',
@@ -103,9 +104,15 @@ $('.search-form form').submit(function(){
                     'value'=>'($data->status=="1")?("Finalizada"):("Pendiente")'
       
                 ),
+             array(
+                    'name'=>'delivered',
+                    'filter'=>array('1'=>'Si','0'=>'No'),
+                 
+                //    'value' =>'($data->delivered=="1")?(CHtml::image(Yii::app()->theme->baseUrl ."/images/checked.png"," ", array("width"=>100))):"no"',
             
-               
-        
+                    'value'=>'($data->delivered=="1")?("Si"):("No")'
+      
+                ),
 		array(
 			'class'=>'CButtonColumn',
                         'buttons'=>array(

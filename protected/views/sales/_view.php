@@ -20,22 +20,23 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('date')); ?>:</b>
-        <?php echo CHtml::encode(Yii::app()->dateFormatter->format("d MMMM y \n HH:mm:ss",strtotime($data->date))); ?>
+        <?php echo CHtml::encode(Yii::app()->dateFormatter->format("d MMMM y  HH:mm:ss",strtotime($data->date))); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('price')); ?>:</b>
-	<?php echo CHtml::encode($data->price); ?>
-	<br />
-        
         <b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
 	<?php echo CHtml::encode($data->status==1?'finalizada':'pendiente'); ?>
 	<br />
          <b><?php echo CHtml::encode($data->getAttributeLabel('id_user')); ?>:</b>
-	<?php echo CHtml::encode($data->id_user); ?>
+	<?php echo CHtml::encode($data->idUser->user_name); ?>
 	<br />
-        <b><?php echo CHtml::encode($data->getAttributeLabel('id_frame')); ?>:</b>
-	<?php echo CHtml::encode($data->id_frame); ?>
+        <b><?php echo CHtml::encode($data->getAttributeLabel('delivered')); ?>:</b>
+        <?php if($data->delivered==1){?>
+        <?php echo CHtml::image(Yii::app()->theme->baseUrl.'/images/checked.png', 'DORE');
+        }else {
+         echo CHtml::image(Yii::app()->theme->baseUrl.'/images/unchecked.png', 'DORE');      
+            }?>
 	<br />
-
+          
+              
+          
 
 </div>

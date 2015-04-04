@@ -26,7 +26,7 @@ class ProviderController extends Controller
 	 */
 	public function accessRules()
 	{
-		return array(
+			return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
 				'roles'=>array('Supervisor'),
@@ -70,6 +70,7 @@ class ProviderController extends Controller
 		if(isset($_POST['Provider']))
 		{
 			$model->attributes=$_POST['Provider'];
+                        $model->provider_name=  ucwords(strtolower($model->provider_name));
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_provider));
 		}
@@ -94,6 +95,7 @@ class ProviderController extends Controller
 		if(isset($_POST['Provider']))
 		{
 			$model->attributes=$_POST['Provider'];
+                        $model->provider_name=  ucwords(strtolower($model->provider_name));
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_provider));
 		}

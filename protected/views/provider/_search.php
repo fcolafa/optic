@@ -36,6 +36,11 @@
 		<?php echo $form->textField($model,'lower'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'id_type'); ?>
+		<?php echo $form->textField($model,'id_type'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton(Yii::t('actions','Search'),array('class'=>Yii::app()->params['btnclass'])); ?>
 	</div>

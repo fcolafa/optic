@@ -15,11 +15,11 @@
  * @property double $lefteye_sphere
  * @property double $lefteye_cylinder
  * @property integer $lefteye_axis
- * @property double $addition
+ * @property doublestring $addition
  * @property double $height
  * @property string $comment
- * @property integer $pupillary_distance
- *
+ * @property string $pupillary_distance
+ * 
  * The followings are the available model relations:
  * @property Sales[] $sales
  */
@@ -42,13 +42,18 @@ class Client extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('client_name, client_lastname, client_rut', 'required'),
-			array('client_phone, pupillary_distance', 'numerical', 'integerOnly'=>true),
-			array('addition, height', 'numerical'),
+			array('client_phone', 'numerical', 'integerOnly'=>true),
+			array('height', 'numerical'),
                         array('righteye_sphere, righteye_cylinder, lefteye_sphere, lefteye_cylinder','numerical','max'=>30,'min'=>-30),
-                        array(' righteye_axis, lefteye_axis','numerical','integerOnly'=>true,'min'=>0,'max'=>359),
+                        array('righteye_axis, lefteye_axis','numerical','integerOnly'=>true,'min'=>0,'max'=>359),
+                      
+                        array('pupillary_distance', 'validp'),
+                       // array('pupillary_distance','pattern'=>'/^[A-Za-z0-9_!@#$%^&*()+=?.,]+$/u', 'message'=>'Spaces or given characters are not allowed'),
 			array('client_name, client_lastname', 'length', 'max'=>45),
 			array('client_rut', 'length', 'max'=>20),
+                        array('pupillary_distance', 'length', 'max'=>10),
                         array('client_rut', 'unique'),
+                        array('id_client','forces'),
 			array('comment', 'safe'),
                         array('client_rut','validateRut','allowEmpty'=>'false'),
 			// The following rule is used by search().
@@ -123,10 +128,10 @@ class Client extends CActiveRecord
 		$criteria->compare('lefteye_sphere',$this->lefteye_sphere);
 		$criteria->compare('lefteye_cylinder',$this->lefteye_cylinder);
 		$criteria->compare('lefteye_axis',$this->lefteye_axis);
-		$criteria->compare('addition',$this->addition);
+		$criteria->compare('addition',$this->addition,true);
 		$criteria->compare('height',$this->height);
 		$criteria->compare('comment',$this->comment,true);
-		$criteria->compare('pupillary_distance',$this->pupillary_distance);
+		$criteria->compare('pupillary_distance',$this->pupillary_distance,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -163,6 +168,23 @@ class Client extends CActiveRecord
             if ($result == 11)
                 $result = 0;
             if ($verifyCode != $result ||!is_numeric($data[0]))
-                $this->addError('rut', Yii::t('validation','Invalid Rut'));
+                $this->addError('client_rut', Yii::t('validation','Invalid Rut'));
         }
+         public function forces($attribute, $params) {
+               if($this->lefteye_sphere == null &&  $this->lefteye_cylinder == null &&  $this->righteye_sphere == null && $this->righteye_cylinder == null){
+                  $this->addError ('righteye_sphere', Yii::t ('validation', 'El cliente debe poseer al menos una graduación ocular'));
+                  $this->addError ('lefteye_sphere', Yii::t ('validation', 'El cliente debe poseer al menos una graduación ocular'));
+                  $this->addError ('righteye_cylinder', Yii::t ('validation', 'El cliente debe poseer al menos una graduación ocular'));
+                  $this->addError ('lefteye_cylinder', Yii::t ('validation', 'El cliente debe poseer al menos una graduación ocular'));
+         }
+         
+        }
+        public function validp($attribute, $params) {
+            $expr='/[0-9]+(\.?[0-9]*)?(\/[0-9]+(\.?[0-9]*)?)?/';
+            if(!preg_match($expr, $this->pupillary_distance))
+                $this->addError('pupillary_distance','error');
+        }
+     
+    
+         
 }

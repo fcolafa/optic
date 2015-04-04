@@ -28,13 +28,14 @@ class Provider extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('provider_name, email_provider', 'required'),
+			array('provider_name, email_provider, id_type', 'required'),
                         array('upper, lower', 'numerical','max'=>30,'min'=>-30),
 			array('provider_name, email_provider', 'length', 'max'=>45),
+                        array('id_type', 'numerical', 'integerOnly'=>true),
                         array('email_provider','email'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_provider, provider_name, email_provider, upper, lower', 'safe', 'on'=>'search'),
+			array('id_provider, provider_name, email_provider,id_type, upper, lower', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -46,6 +47,7 @@ class Provider extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'idType' => array(self::BELONGS_TO, 'Type', 'id_type'),
 		);
 	}
 
@@ -60,6 +62,7 @@ class Provider extends CActiveRecord
 			'email_provider' => Yii::t('database','Email Provider'),
 			'upper' => Yii::t('database','Upper'),
 			'lower' => Yii::t('database','Lower'),
+                        'id_type' => Yii::t('database','Id Type'),
 		);
 	}
 
@@ -86,6 +89,7 @@ class Provider extends CActiveRecord
 		$criteria->compare('email_provider',$this->email_provider,true);
 		$criteria->compare('upper',$this->upper);
 		$criteria->compare('lower',$this->lower);
+                $criteria->compare('id_type',$this->id_type);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

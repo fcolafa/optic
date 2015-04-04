@@ -39,6 +39,7 @@ $this->menu=array(
 		'lefteye_sphere',
 		'lefteye_cylinder',
 		'lefteye_axis',
+                'pupillary_distance',
 		'addition',
 		'height',
 		'comment',

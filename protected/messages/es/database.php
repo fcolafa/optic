@@ -32,9 +32,9 @@ return array(
  'Verification Code'=>'Codigo de Verificación',
   'Contact Providers'=>'Contactar Proveedores',
     //Contactlenses
-    'Contact Lenses'=>'lentes de contacto',
-    'ContactLense'=>'lente de contacto',
-   'ContactLenses'=>'lentes de Contacto', 
+    'Contact Lenses'=>'Lentes de contacto',
+    'ContactLense'=>'Lente de contacto',
+   'ContactLenses'=>'Lentes de Contacto', 
   'Id Contactlenses'=>'Id lente Contacto',
   'Material'=>'Material',
   'Base Curve'=>'Curva Base',
@@ -103,9 +103,15 @@ return array(
 'Sales'=>'ventas',
 'Date'=>'Fecha de venta',
 'Price'=>'Monto Venta',
-'Type'=>'Tipo',
+
 'Pay'=>'Abono',
 'Status'=>'Estado',
+'Payment Method'=>'Medio de Pago',
+'Delivered?'=>'Entregado?', 
+//type
+    'Type'=>'Tipo',
+'Id Type'=>'Id Tipo',
+'Type Name'=>'Tipo',    
 //user
 'Id User'=>'Id Usuario',
 'User'=>'Usuario',

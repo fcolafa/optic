@@ -27,6 +27,8 @@ class Reports extends CFormModel
                         array('reportype ', 'required'),
                         array('reportyear','validateyear'),
                         array('office','requiredoffice'),
+                        array('initdate','requiredinit'),
+                        array('endate','requiredend'),
                         array('initdate','validateinitdate'),
                         array('endate','validatendate'),
                         array('initdate','biggeridate'),
@@ -74,30 +76,45 @@ class Reports extends CFormModel
                 $this->addError ('office', Yii::t ('yii', '{attribute} cannot be blank.',array('{attribute}'=>Yii::t('database','Office'))));
 
         }
+        public function requiredInit($attribute, $params) {
+            if(  empty($this->initdate)&&$this->reportype=='2')
+                $this->addError ('initdate', Yii::t ('yii', '{attribute} cannot be blank.',array('{attribute}'=>Yii::t('database','Init Date'))));
+
+        }
+        public function requiredEnd($attribute, $params) {
+            if(  empty($this->endate)&&$this->reportype=='2')
+                $this->addError ('endate', Yii::t ('yii', '{attribute} cannot be blank.',array('{attribute}'=>Yii::t('database','End Date'))));
+
+        }
         public function biggerdate($attribute,$params){
+             if($this->reportype==2 ){
              date_default_timezone_set('America/Santiago');
             $today = date("d/m/Y h:m",time());
             $input = $this->endate;
             if($input>$today  )
                    $this->addError ('endate', Yii::t ('yii', '{attribute} cannot be bigger than today.',array('{attribute}'=>Yii::t('database','End Date'))));
-            
+             }
         }
         public function biggeridate($attribute,$params){
              date_default_timezone_set('America/Santiago');
+              if($this->reportype==2){
             $today = date("d/m/Y h:m",time());
             $input = $this->initdate;
             if($input>$today  )
                    $this->addError ('initdate',  Yii::t ('yii', '{attribute} cannot be bigger than today.',array('{attribute}'=>Yii::t('database','Init Date'))));
-            
+              }
         }
         public function havesales($attribute,$params){
+            date_default_timezone_set('America/Santiago');
+            if($this->reportype==2&& !empty($this->initdate&& !empty($this->endate))){
             $criteria=new CDbCriteria();
-            $initdate=Yii::app()->dateFormatter->format('yyyy-MM-dd, hh:mm',$this->initdate);
-            $endate=Yii::app()->dateFormatter->format('yyyy-MM-dd, hh:mm',$this->endate);
-            $criteria->condition = "date >= '".$initdate."' and date <='".$endate."'";
+            $initdate=Yii::app()->dateFormatter->format('yyyy-MM-dd HH:mm',$this->initdate);
+            $endate=Yii::app()->dateFormatter->format('yyyy-MM-dd HH:mm',$this->endate);
+            $criteria->condition = " t.id_office=".$this->office." and t.date between '".$initdate."' and '".$endate."'";
             $sales=  Sales::model()->findAll($criteria);
             if(count($sales)==0)
-                $this->addError ('initdate,endate', 'No hay ventas asociadas en ese rango de tiempo');
+                $this->addError ('initdate,endate', 'No hay ventas asociadas entre '.$initdate.' y '.$endate);
+        }
         }
       
 }

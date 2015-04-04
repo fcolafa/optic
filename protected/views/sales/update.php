@@ -3,8 +3,8 @@
 /* @var $model Sales */
 
 $this->breadcrumbs=array(
-	Yii::t('database','Sales')=>array('index'),
-	$model->id_sales=>array('view','id'=>$model->id_sales),
+	Yii::t('database','Sales')=>array('index','ido'=>$ido),
+	$model->id_sales=>array('view','id'=>$model->id_sales,'ido'=>$ido),
 	Yii::t('actions','Update'),
 );
 

@@ -20,12 +20,6 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id_contactlenses'); ?>
-		<?php echo $form->textField($model,'id_contactlenses'); ?>
-		<?php echo $form->error($model,'id_contactlenses'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'base_curve'); ?>
 		<?php echo $form->textField($model,'base_curve'); ?>
 		<?php echo $form->error($model,'base_curve'); ?>

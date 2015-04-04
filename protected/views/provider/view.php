@@ -26,5 +26,6 @@ $this->menu=array(
 		'email_provider',
 		'upper',
 		'lower',
+		'idType.type_name',
 	),
 )); ?>

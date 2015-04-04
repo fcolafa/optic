@@ -8,11 +8,13 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'client-form',
+     
 	// Please note: When you enable ajax validation, make sure the corresponding
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
+     
 )); ?>
 
 	<p class="note"> <?php echo Yii::t('validation','Fields with')?> <span class="required">*</span> <?php echo Yii::t('validation','are required')?> </p>
@@ -55,32 +57,7 @@
                     </div>
                 </td>
         </tr>
-	
-        <tr>
-            <td>
-                <div class="row">
-                        <?php echo $form->labelEx($model,'lefteye_sphere'); ?>
-                        <?php echo $form->numberField($model,'lefteye_sphere',array('step'=>0.25)); ?>
-                        <?php echo $form->error($model,'lefteye_sphere'); ?>
-                </div>
-            </td>
-            <td>
-                <div class="row">
-                        <?php echo $form->labelEx($model,'lefteye_cylinder'); ?>
-                        <?php echo $form->numberField($model,'lefteye_cylinder',array('step'=>0.25)); ?>
-                        <?php echo $form->error($model,'lefteye_cylinder'); ?>
-                </div>
-              
-            </td>
-            <td>
-                <div class="row">
-		<?php echo $form->labelEx($model,'lefteye_axis'); ?>
-		<?php echo $form->numberField($model,'lefteye_axis'); ?>
-		<?php echo $form->error($model,'lefteye_axis'); ?>
-                </div>
-            </td>
-        </tr>
-        <tr>
+	 <tr>
             <td>
                   <div class="row">
                         <?php echo $form->labelEx($model,'righteye_sphere'); ?>
@@ -106,13 +83,38 @@
             </td>
 
         </tr>
+        <tr>
+            <td>
+                <div class="row">
+                        <?php echo $form->labelEx($model,'lefteye_sphere'); ?>
+                        <?php echo $form->numberField($model,'lefteye_sphere',array('step'=>0.25)); ?>
+                        <?php echo $form->error($model,'lefteye_sphere'); ?>
+                </div>
+            </td>
+            <td>
+                <div class="row">
+                        <?php echo $form->labelEx($model,'lefteye_cylinder'); ?>
+                        <?php echo $form->numberField($model,'lefteye_cylinder',array('step'=>0.25)); ?>
+                        <?php echo $form->error($model,'lefteye_cylinder'); ?>
+                </div>
+              
+            </td>
+            <td>
+                <div class="row">
+		<?php echo $form->labelEx($model,'lefteye_axis'); ?>
+		<?php echo $form->numberField($model,'lefteye_axis'); ?>
+		<?php echo $form->error($model,'lefteye_axis'); ?>
+                </div>
+            </td>
+        </tr>
+       
 	
         
            <tr>
             <td>
                 <div class="row">
                         <?php echo $form->labelEx($model,'pupillary_distance'); ?>
-                        <?php echo $form->numberField($model,'pupillary_distance'); ?>
+                        <?php echo $form->textField($model,'pupillary_distance'); ?>
                         <?php echo $form->error($model,'pupillary_distance'); ?>
                 </div>
             </td>
@@ -125,7 +127,7 @@
             <td>
                 <div class="row">
                         <?php echo $form->labelEx($model,'addition'); ?>
-                        <?php echo $form->numberField($model,'addition'); ?>
+                        <?php echo $form->numberField($model,'addition',array('step'=>0.1)); ?>
                         <?php echo $form->error($model,'addition'); ?>
                 </div>
             </td>
@@ -134,11 +136,12 @@
             <td>
                 <div class="row">
                         <?php echo $form->labelEx($model,'height'); ?>
-                        <?php echo $form->numberField($model,'height'); ?>
+                        <?php echo $form->numberField($model,'height',array('step'=>0.1)); ?>
                         <?php echo $form->error($model,'height'); ?>
                 </div>
             </td>
         </tr>
+      
         <tr>
             <td>
                 <div class="row">
@@ -152,10 +155,12 @@
             <td>
                 <div class="row buttons">
                         <?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save'),array('class'=>Yii::app()->params['btnclass'])); ?>
+                        
                 </div>
             </td>
         </tr>
         </table>
+         
 
 <?php $this->endWidget(); ?>
 

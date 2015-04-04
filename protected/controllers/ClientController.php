@@ -70,8 +70,15 @@ class ClientController extends Controller
 		if(isset($_POST['Client']))
 		{
 			$model->attributes=$_POST['Client'];
-			if($model->save())
+                        $model->client_name=  ucwords(strtolower($model->client_name));
+                        $model->client_lastname=  ucwords(strtolower($model->client_lastname));
+                        $model->validate();
+			if($model->save()){
+                            
+                           
 				$this->redirect(array('view','id'=>$model->id_client));
+                        }
+                        
 		}
 
 		$this->render('create',array(
@@ -94,8 +101,12 @@ class ClientController extends Controller
 
 		if(isset($_POST['Client']))
 		{
+                       
 			$model->attributes=$_POST['Client'];
-			if($model->save())
+                        $model->client_name=  ucwords(strtolower($model->client_name));
+                        $model->client_lastname=  ucwords(strtolower($model->client_lastname));
+                        $model->validate();
+			if($model->save())            
 				$this->redirect(array('view','id'=>$model->id_client));
 		}
 
@@ -112,10 +123,11 @@ class ClientController extends Controller
 	public function actionDelete($id)
 	{
           try{
+                $client=Client::model()->findByPk($id);
 		$this->loadModel($id)->delete();
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
                 if(!isset($_GET['ajax'])){
-                    Yii::app()->user->setFlash('success',Yii::t('validation','The element was deleted succesfully'));
+                     Yii::app()->user->setFlash('success',Yii::t('validation','The element was deleted succesfully'));
                     $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
                 }
                  

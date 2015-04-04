@@ -29,6 +29,12 @@
 		<?php echo $form->textField($model,'email_provider',array('size'=>45,'maxlength'=>45)); ?>
 		<?php echo $form->error($model,'email_provider'); ?>
 	</div>
+        <div class="row">
+		<?php echo $form->labelEx($model,'idType.type_name'); ?>
+		<?php echo $form->dropDownList($model,'id_type',CHtml::listData(Type::model()->findAll(),'id_type','type_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Type'))); ?>
+		<?php echo $form->error($model,'id_type'); ?>
+	</div>
+       
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'upper'); ?>

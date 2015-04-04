@@ -90,8 +90,11 @@ $this->breadcrumbs=array(
         $this->widget('CJuiDateTimePicker',array(
         'model'=>$model, //Model object
         'attribute'=>'initdate', //attribute name
-                'mode'=>'datetime', //use "time","date" or "datetime" (default)
-        'options'=>array(), // jquery plugin options
+               'mode'=>'datetime', //use "time","date" or "datetime" (default)
+        'options'=>array(
+            'dateFormat'=>'dd-mm-yy',
+            'maxDate' => 'today',
+        ), // jquery plugin options
     ));
         
 ?>
@@ -101,7 +104,10 @@ $this->breadcrumbs=array(
         'model'=>$model, //Model object
         'attribute'=>'endate', //attribute name
                 'mode'=>'datetime', //use "time","date" or "datetime" (default)
-        'options'=>array(), // jquery plugin options
+        'options'=>array(
+            'dateFormat'=>'dd-mm-yy',
+            'maxDate' => 'today',
+        ), // jquery plugin options
     ));
 ?><?php echo $form->error($model,'endate'); ?>
      

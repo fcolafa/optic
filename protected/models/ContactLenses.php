@@ -32,9 +32,10 @@ class ContactLenses extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_contactlenses', 'required'),
+			array('material,amount', 'required'),
 			array('id_contactlenses, dk, amount, critical_stock', 'numerical', 'integerOnly'=>true),
 			array('base_curve, sphere, cylinder', 'numerical'),
+                        array('if_contactlenses','notnull'),
                         array('sphere, cylinder', 'numerical','max'=>30,'min'=>-30),
                         array('sphere, cylinder','validateUnique'),
 			array('material, laboratory', 'length', 'max'=>45),
@@ -118,7 +119,7 @@ class ContactLenses extends CActiveRecord
 		return parent::model($className);
 	}
         public function validateUnique($attribute, $params) {
-            $criteria=new CDbCriteria();
+            $criteria=new CDbCriteria(); 
             if($this->cylinder==NULL)
                 $cylinder='is null';
             else
@@ -127,11 +128,21 @@ class ContactLenses extends CActiveRecord
                 $sphere='is null';
             else
                 $sphere='='.$this->sphere;
-            $criteria->condition = "cylinder ".$cylinder." and sphere ".$sphere." and material=".$this->material;
+            if($this->isNewRecord) 
+            $criteria->condition = "cylinder ".$cylinder." and sphere ".$sphere." and material='".$this->material. "' ";
+            else
+            $criteria->condition = "cylinder ".$cylinder." and sphere ".$sphere." and material='".$this->material. "' AND  id_contactlenses <> ".$this->id_contactlenses;
             $glass=  $this->findAll($criteria);
             if(count($glass)!=0)
                 $this->addError ('sphere,cylinder', Yii::t ('validation', 'This Conctact Lense already exists'));
 
             
         }
+          public function notnull($attribute, $params) {
+            if ($this->cylinder==NULL && $this->sphere==null){
+                       $this->addError ('cylinder', Yii::t ('validation', 'El lente de contacto debe tener al menos una fuerza designada'));
+                       $this->addError ('sphere', Yii::t ('validation', 'El lente de contacto debe tener al menos una fuerza designada'));
+        }
+        
+            }
 }

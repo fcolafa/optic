@@ -17,7 +17,7 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'id_zone'); ?>
+		<?php echo $form->label($model,'_zonename'); ?>
 		<?php echo $form->textField($model,'id_zone'); ?>
 	</div>
 

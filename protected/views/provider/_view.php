@@ -16,14 +16,16 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('email_provider')); ?>:</b>
 	<?php echo CHtml::encode($data->email_provider); ?>
 	<br />
-
+        <b><?php echo CHtml::encode($data->getAttributeLabel('idType.type_name')); ?>:</b>
+	<?php echo CHtml::encode($data->idType->type_name); ?>
+	<br />
 	<b><?php echo CHtml::encode($data->getAttributeLabel('upper')); ?>:</b>
 	<?php echo CHtml::encode($data->upper); ?>
 	<br />
-
 	<b><?php echo CHtml::encode($data->getAttributeLabel('lower')); ?>:</b>
 	<?php echo CHtml::encode($data->lower); ?>
 	<br />
 
+	
 
 </div>

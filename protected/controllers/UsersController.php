@@ -129,13 +129,20 @@ class UsersController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+                $criteria= new CDbCriteria();
+                $criteria->condition = 'role="Control Total"'; 
+                $user= Users::model()->findAll($criteria);
+                if(count($user)<=1)
+                      Yii::app()->user->setFlash('error',Yii::t('validation','No se puede borra el unico usuario con todos los permisos de acceso'));
+                else{
 		$this->loadModel($id)->delete();
                 Session::model()->deleteByPk($id);
-               
+                }
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-	}
+            
+        }
 
 	/**
 	 * Lists all models.

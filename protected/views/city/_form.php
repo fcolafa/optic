@@ -20,7 +20,7 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-                <?php echo $form->labelEx($model,'id_zone'); ?>
+                <?php echo $form->labelEx($model,'_zonename'); ?>
 		<?php echo $form->dropDownList($model,'id_zone',CHtml::listData(Zone::model()->findAll(),'id_zone','zone_name')); ?>
 		<?php echo $form->error($model,'id_zone'); ?>
 	</div>

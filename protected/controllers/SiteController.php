@@ -190,12 +190,13 @@ class SiteController extends Controller
                       
                    }
                     elseif($model->reportype=='2')
-                        $Office= Office::model()->findByPk($model->office);
-                        $initdate=Yii::app()->dateFormatter->format('yyyy/MM/dd, hh:mm',$model->initdate);
-                        $endate=Yii::app()->dateFormatter->format('yyyy/MM/dd, hh:mm',$model->endate);
+                        $office= Office::model()->findByPk($model->office);
+                        $initdate=Yii::app()->dateFormatter->format('yyyy-MM-dd HH:mm',$model->initdate);
+                        $endate=Yii::app()->dateFormatter->format('yyyy-MM-dd HH:mm',$model->endate);
+                        $command = Yii::app()->db->createCommand(" call rangereport(". $model->office .",'".$initdate."','".$endate ."') ");
+                        $range = $command->queryAll();
                         Yii::app()->request->sendFile('ReporteDetallado-'.$model->initdate.'al'.$model->endate.'.xls', 
-               
-                        $this->renderPartial('/Sales/rangexcel',array('office'=>$Office,'initdate'=>$initdate, 'endate'=>$endate)),true);
+                        $this->renderPartial('/Sales/rangexcel',array('range'=>$range,'office'=>$office)),true);
                     
                 }
             }

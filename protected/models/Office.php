@@ -38,6 +38,7 @@ class Office extends CActiveRecord
 			array('id_city, id_zone, office_name', 'required'),
                         array('id_city, id_zone', 'numerical', 'integerOnly'=>true),
 			array('office_name,office_address', 'length', 'max'=>45),
+                        array('office_name','unique'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
                         array('id_office, id_city, id_zone, office_name', 'safe', 'on'=>'search'),

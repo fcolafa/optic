@@ -70,7 +70,9 @@ class CityController extends Controller
 		if(isset($_POST['City']))
 		{
 			$model->attributes=$_POST['City'];
+                        $model->city_name=  ucwords(strtolower($model->city_name));
 			if($model->save())
+                            
 				$this->redirect(array('view','id'=>$model->id_city));
 		}
 
@@ -94,6 +96,7 @@ class CityController extends Controller
 		if(isset($_POST['City']))
 		{
 			$model->attributes=$_POST['City'];
+                        $model->city_name=  ucwords(strtolower($model->city_name));
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_city));
 		}

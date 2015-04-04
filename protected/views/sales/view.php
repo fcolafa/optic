@@ -3,8 +3,9 @@
 /* @var $model Sales */
 
 $this->breadcrumbs=array(
-	Yii::t('database','Sales')=>array('index'),
+	Yii::t('database','Sales')=>array('sales/index','ido'=>$ido),
 	$model->id_sales,
+      
 );
 if(isset($ido))
     $this->menu=array(
@@ -33,19 +34,31 @@ if(isset($ido))
                 'type'=>'raw',
             ),
 		'idOffice.office_name',
+                'idUser.user_name',
 		  array(
                 'name'=>'date',
                 //'value'=>'date("d M Y",strtotime($data["work_date"]))'
                 'value'=>Yii::app()->dateFormatter->format("d MMMM y | HH:mm:ss",strtotime($model->date))
                 ),
-                'type',
+                'idType.type_name',
                 'pay',
 		'price',
-            'id_frame',
+              
+                array(
+                  'name'=>  'idFrame.frame_name',
+                  'value'=>empty($model->idFrame)?"No asignado":$model->idFrame->frame_name.", ".$model->idFrame->idExamplar->examplar_name." de ".$model->idFrame->idMark->mark_name,
+                ),
+                array(
+                  'name'=>'delivered',
+                  'value'=>$model->delivered==1?"Si":"No",
+                ),
                 array(
                   'name'=>'status',
-                    'value'=>$model->status==1?"Finalizada":"Pendiente",
+                  'value'=>$model->status==1?"Finalizada":"Pendiente",
                 ),
+               
         
 	),
 )); ?>
+<br>
+    <?php echo CHtml::link($model->delivered==1? "Asignar Producto No Entregado":"Asignar Producto Entregado",array("sales/assign",'id'=>$model->id_sales),array('confirm'=>$model->delivered==0?'Confirma Entrega de Producto?':'Anulación de Producto Entregado?','class'=>$model->delivered==1?'button red':'button green')); ?>

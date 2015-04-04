@@ -22,6 +22,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+                'application.extensions.jtogglecolumn.*', 
 	),
 
 	'modules'=>array(
@@ -36,6 +37,7 @@ return array(
 					'application.modules.gii',   // a path alias
 				),
 		),
+                 
 		
 	),
 
@@ -124,7 +126,7 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>false,
-                        //'authTimeout'=>300,
+                       // 'authTimeout'=>300,
 		),
 		// uncomment the following to enable URLs in path-format
 	

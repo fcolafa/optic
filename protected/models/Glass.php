@@ -27,9 +27,11 @@ class Glass extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+                        array('amount','required'),
 			array('amount, critical_stock', 'numerical', 'integerOnly'=>true),
 			array('sphere, cylinder', 'numerical','max'=>30,'min'=>-30),
                         array('sphere, cylinder','validateUnique'),
+                        array('id_glass','notnull'),
                         array('critical_stock','compare','compareAttribute'=>'amount','operator'=>'<=','message'=>' el stock critico no puede ser mayor a la cantidad de cristales'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -112,12 +114,23 @@ class Glass extends CActiveRecord
                 $sphere='is null';
             else
                 $sphere='='.$this->sphere;
-            $criteria->condition = "cylinder ".$cylinder." and sphere ".$sphere;
+            if($this->isNewRecord)
+                $criteria->condition = "cylinder ".$cylinder." and sphere ".$sphere ;
+            else
+                $criteria->condition = "cylinder ".$cylinder." and sphere ".$sphere. " and id_glass <> ".$this->id_glass;
+            
             $glass=  $this->findAll($criteria);
             if(count($glass)!=0)
                 $this->addError ('sphere,cylinder', Yii::t ('validation', 'This crystal already exists'));
 
             
         }
+        public function notnull($attribute, $params) {
+            if ($this->cylinder==NULL && $this->sphere==null){
+                       $this->addError ('cylinder', Yii::t ('validation', 'El cristal debe tener al menos una fuerza designada'));
+                       $this->addError ('sphere', Yii::t ('validation', 'El cristal debe tener al menos una fuerza designada'));
+        }
+        
+            }
         
 }

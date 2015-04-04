@@ -11,7 +11,7 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id_city')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->id_city), array('view', 'id'=>$data->id_city)); ?>
 	<br />
-        <b><?php echo CHtml::encode($data->getAttributeLabel('Región')); ?>:</b>
+        <b><?php echo CHtml::encode($data->getAttributeLabel('_zonename')); ?>:</b>
 	<?php echo CHtml::encode($data->idZone->zone_name); ?>
 	<br />
 	

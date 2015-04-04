@@ -28,8 +28,8 @@
     </div>
   <?php if(Yii::app()->user->checkAccess('Control Total')){?>
      <div class="dashIcon span-3">
-        <a href="<?php echo Yii::app()->baseurl?>/zone/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-map2.png" /></a>
-        <div class="dashIconText"><a href="<?php echo Yii::app()->baseurl?>/zone/"><?php echo Yii::t('database','Zones') ?></a></div>
+        <a href="<?php echo Yii::app()->baseurl?>/city/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-map2.png" /></a>
+        <div class="dashIconText"><a href="<?php echo Yii::app()->baseurl?>/city/"><?php echo Yii::t('database','Cities') ?></a></div>
     </div>
     <div class="dashIcon span-3">
         <a href="<?php echo Yii::app()->baseurl?>/site/globalConfig/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-gears.png" /></a>

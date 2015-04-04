@@ -3,7 +3,7 @@
 /* @var $model Sales */
 
 $this->breadcrumbs=array(
-	Yii::t('database','Sales')=>array('index'),
+	Yii::t('database','Sales')=>array('index','ido'=>$ido),
 	Yii::t('actions','Create'),
 );
 

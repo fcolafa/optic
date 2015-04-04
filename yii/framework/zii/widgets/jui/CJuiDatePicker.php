@@ -7,9 +7,7 @@
  * @copyright 2008-2013 Yii Software LLC
  * @license http://www.yiiframework.com/license/
  */
-
 Yii::import('zii.widgets.jui.CJuiInputWidget');
-
 /**
  * CJuiDatePicker displays a datepicker.
  *
@@ -62,7 +60,6 @@ class CJuiDatePicker extends CJuiInputWidget
 	 * @var boolean If true, shows the widget as an inline calendar and the input as a hidden field.
 	 */
 	public $flat=false;
-
 	/**
 	 * Run this widget.
 	 * This method registers necessary javascript and renders the needed HTML code.
@@ -70,14 +67,12 @@ class CJuiDatePicker extends CJuiInputWidget
 	public function run()
 	{
 		list($name,$id)=$this->resolveNameID();
-
 		if(isset($this->htmlOptions['id']))
 			$id=$this->htmlOptions['id'];
 		else
 			$this->htmlOptions['id']=$id;
 		if(isset($this->htmlOptions['name']))
 			$name=$this->htmlOptions['name'];
-
 		if($this->flat===false)
 		{
 			if($this->hasModel())
@@ -98,26 +93,19 @@ class CJuiDatePicker extends CJuiInputWidget
 				echo CHtml::hiddenField($name,$this->value,$this->htmlOptions);
 				$this->options['defaultDate']=$this->value;
 			}
-
 			$this->options['altField']='#'.$id;
-
 			$id=$this->htmlOptions['id']=$id.'_container';
 			$this->htmlOptions['name']=$name.'_container';
-
 			echo CHtml::tag('div',$this->htmlOptions,'');
 		}
-
 		$options=CJavaScript::encode($this->options);
 		$js = "jQuery('#{$id}').datepicker($options);";
-
 		if($this->language!='' && $this->language!='en')
 		{
 			$this->registerScriptFile($this->i18nScriptFile);
 			$js = "jQuery('#{$id}').datepicker(jQuery.extend({showMonthAfterYear:false},jQuery.datepicker.regional['{$this->language}'],{$options}));";
 		}
-
 		$cs = Yii::app()->getClientScript();
-
 		if(isset($this->defaultOptions))
 		{
 			$this->registerScriptFile($this->i18nScriptFile);

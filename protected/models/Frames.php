@@ -16,6 +16,8 @@
  */
 class Frames extends CActiveRecord
 {
+        public $_examplarname;
+        public $_markname;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -32,12 +34,13 @@ class Frames extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_examplar, id_mark', 'required'),
+			array('id_examplar, id_mark, amount', 'required'),
 			array('id_examplar, id_mark', 'numerical', 'integerOnly'=>true),
                         array('frame_name', 'length', 'max'=>45),
+                        
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_frame, id_examplar, id_mark, frame_name', 'safe', 'on'=>'search'),
+			array('_examplarname,_markname, id_frame, id_examplar, id_mark, frame_name', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -85,12 +88,15 @@ class Frames extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
+                $criteria->with=array('idExamplar','idMark');
+                $criteria->together=true;
 		$criteria->compare('id_frame',$this->id_frame);
 		$criteria->compare('id_examplar',$this->id_examplar);
 		$criteria->compare('id_mark',$this->id_mark);
                 $criteria->compare('frame_name',$this->frame_name,true);
-
+                
+                $criteria->compare('idExamplar.examplar_name',$this->_examplarname, true);
+                $criteria->compare('idMark.mark_name',$this->_markname, true);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

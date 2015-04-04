@@ -1,11 +1,11 @@
 <script type='text/javascript'>
        $(document).ready(function(){
 
-  var droplist = $('#Sales_type');
-  if(droplist.val()=='Contacto')
+  var droplist = $('#Sales_id_type');
+  if(droplist.val()!='2')
        $('#frame').hide();
   droplist.change(function(e){
-    if (droplist.val() == 'Optico') {
+    if (droplist.val() == '2') {
       $('#frame').show();
     }
     else {
@@ -72,17 +72,22 @@
 		<?php echo $form->error($model,'id_office'); ?>
 	</div>
         <?php } ?>
-        
-        <div class="row">
-		<?php echo $form->labelEx($model,'type'); ?>
-		<?php echo $form->dropDownList($model,'type',array('Contacto'=>'Contacto','Optico'=>'Optico')); ?>
-		<?php echo $form->error($model,'type'); ?>
+              <div class="row">
+		<?php echo $form->labelEx($model,'id_type'); ?>
+		<?php echo $form->dropDownList($model,'id_type',CHtml::listData(Type::model()->findAll(),'id_type','type_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Type'))); ?>
+		<?php echo $form->error($model,'id_type'); ?>
 	</div>
+       
          
         <div class="row" id="frame">
 		<?php echo $form->labelEx($model,'id_frame'); ?>
 		<?php echo $form->dropDownList($model,'id_frame',CHtml::listData(Frames::model()->findAll(),'id_frame','frame_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Frame'))); ?>
 		<?php echo $form->error($model,'id_frame'); ?>
+	</div>
+         <div class="row">
+		<?php echo $form->labelEx($model,'payment_method'); ?>
+		<?php echo $form->dropDownList($model,'payment_method',array('Efectivo'=>'Efectivo','Cheque'=>'Cheque','TransBank'=>'Transbank'),array('prompt'=>'Seleccione Medio de Pago')); ?>
+		<?php echo $form->error($model,'payment_method'); ?>
 	</div>
 
 	<div class="row">
@@ -95,7 +100,7 @@
 		<?php echo $form->textField($model,'price'); ?>
 		<?php echo $form->error($model,'price'); ?>
 	</div>
-       
+  
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('actions','Create') : Yii::t('actions','Save'),array('class'=>Yii::app()->params['btnclass'])); ?>

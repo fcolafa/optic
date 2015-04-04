@@ -62,7 +62,7 @@
                                 ),
                         ));
                        $glass=  Glass::model()->findAll('amount<=critical_stock');
-                       if(isset($glass)){
+                       if(!empty($glass)){
                            echo "los siguientes Cristales estan bajo el stock deseado <br>";
                            $cuerpo="";
                            foreach($glass as $gl){
@@ -70,10 +70,12 @@
                            $cuerpo.=$linea."\n";
                            $linea.="<br>";
                            echo CHtml::link($linea,array("glass/view", 'id'=>$gl->id_glass)); 
-                              }
+                           }
                            echo CHtml::link("solicitar Cristales",array('site/contact','cuerpo'=>$cuerpo));
-                             
                        }
+                       
+                       
+                       $contactl=  ContactLenses::model()->findAll('amount<=critical_stock');
                     $this->endWidget('zii.widgets.jui.CJuiDialog');
                     /** End Widget **/
                     echo CHtml::button(Yii::t('actions','System Alerts'), array(

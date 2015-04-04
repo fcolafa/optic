@@ -22,8 +22,8 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id_frame',
-		'id_examplar',
-		'id_mark',
+                'idMark.mark_name',
+		'idExamplar.examplar_name',
                 'frame_name',
 	),
 )); ?>
