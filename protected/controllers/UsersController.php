@@ -70,7 +70,6 @@ class UsersController extends Controller
 			$model->attributes=$_POST['Users'];
                         $model->password = md5($model->password);
                         $model->password_repeat = md5($model->password_repeat);
-                        date_default_timezone_set('America/Santiago');
                         $model->date_create=  date("y/m/d H:i:s");
                         
 			if($model->save()){
@@ -103,7 +102,7 @@ class UsersController extends Controller
 			$model->attributes=$_POST['Users'];
                         $model->password = md5($model->password);
                         $model->password_repeat = md5($model->password_repeat);
-                        date_default_timezone_set('America/Santiago');
+                        
                         $model->date_create=  date("y/m/d H:i:s");
                       
 			if($model->save()){

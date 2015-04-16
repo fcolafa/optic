@@ -61,8 +61,6 @@ $('.search-form form').submit(function(){
                             'value'=>'Yii::app()->dateFormatter->format("d MMMM y \n HH:mm:ss",strtotime($data->login))',
 
                     ),
-             
-            
 		array(
 			'class'=>'CButtonColumn',
                         'buttons'=>array(

@@ -74,7 +74,6 @@ class SalesController extends Controller
 		if(isset($_POST['Sales']))
 		{
 			$model->attributes=$_POST['Sales'];
-                        date_default_timezone_set('America/Santiago');
                         $model->date=  date("y-m-d H:i:s");
                         $model->id_user=Yii::app()->user->id;
                         $model->delivered=0;
@@ -272,7 +271,8 @@ class SalesController extends Controller
 			'dataProvider'=>$dataProvider,'ido'=>$ido,
 		));
 	}
-         public function actionAssign($id) {
+        
+        public function actionAssign($id) {
            $model=Sales::model()->findByPk($id);
           if($model->pay==$model->price){
             if($model->delivered==0){

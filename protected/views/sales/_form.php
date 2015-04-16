@@ -1,24 +1,12 @@
-<script type='text/javascript'>
-       $(document).ready(function(){
 
-  var droplist = $('#Sales_id_type');
-  if(droplist.val()!='2')
-       $('#frame').hide();
-  droplist.change(function(e){
-    if (droplist.val() == '2') {
-      $('#frame').show();
-    }
-    else {
-      $('#frame').hide();
-    }
-  })
-});
- 
-</script>
 <?php
 /* @var $this SalesController */
 /* @var $model Sales */
 /* @var $form CActiveForm */
+
+$baseUrl = Yii::app()->theme->baseUrl; 
+$cs = Yii::app()->getClientScript();
+$cs->registerScriptFile($baseUrl.'/js/_formsales.js');
 ?>
 
 <div class="form">
@@ -95,6 +83,7 @@
 		<?php echo $form->textField($model,'pay'); ?>
 		<?php echo $form->error($model,'pay'); ?>
 	</div>
+        
 	<div class="row">
 		<?php echo $form->labelEx($model,'price'); ?>
 		<?php echo $form->textField($model,'price'); ?>

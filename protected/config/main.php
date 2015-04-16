@@ -12,8 +12,7 @@ return array(
 	'sourceLanguage'=>'en',
 	'charset'=>'utf-8',
         'theme'=>'optic',
-       
-        
+        'timeZone'=>'America/Santiago',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -83,7 +82,7 @@ return array(
         		    )
         		),
 		    ),
-                'widgetFactory'=>array(
+            'widgetFactory'=>array(
                     'class'=>'CWidgetFactory',
         
                     

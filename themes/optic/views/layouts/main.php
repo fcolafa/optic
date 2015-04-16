@@ -7,24 +7,49 @@
 	<meta name="language" content="en" />
 
 	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
-
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/form.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/buttons.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/icons.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/tables.css" />
-    
-       <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/mbmenu.css" />
-       <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/jquery.css" />
-       <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/mbmenu_iestyles.css" />
        <title><?php echo CHtml::encode($this->pageTitle); ?></title>
        <link rel="icon" type="image/png" href="<?php echo Yii::app()->theme->baseUrl?>/images/favicon.png" />
 
+       <script type="text/javascript">   
+        var idleTime = 0;
+         $(document).ready(function () {
+             //Increment the idle time counter every minute.
+             var guest="<?php echo Yii::app()->user->isGuest?'false':'true'?>";
+             if(guest=='true')
+                 var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+             //Zero the idle timer on mouse movement.
+             $(this).mousemove(function (e) {
+                 idleTime = 0;
+             });
+             $(this).keypress(function (e) {
+                 idleTime = 0;
+             });
+         });
+
+         function timerIncrement() {
+             idleTime = idleTime + 1;
+             if (idleTime > 2) { // 20 minutes
+                alert("Sesión Expirada por Inactividad");
+                window.location.replace("<?php echo Yii::app()->createAbsoluteUrl("Site/logout"); ?>");
+             }
+         }
+         
+     </script>
+       
+        <?php $baseUrl = Yii::app()->theme->baseUrl; 
+        $cs = Yii::app()->getClientScript();
+        $cs->registerCssFile($baseUrl.'/css/screen.css',$media="screen, projection");
+        $cs->registerCssFile($baseUrl.'/css/print.css',$media="print");
+        $cs->registerCssFile($baseUrl.'/css/main.css');
+        $cs->registerCssFile($baseUrl.'/css/form.css');
+        $cs->registerCssFile($baseUrl.'/css/buttons.css');
+        $cs->registerCssFile($baseUrl.'/css/icons.css');
+        $cs->registerCssFile($baseUrl.'/css/tables.css');
+        $cs->registerCssFile($baseUrl.'/css/mbmenu.css');
+        $cs->registerCssFile($baseUrl.'/css/jquery.css');
+        $cs->registerCssFile($baseUrl.'/css/mbmenu_iestyles.css');
+        $cs->registerScriptFile($baseUrl.'/js/clock.js');?>
 </head>
 
 <body>
@@ -33,11 +58,11 @@
 
 	<div id="topnav">
             
+            
+            <div class="topnav_text" > 
+                <div id="clockbox" ></div>
               
-            <div class="topnav_text"> 
                 
-              
-              
                <?php 
              
                 if(!Yii::app()->user->isGuest){?>
@@ -143,7 +168,8 @@
                 ),
             array('label'=>Yii::t('actions','Login'), 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
             array('label'=>Yii::t('actions','Manage').' '.Yii::t('database','Users'),'url'=>array('/users/index'),'visible'=>Yii::app()->user->checkAccess('Control Total')),        
-            array('label'=>Yii::t('actions','Logout').' ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+            array('label'=>Yii::t('actions','Logout').' ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'),'visible'=>!Yii::app()->user->isGuest,
+                'linkOptions' => array('confirm' => 'Esta seguro que desea cerrar la sesión'),),
       
             ),
   ));?> 
@@ -151,10 +177,12 @@
 	</div> <!--mainmenu -->
             <?php    $this->widget('ext.LangPick.ELangPick', array(      
                )); ?>
+        
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
+		)); ?>
+        <!-- breadcrumbs -->
 	<?php endif?>
                 
                 <!-- some validation message -->

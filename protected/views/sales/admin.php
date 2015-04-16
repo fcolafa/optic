@@ -44,7 +44,7 @@ $('.search-form form').submit(function(){
 ) <?php echo Yii::t('validation','at the beginning of each of your search values to specify how the comparison should be done')?> .
 </p>
 
-<?php echo CHtml::link(Yii::t('actions','Advanced Search'),'#',array('class'=>'search-button')); ?>
+<?php //echo CHtml::link(Yii::t('actions','Advanced Search'),'#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,

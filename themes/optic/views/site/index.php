@@ -92,26 +92,19 @@ $this->beginWidget('zii.widgets.CPortlet', array(
                         echo "<th>".$o->office_name."</th>";
                         $command = Yii::app()->db->createCommand(" call monthsales(". $o->id_office .",'".  date("Y")."') ");
                         $month = $command->queryAll();
-                        $i=1;
-                        foreach($month as $m){
-                          
-                            while ($i<13){
-                                if($i==intval($m['month(s.date)'])){
-                                   
-                                 echo "<td>".intval($m['sum(s.price)']) ."</td>";
-                                 $i+=1;
-                                 break 1;
-                                }else{
-                                echo "<td>0</td>";
+                        $sales=array_fill(1,12,0);
+                             foreach($month as $m){
+                           for($i=1;$i<12;$i++){
+                                if($i==intval($m['month(s.date)']))
+                                    $sales[$i]=intval($m['sum(s.price)']);
                                 }
-                                $i+=1;
                             }
-                            
-                            }
-                            
+                             foreach($sales as $sale){
+                                    echo "<td style='font-weight:bold'>".$sale."</td>";
+                             }
                         echo "</tr>";
                         }
-                       }
+                    }
                         ?>                 
                 </tbody>
             </table>

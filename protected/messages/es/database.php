@@ -1,6 +1,5 @@
 <?php 
 return array(
-
 //city
 'Cities'=>'Ciudades',
 'City'=>'Ciudad',

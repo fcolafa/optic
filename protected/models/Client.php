@@ -36,6 +36,7 @@ class Client extends CActiveRecord
 	/**
 	 * @return array validation rules for model attributes.
 	 */
+        
 	public function rules()
 	{
 		// NOTE: you should only define rules for those attributes that
@@ -63,14 +64,18 @@ class Client extends CActiveRecord
 	/**
 	 * @return array relational rules.
 	 */
+    
 	public function relations()
 	{
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
 			'sales' => array(self::HAS_MANY, 'Sales', 'id_client'),
+                    
 		);
 	}
+        
+  
 
 	/**
 	 * @return array customized attribute labels (name=>label)
@@ -96,6 +101,7 @@ class Client extends CActiveRecord
                         'Forces'=>'Fuerza',
 		);
 	}
+     
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.

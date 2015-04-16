@@ -21,6 +21,7 @@ body
 	background-color:#000000;
 	color:#FFFF;
 	text-align:right;
+         overflow: hidden;
 }
 
 .topnav_text a
@@ -28,6 +29,12 @@ body
 	color: #FFFFFF!important;
 	font: normal 8pt Arial,Helvetica,sans-serif;
 	text-decoration:underline;
+       
+}
+#clockbox
+{
+    float: left;
+    color: #F1F1F1;
 }
 
 

@@ -88,7 +88,6 @@ class Reports extends CFormModel
         }
         public function biggerdate($attribute,$params){
              if($this->reportype==2 ){
-             date_default_timezone_set('America/Santiago');
             $today = date("d/m/Y h:m",time());
             $input = $this->endate;
             if($input>$today  )
@@ -96,7 +95,6 @@ class Reports extends CFormModel
              }
         }
         public function biggeridate($attribute,$params){
-             date_default_timezone_set('America/Santiago');
               if($this->reportype==2){
             $today = date("d/m/Y h:m",time());
             $input = $this->initdate;
@@ -105,7 +103,7 @@ class Reports extends CFormModel
               }
         }
         public function havesales($attribute,$params){
-            date_default_timezone_set('America/Santiago');
+          
             if($this->reportype==2&& !empty($this->initdate&& !empty($this->endate))){
             $criteria=new CDbCriteria();
             $initdate=Yii::app()->dateFormatter->format('yyyy-MM-dd HH:mm',$this->initdate);
@@ -113,7 +111,7 @@ class Reports extends CFormModel
             $criteria->condition = " t.id_office=".$this->office." and t.date between '".$initdate."' and '".$endate."'";
             $sales=  Sales::model()->findAll($criteria);
             if(count($sales)==0)
-                $this->addError ('initdate,endate', 'No hay ventas asociadas entre '.$initdate.' y '.$endate);
+                $this->addError ('initdate,endate', 'No hay ventas asociadas entre '.$this->initdate.' y '.$this->endate);
         }
         }
       
