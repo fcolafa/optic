@@ -18,25 +18,23 @@
 	<p class="note"> <?php echo Yii::t('validation','Fields with')?> <span class="required">*</span> <?php echo Yii::t('validation','are required')?> </p>
 
 	<?php echo $form->errorSummary($model); ?>
-
+        <div class="row">
+		<?php echo $form->labelEx($model,'idLaboratory.laboratory_name'); ?>
+		<?php echo $form->dropDownList($model,'id_laboratory',  CHtml::listData(Laboratory::model()->findAll(), 'id_laboratory', 'laboratory_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Laboratory'))); ?>
+		<?php echo $form->error($model,'id_laboratory'); ?>
+	</div>
 	<div class="row">
+		<?php echo $form->labelEx($model,'idMaterial.material_name'); ?>
+		<?php echo $form->dropDownList($model,'id_material',  CHtml::listData(Material::model()->findAll(), 'id_material', 'material_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Material'))); ?>
+		<?php echo $form->error($model,'id_material'); ?>
+	</div>
+        
+         <div class="row">
 		<?php echo $form->labelEx($model,'base_curve'); ?>
-		<?php echo $form->textField($model,'base_curve'); ?>
+		<?php echo $form->numberField($model,'base_curve',array('step'=>0.01)); ?>
 		<?php echo $form->error($model,'base_curve'); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'material'); ?>
-		<?php echo $form->textField($model,'material',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'material'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'laboratory'); ?>
-		<?php echo $form->textField($model,'laboratory',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'laboratory'); ?>
-	</div>
-
+       
 	<div class="row">
 		<?php echo $form->labelEx($model,'dk'); ?>
 		<?php echo $form->numberField($model,'dk'); ?>

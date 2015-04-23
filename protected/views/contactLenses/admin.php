@@ -34,7 +34,7 @@ $('.search-form form').submit(function(){
 ) <?php echo Yii::t('validation','at the beginning of each of your search values to specify how the comparison should be done')?> .
 </p>
 
-<?php// echo CHtml::link(Yii::t('actions','Advanced Search'),'#',array('class'=>'search-button')); ?>
+<?php // echo CHtml::link(Yii::t('actions','Advanced Search'),'#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
@@ -45,18 +45,21 @@ $('.search-form form').submit(function(){
 	'id'=>'contact-lenses-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+        'ajaxUpdate'=>false,
 	'columns'=>array(
 		'id_contactlenses',
+                array('name'=>'idLaboratory.laboratory_name',
+                    'value'=>'($data->id_laboratory != null)?($data->idLaboratory->laboratory_name):("no asignado")',
+                    'filter'=>  CHtml::activeTextField($model, '_laboratoryname'),
+                    ),
+                    array('name'=>'idMaterial.material_name',
+                    'value'=>'$data->idMaterial->material_name',
+                    'filter'=>  CHtml::activeTextField($model, '_materialname'),
+                    ),
 		'base_curve',
-		'material',
-		'laboratory',
 		'dk',
 		'sphere',
-		/*
-		'cylinder',
-		'amount',
-		'critical_stock',
-		*/
+		 
 		array(
 			'class'=>'CButtonColumn',
 		),

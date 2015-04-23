@@ -37,7 +37,7 @@ return array(
   'Id Contactlenses'=>'Id lente Contacto',
   'Material'=>'Material',
   'Base Curve'=>'Curva Base',
-  'Laboratory'=>'Laboratorio',
+ 
     'Dk'=>'DK',
     'Amount'=>'Cantidad',
   //examplar
@@ -68,11 +68,18 @@ return array(
  'Home'=>'Inicio',
 
  'Login'=>'Conexión',  
+ 'Laboratory'=>'Laboratorio',
+     'Laboratory Name'=>'Nombre Laboratorio',
+ 'Laboratories'=>'Laboratorios',
+    
  //marks
  'Mark'=>'Marca',
  'Marks'=>'Marcas',
  'Id Mark'=>'Id Marca',
  'Mark Name'=>'Nombre de Marca',
+   //material
+ 'Material Name'=>'Nombre Material',
+ 'Materials'=>'Materiales',
 //office
 'Office'=>'Sucursal',
 'Offices'=>'Sucursales',

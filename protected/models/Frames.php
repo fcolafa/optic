@@ -37,7 +37,7 @@ class Frames extends CActiveRecord
 			array('id_examplar, id_mark, amount', 'required'),
 			array('id_examplar, id_mark,critical_stock', 'numerical', 'integerOnly'=>true),
                         array('frame_name', 'length', 'max'=>45),
-                     array('critical_stock','compare','compareAttribute'=>'amount','operator'=>'<=','message'=>' el stock critico no puede ser mayor a la cantidad de Armazones'),
+                        array('critical_stock','compare','compareAttribute'=>'amount','operator'=>'<=','message'=>' el stock critico no puede ser mayor a la cantidad de Armazones'),
                         
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

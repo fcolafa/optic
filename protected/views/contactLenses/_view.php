@@ -8,18 +8,17 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('id_contactlenses')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->id_contactlenses), array('view', 'id'=>$data->id_contactlenses)); ?>
 	<br />
-
+        <b><?php echo CHtml::encode($data->getAttributeLabel('idLaboratory.laboratory_name')); ?>:</b>
+	<?php echo CHtml::encode(($data->id_laboratory != null)?$data->idLaboratory->laboratory_name:"no asignado"); ?>
+	<br />
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('idMaterial.material_name')); ?>:</b>
+	<?php echo CHtml::encode($data->idMaterial->material_name); ?>
+	<br />
 	<b><?php echo CHtml::encode($data->getAttributeLabel('base_curve')); ?>:</b>
 	<?php echo CHtml::encode($data->base_curve); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('material')); ?>:</b>
-	<?php echo CHtml::encode($data->material); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('laboratory')); ?>:</b>
-	<?php echo CHtml::encode($data->laboratory); ?>
-	<br />
+        
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('dk')); ?>:</b>
 	<?php echo CHtml::encode($data->dk); ?>

@@ -22,16 +22,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'material'); ?>
-		<?php echo $form->textField($model,'material',array('size'=>45,'maxlength'=>45)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'laboratory'); ?>
-		<?php echo $form->textField($model,'laboratory',array('size'=>45,'maxlength'=>45)); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'dk'); ?>
 		<?php echo $form->textField($model,'dk'); ?>
 	</div>

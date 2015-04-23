@@ -21,7 +21,7 @@
 
 	<div class="row">
                 <?php echo $form->labelEx($model,'_zonename'); ?>
-		<?php echo $form->dropDownList($model,'id_zone',CHtml::listData(Zone::model()->findAll(),'id_zone','zone_name')); ?>
+		<?php echo $form->dropDownList($model,'id_zone',CHtml::listData(Zone::model()->findAll(),'id_zone','zone_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Zone'))); ?>
 		<?php echo $form->error($model,'id_zone'); ?>
 	</div>
 

@@ -128,13 +128,16 @@ class UsersController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+                $model=$this->loadModel($id);
+                if($model->role=="Control Total"){
                 $criteria= new CDbCriteria();
-                $criteria->condition = 'role="Control Total"'; 
+                $criteria->condition = 'role="Control Total" and id_user='.$id; 
                 $user= Users::model()->findAll($criteria);
                 if(count($user)<=1)
                       Yii::app()->user->setFlash('error',Yii::t('validation','No se puede borra el unico usuario con todos los permisos de acceso'));
-                else{
-		$this->loadModel($id)->delete();
+                }else{
+                Yii::app ()->authManager->revoke($model->role,$id);
+		$model->delete();
                 Session::model()->deleteByPk($id);
                 }
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser

@@ -60,6 +60,9 @@ class SiteController extends Controller
 	 */
 	public function actionContact($cuerpo="",$type=null)
 	{
+                if(Yii::app()->user->isGuest)
+                    $this->redirect(Yii::app()->baseUrl.'/site/login');
+          
 		$model=new ContactForm;
                 $model->body=$cuerpo;
                 if($type!=null){
@@ -126,6 +129,12 @@ class SiteController extends Controller
 	}
         public function actionGlobalConfig()
         {
+            if(Yii::app()->user->isGuest)
+                    $this->redirect(Yii::app()->baseUrl.'/site/login');
+             if(!Yii::app()->user->checkAccess('Control Total')){
+                    Yii::app()->user->setFlash('error',"No esta autorizado para realizar esta accion");
+                    $this->redirect(Yii::app()->baseUrl.'/site/index');
+                }
             $file = dirname(__FILE__).'../../config/params.inc';
             $content = file_get_contents($file);
             $arr = unserialize(base64_decode($content));
@@ -155,6 +164,8 @@ class SiteController extends Controller
 	public function actionLogin()
 	{
 		$model=new LoginForm;
+                $model->username="";
+                $model->password="";
 
 		// if it is ajax validation request
 		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
@@ -189,6 +200,8 @@ class SiteController extends Controller
 	}
         
         public function actionReports(){
+            if(Yii::app()->user->isGuest)
+                    $this->redirect(Yii::app()->baseUrl.'/site/login');
             $model=new Reports;
             if(isset($_POST['Reports']))
             {

@@ -27,15 +27,15 @@ return array(
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		
-//                'gii'=>array(
-//                        'class'=>'system.gii.GiiModule',
-//                        'password'=>'1234',
-//                        // If removed, Gii defaults to localhost only. Edit carefully to taste.
-//                        'ipFilters'=>array('127.0.0.1','::1'),
-//                                'generatorPaths'=>array(
-//                                        'application.modules.gii',   // a path alias
-//                                ),
-//                ),
+               'gii'=>array(
+                      'class'=>'system.gii.GiiModule',
+                       'password'=>'1234',
+                      // If removed, Gii defaults to localhost only. Edit carefully to taste.
+                      'ipFilters'=>array('127.0.0.1','::1'),
+                              'generatorPaths'=>array(
+                                    'application.modules.gii',   // a path alias
+                             ),
+               ),
                  
 		
 	),

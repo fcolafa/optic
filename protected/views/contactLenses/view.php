@@ -22,9 +22,9 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id_contactlenses',
-		'base_curve',
-		'material',
-		'laboratory',
+		'idLaboratory.laboratory_name',
+		'idMaterial.material_name',
+                'base_curve',
 		'dk',
 		'sphere',
 		'cylinder',

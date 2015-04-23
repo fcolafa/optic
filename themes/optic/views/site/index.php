@@ -23,7 +23,7 @@
     </div>
     
     <div class="dashIcon span-3">
-        <a href="<?php echo Yii::app()->createUrl('/site/report') ?>"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-chart.png" alt="Page" /></a>
+        <a href="<?php echo Yii::app()->createUrl('/site/reports') ?>"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-chart.png" alt="Page" /></a>
         <div class="dashIconText"><a href="<?php echo Yii::app()->createUrl('/site/reports') ?>"><?php echo Yii::t('database','Reports')?></a></div>
     </div>
   <?php if(Yii::app()->user->checkAccess('Control Total')){?>
@@ -55,12 +55,6 @@ $this->beginWidget('zii.widgets.CPortlet', array(
 
 ?>
 <div class="chart3">
-   
-    
-
-  
-
-       
     <div>
         <div class="text">
             <table class="myChart">
@@ -85,7 +79,7 @@ $this->beginWidget('zii.widgets.CPortlet', array(
                 <tbody>
                   
                         <?php 
-                        $office=Office::model()->findAll();
+                       $office=Office::model()->findAll();
                        if(isset($office)){
                         foreach ($office as $o){
                         echo "<tr>";   
@@ -108,8 +102,6 @@ $this->beginWidget('zii.widgets.CPortlet', array(
                         ?>                 
                 </tbody>
             </table>
-            
-            
         </div>
     </div>
 </div>

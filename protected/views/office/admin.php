@@ -52,7 +52,7 @@ $('.search-form form').submit(function(){
                     'value'=>'$data->idZone->zone_name',
                     'filter'=>  CHtml::activeTextField($model, '_zonename'),
                     ),
-                array('name'=>'idCity.city_name',
+                    array('name'=>'idCity.city_name',
                     'value'=>'$data->idCity->city_name',
                     'filter'=>  CHtml::activeTextField($model, '_cityname'),
                     ),

@@ -64,7 +64,7 @@ class City extends CActiveRecord
 			'id_city' => Yii::t('database','Id City'),
 			'id_zone' => Yii::t('database','Id Zone'),
 			'city_name' => Yii::t('database','City Name'),
-                        '_zonename'=>Yii::t('database','Nombre Region'),
+            '_zonename'=>Yii::t('database','Zone Name'),
 		);
 	}
 
