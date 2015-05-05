@@ -30,7 +30,7 @@ class Glass extends CActiveRecord
                         array('amount','required'),
 			array('amount, critical_stock', 'numerical', 'integerOnly'=>true),
 			array('sphere, cylinder', 'numerical','max'=>30,'min'=>-30),
-                        array('sphere, cylinder','validateUnique'),
+                        array('id_glass','validateUnique'),
                         array('id_glass','notnull'),
                         array('critical_stock','compare','compareAttribute'=>'amount','operator'=>'<=','message'=>' el stock critico no puede ser mayor a la cantidad de cristales'),
 			// The following rule is used by search().
@@ -121,7 +121,7 @@ class Glass extends CActiveRecord
             
             $glass=  $this->findAll($criteria);
             if(count($glass)!=0)
-                $this->addError ('sphere,cylinder', Yii::t ('validation', 'This crystal already exists'));
+                $this->addError ('id_glass', Yii::t ('validation', 'This crystal already exists'));
 
             
         }

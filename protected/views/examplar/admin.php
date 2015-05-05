@@ -48,7 +48,11 @@ $('.search-form form').submit(function(){
         'ajaxUpdate'=>false,
 	'columns'=>array(
 		'id_examplar',
-		'id_mark',
+		   array(
+                    'name'=>'idMark.mark_name',
+                    'value'=>'$data->idMark->mark_name',
+                    'filter'=>  CHtml::activeTextField($model, '_markname'),
+                    ),
 		'examplar_name',
 		array(
 			'class'=>'CButtonColumn',

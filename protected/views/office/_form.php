@@ -20,7 +20,7 @@
 	<?php echo $form->errorSummary($model); ?>
         
         <div class="row">
-		<?php echo $form->labelEx($model,'id_zone'); ?>
+		<?php echo $form->labelEx($model,'idZone.zone_name'); ?>
                 <?php echo $form->dropDownList($model,'id_zone' ,CHtml::listData(Zone::model()->findAll(),'id_zone','zone_name'),
 			array(
                                 'prompt'=>Yii::t('actions','Select')." ".Yii::t("database", "Zone"),
@@ -36,7 +36,7 @@
 
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id_city'); ?>
+		<?php echo $form->labelEx($model,'idCity.city_name'); ?>
 		<?php echo $form->dropDownList($model,'id_city',CHtml::listData(City::model()->findAll('id_zone=:id_zone',array(':id_zone'=>$model->id_zone)),'id_city','city_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','City'))); ?>
 		<?php echo $form->error($model,'id_city'); ?>
 	</div>

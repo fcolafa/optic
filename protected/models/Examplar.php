@@ -17,6 +17,7 @@ class Examplar extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+      public $_markname;
 	public function tableName()
 	{
 		return 'examplar';
@@ -33,9 +34,10 @@ class Examplar extends CActiveRecord
 			array('id_mark', 'required'),
 			array('id_mark', 'numerical', 'integerOnly'=>true),
 			array('examplar_name', 'length', 'max'=>45),
+                        array('examplar_name','unique'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_examplar, id_mark, examplar_name', 'safe', 'on'=>'search'),
+			array('_markname, sid_examplar, id_mark, examplar_name', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -81,10 +83,11 @@ class Examplar extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
+                $criteria->with=array('idMark');
 		$criteria->compare('id_examplar',$this->id_examplar);
 		$criteria->compare('id_mark',$this->id_mark);
 		$criteria->compare('examplar_name',$this->examplar_name,true);
+                 $criteria->compare('idMark.mark_name',$this->_markname, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

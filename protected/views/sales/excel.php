@@ -2,7 +2,7 @@
 <?php
 $x=0;
 $amonth=array('Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre','Total Anual');
-if(isset($office)){?>
+?>
 
  <h1> Reporte de ventas Anuales <?php echo $year ?> </h1>
 
@@ -10,7 +10,7 @@ if(isset($office)){?>
         <tr>
             <th bgcolor="#8fcc14"> </th>
           <?php foreach($amonth as $am){
-              echo "<td bgcolor='#8fcc14' style='font-weight:bold;'>".$am."</td>";
+              echo "<td bgcolor='#8fcc14' style='font-weight:bold '>".$am."</td>";
           }
 ?>
         </tr>
@@ -100,7 +100,6 @@ if(isset($office)){?>
        foreach($user as $u){
        $usermonthsales = Yii::app()->db->createCommand(" call usersmonthsales(".$u->id_user.",".$year.") ")->queryAll();
        $totalu=0;
-       
        $salesusers=array_fill(1,13,0);
        foreach($usermonthsales as $ums){
          for($i=1;$i<13;$i++){
@@ -111,18 +110,17 @@ if(isset($office)){?>
             }
             $salesusers[13]=$totalu; 
           }
-          
-          echo $color%2==0?"<tr bgcolor='#d8efa7'>":"<tr bgcolor='#bcf959'>";
-          $color+=1;
-          echo "<td bgcolor='#bcf959' style='font-weight:bold'>".$u->user_name."</td>";
+        echo $color%2==0?"<tr bgcolor='#d8efa7'>":"<tr bgcolor='#bcf959'>";
+        $color+=1;
+        echo "<td bgcolor='#bcf959' style='font-weight:bold'>".$u->user_name."</td>";
           foreach($salesusers as $su){
-             echo  "<td>".$su."</td><br>";
-          }
+           echo  "<td>".$su."</td>";
         }
+        echo "</tr>";
+        }
+        
         ?>
-         
-       
-<?php } ?>
+   </table>
         
     
 

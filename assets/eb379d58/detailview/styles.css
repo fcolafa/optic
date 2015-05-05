@@ -27,12 +27,12 @@ table.detail-view th
 
 table.detail-view tr.odd
 {
-	background:#E5F1F4;
+	background:#F8F8F8;
 }
 
 table.detail-view tr.even
 {
-	background:#F8F8F8;
+	background:#E6EFC2;
 }
 
 table.detail-view tr.odd th

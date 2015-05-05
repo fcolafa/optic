@@ -95,6 +95,7 @@ class UsersController extends Controller
 	{
 		$model=$this->loadModel($id);
                    $model->password='';
+                   $role=$model->role;
 
 		if(isset($_POST['Users']))
 		{
@@ -104,12 +105,20 @@ class UsersController extends Controller
                         $model->password_repeat = md5($model->password_repeat);
                         
                         $model->date_create=  date("y/m/d H:i:s");
+                         if($role=="Control Total" && $role != $model->role){
+                            $criteria= new CDbCriteria();
+                            $criteria->condition = 'role="Control Total" and id_user='.$id; 
+                            $user= Users::model()->findAll($criteria);
+                        if(count($user)<=1)
+                         Yii::app()->user->setFlash('error',Yii::t('validation','No se puede modificar el unico usuario con todos los permisos de acceso'));
+                         }else{
                       
 			if($model->save()){
                                 Yii::app ()->authManager->revoke($model->role,$model->id_user);
                                 Yii::app()->authManager->assign($model->role,$model->id_user);
 				$this->redirect(array('view','id'=>$model->id_user));
                          }
+                }
                        $model->password_repeat='';
                        $model->password='';
                        $model->_oldpassword='';

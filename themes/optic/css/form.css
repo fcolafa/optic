@@ -194,3 +194,35 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
 	clear: left;
 	padding-left: 110px;
 }
+ul.yiiPager a:link,
+ul.yiiPager a:visited
+{
+	border:solid 1px #CCCCCC;
+	font-weight:bold;
+	color:#73A50E;
+	padding:1px 6px;
+	text-decoration:none;
+}
+
+ul.yiiPager .page a
+{
+	font-weight:normal;
+}
+
+ul.yiiPager a:hover
+{
+	border:solid 1px #73A50E;
+}
+
+ul.yiiPager .selected a
+{
+	background:#8ECF11;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+ul.yiiPager .hidden a
+{
+	border:solid 1px #DEDEDE;
+	color:#888888;
+}

@@ -154,6 +154,9 @@ class SalesController extends Controller
                               
                                 $sql ="UPDATE contact_lenses SET amount=amount-1 WHERE  ";
                                 $sql2="UPDATE contact_lenses SET amount=amount-1 WHERE  "; 
+                                $sqlcontact1="INSERT INTO contact_lenses (sphere,cylinder,amount,critical_stock)";
+                                $sqlcontact2="INSERT INTO contact_lenses (sphere,cylinder,amount,critical_stock)";
+                                
                                 $type="Lente de Contacto";
                                 $plutype="Lentes de Contacto";
                                 $right=  ContactLenses::model()->find($criteria);
@@ -163,8 +166,13 @@ class SalesController extends Controller
                             
                             if(!$right && !$left)
                             {
-                                $cuerpo=' Ojo Izquierdo Esfera '.$lsphere.' Cilindro '.$lcylinder."\n";
-                                $cuerpo.='Ojo Derecho Esfera= '.$rsphere.' Cilindro='.$rcylinder;
+                                $cuerpo=$plutype."\n";
+                                $rsphere=$rsphere=='is null'?'':' Esfera '.$rsphere;
+                                $rcylinder=$rcylinder=='is null'?'':' Cilindro '.$rcylinder;
+                                $cuerpo.='Ojo Derecho'.$rsphere.$rcylinder."\n";
+                                $lsphere=$lsphere=='is null'?'':' Esfera '.$lsphere;
+                                $lcylinder=$lcylinder=='is null'?'':' Cilindro '.$lcylinder;
+                                $cuerpo.='Ojo Izquierdo'.$lsphere.$lcylinder."\n";
                                 Yii::app()->user->setFlash('notice', $plutype." no Encontrados\n". CHtml::link("solicitar ".$plutype,array('site/contact','cuerpo'=>$cuerpo,'type'=>$model->id_type)).$frmsg);
                             }else{
                             if($right && $left){
@@ -174,12 +182,16 @@ class SalesController extends Controller
                                 $sql2.=" sphere ".$rsphere." AND cylinder ".$rcylinder;
                             }
                             elseif($right && !$left) {
-                                $cuerpo='Esfera '.$lsphere.' Cilindro '.$lcylinder;
+                                $lsphere=$lsphere=='is null'?'':' Esfera '.$lsphere;
+                                $lcylinder=$lcylinder=='is null'?'':' Cilindro '.$lcylinder;
+                                $cuerpo.='Ojo Izquierdo'.$lsphere.$lcylinder."\n";
                                 $sql .= " sphere ".$rsphere." AND cylinder ".$rcylinder;
                                 Yii::app()->user->setFlash('notice', $type.' Ojo Derecho Descontado de Stock, desea solicitar '.  CHtml::link($type." Ojo izquierdo?",array('site/contact','cuerpo'=>$cuerpo,'type'=>$model->id_type)).$frmsg);
                                 
                             }elseif(!$right && $left){
-                                $cuerpo='Esfera '.$rsphere.' Cilindro '.$rcylinder;
+                                $rsphere=$rsphere=='is null'?'':' Esfera '.$rsphere;
+                                $rcylinder=$rcylinder=='is null'?'':' Cilindro '.$rcylinder;
+                                $cuerpo.='Ojo Derecho'.$rsphere.$rcylinder."\n";
                                 $sql .= " sphere ".$lsphere." AND cylinder ".$lcylinder;
                                 Yii::app()->user->setFlash('notice', $type.' Ojo izquierdo Descontado de Stock, Desea solicitar '. CHtml::link($type." Ojo Derecho?",array('site/contact','cuerpo'=>$cuerpo,'type'=>$model->id_type)).$frmsg);
                             }

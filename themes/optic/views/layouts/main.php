@@ -9,31 +9,23 @@
 	<!-- blueprint CSS framework -->
        <title><?php echo CHtml::encode($this->pageTitle); ?></title>
        <link rel="icon" type="image/png" href="<?php echo Yii::app()->theme->baseUrl?>/images/favicon.png" />
-
-       <script type="text/javascript">   
-        var idleTime = 0;
-         $(document).ready(function () {
-             //Increment the idle time counter every minute.
-             var guest="<?php echo Yii::app()->user->isGuest?'false':'true'?>";
-             if(guest=='true')
-                 var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
-
-             //Zero the idle timer on mouse movement.
-             $(this).mousemove(function (e) {
-                 idleTime = 0;
-             });
-             $(this).keypress(function (e) {
-                 idleTime = 0;
-             });
-         });
-
-         function timerIncrement() {
-             idleTime = idleTime + 1;
-             if (idleTime > 2) { // 20 minutes
-                alert("Sesión Expirada por Inactividad");
-                window.location.replace("<?php echo Yii::app()->createAbsoluteUrl("Site/logout"); ?>");
-             }
-         }
+       <script type="text/javascript">    
+        var guest="<?php echo Yii::app()->user->isGuest?'false':'true'?>";
+        $(document).ready(function () {
+		var idleState = false;
+		var idleTimer = null;
+        $('*').bind('mousemove click mouseup mousedown keydown keypress keyup submit change mouseenter scroll resize dblclick', function () {
+            clearTimeout(idleTimer);
+            if (idleState == true && guest=='true') { 
+                 alert("Sesión expirada por Inactividad ") ; 
+                 window.location.replace("<?php echo Yii::app()->createAbsoluteUrl("Site/logout"); ?>");
+                 idleState=false;
+            }
+            idleState = false;
+            idleTimer = setTimeout(function () {idleState = true; }, 240000);
+        });
+    }
+    );     
          
      </script>
        
@@ -50,6 +42,8 @@
         $cs->registerCssFile($baseUrl.'/css/jquery.css');
         $cs->registerCssFile($baseUrl.'/css/mbmenu_iestyles.css');
         $cs->registerScriptFile($baseUrl.'/js/clock.js');?>
+       
+
 </head>
 
 <body>
@@ -145,6 +139,7 @@
 	</div><!-- header -->
         <div id="mainMbMenu">
   <?php 
+  
   $this->widget('application.extensions.mbmenu.MbMenu',array(
             'items'=>array(
             array('label'=>Yii::t('database','Home'), 'url'=>array('/site/index'),'visible'=>!Yii::app()->user->isGuest),

@@ -31,6 +31,7 @@ class Zone extends CActiveRecord
 		return array(
 			array('zone_name', 'required'),
 			array('zone_name', 'length', 'max'=>45),
+                        array('zone_name', 'unique'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id_zone, zone_name', 'safe', 'on'=>'search'),

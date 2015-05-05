@@ -35,6 +35,7 @@ class City extends CActiveRecord
 			array('id_zone, city_name', 'required'),
 			array('id_zone', 'numerical', 'integerOnly'=>true),
 			array('city_name', 'length', 'max'=>45),
+                        array('city_name', 'unique'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id_city, id_zone, city_name', 'safe', 'on'=>'search'),
@@ -64,7 +65,7 @@ class City extends CActiveRecord
 			'id_city' => Yii::t('database','Id City'),
 			'id_zone' => Yii::t('database','Id Zone'),
 			'city_name' => Yii::t('database','City Name'),
-            '_zonename'=>Yii::t('database','Zone Name'),
+                        '_zonename'=>Yii::t('database','Zone Name'),
 		);
 	}
 

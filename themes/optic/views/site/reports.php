@@ -50,14 +50,19 @@ $this->breadcrumbs=array(
         ?>
      
         <?php echo $form->labelEx($model,'reportyear'); ?>
-        <?php echo  $form->dropDownList($model,'reportyear',$yfinal,array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Year')));?>
-        <?php echo $form->error($model,'reportyear'); ?>
+        <?php echo  $form->dropDownList($model,'reportyear',$yfinal,array('multiple' => 'multiple','style'=>'width:200px'));?>
+        <?php echo $form->error($model,'reportyear'); 
+        
+        ?>
      
  </div>
+ 
  <div class="row" id="range">
-        
+        <?php
+        $office=CHtml::listData(Office::model()->findAll(),'id_office','office_name');
+        ?>
         <?php echo $form->labelEx($model,'office'); ?>
-        <?php echo  $form->dropDownList($model,'office',CHtml::listData(Office::model()->findAll(),'id_office','office_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Office')));?>
+        <?php echo  $form->dropDownList($model,'office',$office,array('multiple'=>'multiple'));?>
         <?php echo $form->error($model,'office'); ?>
      
         <?php echo $form->labelEx($model,'initdate'); ?>
@@ -116,25 +121,6 @@ $this->breadcrumbs=array(
     
 	<?php endif; ?>
     <br>
-    <!--
-<div class="span-23 showgrid">
-    
-    <!--
-    <div class="dashboardIcons span-16">
-        
-        <div class="dashIcon span-3">
-        <a href="<?php echo Yii::app()->createUrl('/sales/excel') ?>"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-file.png" alt="Page" /></a>
-        <div class="dashIconText"><a href="<?php echo Yii::app()->createUrl('/sales/excel')?>"><?php echo Yii::t('actions','Export to')?> Excel</a></div>
-        </div>
-       
-        <div class="dashIcon span-3">
-        <a target="_blank" href="<?php echo Yii::app()->createUrl('/sales/pdf') ?>"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/big_icons/icon-file-pdf.png" alt="Page" /></a>
-                 <div class="dashIconText"><a target="_blank" href="<?php echo Yii::app()->createUrl('/sales/pdf')?>"><?php echo Yii::t('actions','Export to')?> PDF</a></div>
-        </div>
-        
-    </div>
-</div>
--->
 <?php $this->endWidget(); ?>
 </div><!-- form -->
 <?php endif;

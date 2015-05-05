@@ -31,12 +31,7 @@ class Reports extends CFormModel
                         array('endate','requiredend'),
                         array('initdate','validateinitdate'),
                         array('endate','validatendate'),
-                        array('initdate','biggeridate'),
-                        array('endate','biggerdate'),
-                      
                         array('initdate','havesales'),
-                
-
 			// verifyCode needs to be entered correctly
 			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
                         
@@ -56,6 +51,7 @@ class Reports extends CFormModel
                         'datatype'=>Yii::t('database','Data Type'),
                         'initdate'=>Yii::t('database','Init Date'),
                         'endate'=>Yii::t('database','End Date'),
+                        'office'=>Yii::t('database','Office'),
 		);
 	}
         public function validatEndate($attribute,$params){
@@ -86,33 +82,22 @@ class Reports extends CFormModel
                 $this->addError ('endate', Yii::t ('yii', '{attribute} cannot be blank.',array('{attribute}'=>Yii::t('database','End Date'))));
 
         }
-        public function biggerdate($attribute,$params){
-             if($this->reportype==2 ){
-            $today = date("d/m/Y h:m",time());
-            $input = $this->endate;
-            if($input>$today  )
-                   $this->addError ('endate', Yii::t ('yii', '{attribute} cannot be bigger than today.',array('{attribute}'=>Yii::t('database','End Date'))));
-             }
-        }
-        public function biggeridate($attribute,$params){
-              if($this->reportype==2){
-            $today = date("d/m/Y h:m",time());
-            $input = $this->initdate;
-            if($input>$today  )
-                   $this->addError ('initdate',  Yii::t ('yii', '{attribute} cannot be bigger than today.',array('{attribute}'=>Yii::t('database','Init Date'))));
-              }
-        }
+      
         public function havesales($attribute,$params){
           
             if($this->reportype==2&& !empty($this->initdate&& !empty($this->endate))){
             $criteria=new CDbCriteria();
             $initdate=Yii::app()->dateFormatter->format('yyyy-MM-dd HH:mm',$this->initdate);
             $endate=Yii::app()->dateFormatter->format('yyyy-MM-dd HH:mm',$this->endate);
-            $criteria->condition = " t.id_office=".$this->office." and t.date between '".$initdate."' and '".$endate."'";
+            if($this->office)
+            foreach ($this->office as $of=>$id){
+            $criteria->condition = " t.id_office=".$id." and t.date between '".$initdate."' and '".$endate."'";
             $sales=  Sales::model()->findAll($criteria);
+            $office=  Office::model()->findByPk($id);
             if(count($sales)==0)
-                $this->addError ('initdate,endate', 'No hay ventas asociadas entre '.$this->initdate.' y '.$this->endate);
+                $this->addError ('initdate,endate',  $office->office_name.' no tiene ventas asociadas entre '.$this->initdate.' y '.$this->endate);
+            
+            }
+            }
         }
-        }
-      
 }

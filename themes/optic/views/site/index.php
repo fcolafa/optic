@@ -9,6 +9,25 @@
   $cs->registerCssFile($baseUrl.'/css/jquery.css');
 
 ?>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+  var droplist = $('#graphicsyear');
+  var dropyear;
+    droplist.change(function(e){
+        dropyear=$('#graphicsyear').val();
+         jQuery.ajax({
+                        url: "<?php echo Yii::app()->createAbsoluteUrl('site/year') ?>",
+                        type: 'POST',
+                        data: { 'yearg' : dropyear },
+                        success:function(data){
+                           document.location.href='http://localhost/optic/site/index/'+data;
+                        },
+                })
+    })
+ });
+
+</script>
 
 <?php $this->pageTitle=Yii::app()->name; ?>
 
@@ -49,9 +68,17 @@
      $date=  date("Y"); 
 
 $this->beginWidget('zii.widgets.CPortlet', array(
-	'title'=>Yii::t('actions','Sales Chart')." ".$date,
+	'title'=>Yii::t('actions','Sales Chart')." ".$yearg,
 ));
-
+$year="SELECT year(t.date) FROM `sales` `t` GROUP BY year(t.date)";
+        $years=  Yii::app()->db->createCommand($year)->queryAll();
+        $yfinal= array();
+        foreach($years as $y){
+           $yfinal[$y['year(t.date)']]=$y['year(t.date)'];
+        }
+        echo CHtml::dropDownList('graphicsyear', 'year(t.date)', $yfinal,array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Year')));
+        echo "<br>";
+ 
 
 ?>
 <div class="chart3">
@@ -73,27 +100,27 @@ $this->beginWidget('zii.widgets.CPortlet', array(
                         <th>Octubre</th>
                         <th>Noviembre</th>
                         <th>Diciembre</th>
-                        
+                       
                     </tr>
                 </thead>
                 <tbody>
-                  
                         <?php 
                        $office=Office::model()->findAll();
                        if(isset($office)){
                         foreach ($office as $o){
                         echo "<tr>";   
                         echo "<th>".$o->office_name."</th>";
-                        $command = Yii::app()->db->createCommand(" call monthsales(". $o->id_office .",'".  date("Y")."') ");
+                        $command = Yii::app()->db->createCommand(" call monthsales(". $o->id_office .",'".$yearg."') ");
                         $month = $command->queryAll();
                         $sales=array_fill(1,12,0);
                              foreach($month as $m){
-                           for($i=1;$i<12;$i++){
+                           for($i=1;$i<=12;$i++){
                                 if($i==intval($m['month(s.date)']))
                                     $sales[$i]=intval($m['sum(s.price)']);
                                 }
                             }
                              foreach($sales as $sale){
+                                     
                                     echo "<td style='font-weight:bold'>".$sale."</td>";
                              }
                         echo "</tr>";
