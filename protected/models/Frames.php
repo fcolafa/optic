@@ -18,6 +18,7 @@ class Frames extends CActiveRecord
 {
         public $_examplarname;
         public $_markname;
+        public $_materialname;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -34,14 +35,14 @@ class Frames extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_examplar, id_mark, amount', 'required'),
-			array('id_examplar, id_mark,critical_stock', 'numerical', 'integerOnly'=>true),
-                        array('frame_name', 'length', 'max'=>45),
+			array('id_examplar, id_mark, amount, id_frame_material', 'required'),
+			array('id_examplar, id_mark,critical_stock, id_frame_material ', 'numerical', 'integerOnly'=>true),
+                     
                         array('critical_stock','compare','compareAttribute'=>'amount','operator'=>'<=','message'=>' el stock critico no puede ser mayor a la cantidad de Armazones'),
-                        
+                        array('frame_description', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('_examplarname,_markname, id_frame, id_examplar, id_mark, frame_name,critical_stock', 'safe', 'on'=>'search'),
+			array('_materialname, _examplarname, _markname, id_frame, id_examplar, id_mark, frame_description,critical_stock', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,6 +57,7 @@ class Frames extends CActiveRecord
 			'idExamplar' => array(self::BELONGS_TO, 'Examplar', 'id_examplar'),
                         'idMark' => array(self::BELONGS_TO, 'Mark', 'id_mark'),
                         'sales' => array(self::HAS_MANY, 'Sales', 'id_frame'),
+                        'idFrameMaterial' => array(self::BELONGS_TO, 'FrameMaterial', 'id_frame_material'),
 		);
 	}
 
@@ -68,9 +70,10 @@ class Frames extends CActiveRecord
 			'id_frame' => Yii::t('database','Id Frame'),
 			'id_examplar' => Yii::t('database','Id Examplar'),
 			'id_mark' => Yii::t('database','Id Mark'),
-                        'frame_name' => Yii::t('database','Frame Name'),
-                    'amount' => Yii::t('database','Amount'),
-                    'critical_stock' => Yii::t('database','Critical Stock'),
+                        'frame_description' => Yii::t('database','Frame Description'),
+                        'amount' => Yii::t('database','Amount'),
+                        'critical_stock' => Yii::t('database','Critical Stock'),
+                        'id_frame_material' => Yii::t('database','Id Frame Material'),
 		);
 	}
 
@@ -91,16 +94,18 @@ class Frames extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-                $criteria->with=array('idExamplar','idMark');
+                $criteria->with=array('idExamplar','idMark','idFrameMaterial');
                 $criteria->together=true;
 		$criteria->compare('id_frame',$this->id_frame);
 		$criteria->compare('id_examplar',$this->id_examplar);
 		$criteria->compare('id_mark',$this->id_mark);
-                $criteria->compare('frame_name',$this->frame_name,true);
-               $criteria->compare('amount',$this->amount);
+                $criteria->compare('frame_description',$this->frame_description,true);
+                $criteria->compare('amount',$this->amount);
                 $criteria->compare('critical_stock',$this->critical_stock);
+                $criteria->compare('id_frame_material',$this->id_frame_material);
                 $criteria->compare('idExamplar.examplar_name',$this->_examplarname, true);
                 $criteria->compare('idMark.mark_name',$this->_markname, true);
+                 $criteria->compare('idFrameMaterial.frame_material_name',$this->_materialname, true);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

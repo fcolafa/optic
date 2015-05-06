@@ -50,8 +50,7 @@ $('.search-form form').submit(function(){
 		'id_provider',
 		'provider_name',
 		'email_provider',
-		'upper',
-		'lower',
+		
                 
 		array(
 			'class'=>'CButtonColumn',

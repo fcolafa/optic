@@ -1,4 +1,4 @@
-<?php 
+Gestionar<?php 
 return array(
 'Operations'=>'Acciones',
 'Create'=>'Crear',
@@ -21,5 +21,6 @@ return array(
 'Search'=>'Buscar',
 'Contact'=>'Contacto',
 'Generate'=>'Generar',
+ 'Arrange'=>'Gestionar'
     
 );

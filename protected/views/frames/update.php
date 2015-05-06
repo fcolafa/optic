@@ -13,6 +13,10 @@ $this->menu=array(
 	array('label'=>Yii::t('actions','Create')." ". Yii::t('database','Frames'), 'url'=>array('create')),
 	array('label'=>Yii::t('actions','View')." ". Yii::t('database','Frames'), 'url'=>array('view', 'id'=>$model->id_frame)),
 	array('label'=>Yii::t('actions','Manage')." ". Yii::t('database','Frames'), 'url'=>array('admin')),
+        array('label'=>Yii::t('actions','Arrange')." ". Yii::t('database','Marks'), 'url'=>array('mark/index')),
+        array('label'=>Yii::t('actions','Arrange')." ". Yii::t('database','Examplars'), 'url'=>array('examplar/index')),
+        array('label'=>Yii::t('actions','Arrange')." ". Yii::t('database','Frame Materials'), 'url'=>array('framematerial/index')),
+      
 );
 ?>
 

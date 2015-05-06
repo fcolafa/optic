@@ -17,8 +17,8 @@
 	<?php echo CHtml::encode($data->idExamplar->examplar_name); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('frame_name')); ?>:</b>
-	<?php echo CHtml::encode($data->frame_name); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('frame_description')); ?>:</b>
+	<?php echo CHtml::encode($data->frame_description); ?>
 	<br />
         <b><?php echo CHtml::encode($data->getAttributeLabel('amount')); ?>:</b>
 	<?php echo CHtml::encode($data->amount); ?>

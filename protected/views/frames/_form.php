@@ -41,11 +41,15 @@
 		<?php echo $form->dropDownList($model,'id_examplar',CHtml::listData(Examplar::model()->findAll('id_mark=:id_mark',array(':id_mark'=>$model->id_mark)),'id_examplar','examplar_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Examplar'))); ?>
 		<?php echo $form->error($model,'id_examplar'); ?>
 	</div>
-        
         <div class="row">
-		<?php echo $form->labelEx($model,'frame_name'); ?>
-		<?php echo $form->textField($model,'frame_name',array('size'=>45,'maxlength'=>45)); ?>
-		<?php echo $form->error($model,'frame_name'); ?>
+                <?php echo $form->labelEx($model,'id_frame_material'); ?>
+		<?php echo $form->dropDownList($model,'id_frame_material',CHtml::listData(FrameMaterial::model()->findAll(),'id_frame_material','frame_material_name'),array('prompt'=>Yii::t('actions','Select')." ".Yii::t('database','Frame Material'))); ?>
+		<?php echo $form->error($model,'id_frame_material'); ?>
+        </div>
+        <div class="row">
+		<?php echo $form->labelEx($model,'frame_description'); ?>
+		<?php echo $form->textArea($model,'frame_description',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'frame_description'); ?>
 	</div>
         <div class="row">
 		<?php echo $form->labelEx($model,'amount'); ?>

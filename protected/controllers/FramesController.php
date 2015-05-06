@@ -70,7 +70,7 @@ class FramesController extends Controller
 		if(isset($_POST['Frames']))
 		{
 			$model->attributes=$_POST['Frames'];
-                        $model->frame_name=  ucwords(strtolower($model->frame_name));
+                       
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_frame));
 		}
@@ -95,7 +95,7 @@ class FramesController extends Controller
 		if(isset($_POST['Frames']))
 		{
 			$model->attributes=$_POST['Frames'];
-                        $model->frame_name=  ucwords(strtolower($model->frame_name));
+                     
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_frame));
 		}

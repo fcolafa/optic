@@ -10,6 +10,9 @@ $this->breadcrumbs=array(
 $this->menu=array(
 	array('label'=>Yii::t('actions','List')." ".Yii::t('database','ContactLenses'), 'url'=>array('index')),
 	array('label'=>Yii::t('actions','Manage')." ". Yii::t('database','ContactLenses'), 'url'=>array('admin')),
+      array('label'=>Yii::t('actions','Arrange')." ". Yii::t('database','Laboratories'), 'url'=>array('laboratory/index')),
+        array('label'=>Yii::t('actions','Arrange')." ". Yii::t('database','Materials'), 'url'=>array('material/index')),
+      
 );
 ?>
 

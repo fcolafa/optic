@@ -13,6 +13,8 @@ $this->menu=array(
 	array('label'=>Yii::t('actions','Create')." ". Yii::t('database','ContactLenses'), 'url'=>array('create')),
 	array('label'=>Yii::t('actions','View')." ". Yii::t('database','ContactLenses'), 'url'=>array('view', 'id'=>$model->id_contactlenses)),
 	array('label'=>Yii::t('actions','Manage')." ". Yii::t('database','ContactLenses'), 'url'=>array('admin')),
+        array('label'=>Yii::t('actions','Arrange')." ". Yii::t('database','Laboratories'), 'url'=>array('laboratory/index')),
+        array('label'=>Yii::t('actions','Arrange')." ". Yii::t('database','Materials'), 'url'=>array('material/index')),
 );
 ?>
 

@@ -115,7 +115,7 @@
                            echo "<br>Los siguientes Armazones estan bajo el stock deseado <br>";
                            $cuerpo="Armazones \n";
                            foreach($frame as $f){
-                           $linea=$f->frame_name." ,modelo:".$f->idExamplar->examplar_name." de ".$f->idMark->mark_name;
+                           $linea=$f->idFrameMaterial->frame_material_name." ,modelo:".$f->idExamplar->examplar_name." de ".$f->idMark->mark_name;
                            $cuerpo.=$linea."\n";
                            $linea.="<br>";
                            echo "<li>". CHtml::link($linea,array("frames/view", 'id'=>$f->id_frame))."</li>"; 
@@ -149,11 +149,7 @@
                   'visible'=>!Yii::app()->user->isGuest,
                   'items'=>array(
                     array('label'=>Yii::t('database','Glasses'), 'url'=>array('/Glass/index')),
-                    array('label'=>Yii::t('database','Materials'), 'url'=>array('/material/index')),
-                    array('label'=>Yii::t('database','Laboratories'), 'url'=>array('/laboratory/index')),
                     array('label'=>Yii::t('database','Contact Lenses'), 'url'=>array('/contactlenses/index')),
-                    array('label'=>Yii::t('database','Marks'), 'url'=>array('/mark/index')),
-                    array('label'=>Yii::t('database','Examplars'), 'url'=>array('/examplar/index')),
                     array('label'=>Yii::t('database','Frames'), 'url'=>array('/frames/index')),
                   ),
                 ), 

@@ -45,20 +45,29 @@ $('.search-form form').submit(function(){
 	'id'=>'frames-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
-    'ajaxUpdate'=>false,
+        'ajaxUpdate'=>false,
 	'columns'=>array(
-		'id_frame',
+		'frame_description',
                 array(
                     'name'=>'idMark.mark_name',
                     'value'=>'$data->idMark->mark_name',
                     'filter'=>  CHtml::activeTextField($model, '_markname'),
                     ),
-		array(
+		
+                array(
                     'name'=>'idExamplar.examplar_name',
                     'value'=>'$data->idExamplar->examplar_name',
                     'filter'=>  CHtml::activeTextField($model, '_examplarname'),
                     ),
-                'frame_name',
+             array(
+                    'name'=>'idFrameMaterial.frame_material_name',
+                    'value'=>'$data->idFrameMaterial->frame_material_name',
+                    'filter'=>  CHtml::activeTextField($model, '_materialname'),
+                    ),
+            'amount',
+            'critical_stock',
+           
+                
 		array(
 			'class'=>'CButtonColumn',
 		),

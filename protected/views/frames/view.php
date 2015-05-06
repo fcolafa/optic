@@ -24,8 +24,11 @@ $this->menu=array(
 		'id_frame',
                 'idMark.mark_name',
 		'idExamplar.examplar_name',
-                'frame_name',
-                'amount',
-                'critical_stock',
+                'idFrameMaterial.frame_material_name',
+                'frame_description',
+		'amount',
+		'critical_stock',
+		'id_frame_material',
+               
 	),
 )); ?>

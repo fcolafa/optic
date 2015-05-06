@@ -44,7 +44,8 @@ return array(
  'Examplar'=>'Modelo',
  'Examplars'=>'Modelos',
  'Id Examplar'=>'Id Modelo',
- 'Examplar Name'=>'Nombre Modelo' ,  
+ 'Examplar Name'=>'Nombre Modelo' , 
+    'Frame Material'=>'Material Armazon',
   //File
  'File'=>'Archivo',
  'Import Data'=>'Importar Datos',
@@ -53,14 +54,18 @@ return array(
  'Frames'=>'Armazones',
  'Id Frame'=>'Id Armazon',
  'Frame Name'=>'Nombre Armazon',
+ 'Id Frame Material'=>'Id Material Armazon',
+ 'Frame Material Name'=>'Nombre Material Armazon',
+    'FrameMaterial'=>' Material de Armazon',
+    'Frame Materials'=>' Materiales de Armazon',
  //glass
  'Glass'=>'Cristal',
  'Glasses'=>'Cristales',
  'Sphere'=>'Esfera',
  'Cylinder'=>'Cilindro',
  'Critical Stock'=>'Stock Critico',
-    
- 
+  'Frame Materials'=>'Materiales de Armazones',
+    'Frame Description'=>'Descripcion Armazon',
  'Global Configuration'=>'Configuración Global',
  'Languaje'=>'Idioma',
     
